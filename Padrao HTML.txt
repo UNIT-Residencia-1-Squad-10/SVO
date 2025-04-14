@@ -1,0 +1,37 @@
+<!--
+  📘 Boas Práticas em HTML
+
+  ✨ Estrutura e Organização
+  - Comece sempre com `<!DOCTYPE html>` e defina o idioma com `<html lang="pt-br">` ou `lang="en"`.
+  - Use uma estrutura semântica clara com as tags apropriadas: <header>, <main>, <section>, <article>, <footer>, etc.
+  - Agrupe conteúdos relacionados dentro de containers (ex: <div>, <section>) com classes significativas.
+
+  ✨ Semântica
+  - Use tags semânticas para dar significado ao conteúdo (ex: use <button> ao invés de <div> para ações).
+  - Utilize <label> para inputs e associe corretamente com o atributo `for`.
+
+  ✨ Acessibilidade (A11Y)
+  - Adicione atributos `alt` em todas as imagens.
+  - Use corretamente as hierarquias de título (<h1> a <h6>), sem pular níveis.
+  - Use atributos ARIA apenas quando necessário para complementar a semântica.
+
+  ✨ Boas práticas com atributos
+  - Utilize `type`, `name`, `id` e `placeholder` corretamente em inputs.
+  - Prefira o uso de `class` para estilização e evite uso excessivo de `id` (ids devem ser únicos).
+  - Sempre use aspas duplas para valores de atributos (ex: class="menu").
+
+  ✨ Performance e SEO
+  - Utilize o atributo `meta charset="UTF-8"` no <head> para garantir a codificação correta.
+  - Utilize `<meta name="viewport" content="width=device-width, initial-scale=1.0">` para responsividade.
+  - Sempre que possível, adicione `title`, `description`, e favicon para melhorar o SEO.
+
+  ✨ Comentários
+  - Use comentários (`<!-- Comentário -->`) para explicar estruturas complexas ou seções do código.
+  - Evite comentários redundantes ou que descrevam o óbvio.
+
+  ✨ Validação
+  - Teste o HTML em validadores como: https://validator.w3.org/
+
+  ✅ HTML limpo, semântico e acessível é essencial para um bom front-end!
+
+-->
