@@ -1,0 +1,35 @@
+Utilize os seguintes padrões ao fazer commits neste projeto:
+
+1. Estrutura do Commit:
+<tipo>(escopo opcional): <mensagem>
+
+2. Tipos Comuns:
+feat:      Adição de nova funcionalidade
+fix:       Correção de bug
+docs:      Alterações apenas na documentação
+style:     Alterações de formatação, identação, etc. (sem mudança de código)
+refactor:  Refatoração de código (sem adicionar novas features nem corrigir bugs)
+perf:      Melhoria de performance
+test:      Adição ou modificação de testes
+build:     Alterações que afetam o sistema de build ou dependências
+ci:        Alterações nos arquivos de configuração de integração contínua
+chore:     Outras mudanças que não modificam src ou testes
+revert:    Reversão de um commit anterior
+
+3. Exemplos:
+feat: adicionar página de login
+fix: corrigir bug no formulário de cadastro
+docs: atualizar documentação da API
+style: remover espaços em branco desnecessários
+refactor: melhorar estrutura do componente Header
+perf: otimizar carregamento de imagens
+test: adicionar testes para componente de botão
+build: atualizar dependências do projeto
+ci: configurar pipeline do GitHub Actions
+chore: renomear arquivos para padrão kebab-case
+revert: revert "feat: adicionar componente de notificações"
+
+4. Dicas:
+- Use o imperativo no tempo presente ("adicionar" em vez de "adicionado").
+- Escreva mensagens curtas e diretas.
+- Use escopos (entre parênteses) quando desejar detalhar onde ocorreu a mudança, ex: feat(login): criar autenticação
