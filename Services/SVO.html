@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVO - Serviço de Verificação de Óbito</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .nav-top {
+      position: fixed; /* Fixa a barra no topo */
+      top: 0; /* Garante que ela fique no topo */
+      left: 0; /* Garante que ela comece na esquerda */
+      width: 100%; /* Faz a barra ocupar a largura total */
+      z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+      background-color: white; /* Ou a cor de fundo desejada */
+      /* Outros estilos que você já tem ou queira adicionar */
+    }
+
+    /* Pode ser necessário adicionar um pouco de padding ao body para evitar que o conteúdo fique escondido atrás da navbar */
+    body {
+      background-color: #b7bdc4;
+      padding-top: 80px; /* Ajuste esse valor de acordo com a altura da sua navbar */
+    }
+  </style>
+   
+</head>
+<body background="#01448A">
+  <section>
+    <header>
+      <nav class="navbar navbar-light nav-top">
+        <div class="container-fluid nav-container">
+          <a class="navbar-brand" href="SVO.html" target="_blank">
+            <img src="images/logo svo branco.png" style="max-width:130px; max-height:80px">
+          </a>
+          <a class="navbar-brand" href="SVO.html" target="_blank">Início</a>
+          <a class="navbar-brand" href="SVO.html" target="_blank">Profissionais</a>
+          <a class="navbar-brand" href="SVO.html" target="_blank">Notícias</a>
+          <a class="navbar-brand" href="SVO.html" target="_blank">Serviços</a>
+          <a class="navbar-brand" href="SVO.html" target="_blank">Contato</a>
+          <a class="navbar-brand" href="SVO.html" target="_blank">Fale Conosco</a>
+          
+
+        </div>
+      </nav>    </header>
+  </section>
+
+<section >
+  <div class="sidebar" >
+    <div id="step-1" class="step">Etapa 1<br>Condições do óbito</div>
+    <div id="step-2" class="step">Etapa 2<br>Sobre a pessoa falecida</div>
+    <div id="step-3" class="step">Etapa 3<br>Informações do solicitante</div>
+  </div>
+</section>
+
+<section style="text-align: center;">
+
+  <div class="content">
+    <div class="step-content" data-step="1">
+      <h2>Triagem</h2>
+      <p>Responda às perguntas a seguir para iniciar a solicitação de remoção de corpo.</p>
+      <button class="btn-blue" onclick="next()">Iniciar</button>
+    </div>
+
+    <div class="step-content" data-step="2">
+      <h2>Condições do óbito</h2>
+      <p>A pessoa falecida possuía plano funerário?</p>
+      <button class="btn-blue" onclick="next()">Sim</button>
+      <button class="btn-blue" onclick="next()">Não</button>
+    </div>
+
+    <div class="step-content" data-step="3">
+      <h2>Condições do óbito</h2>
+      <p>O óbito ocorreu na residência, no hospital ou em outro lugar?</p>
+      <button class="btn-blue" onclick="next()">Na residência</button>
+      <button class="btn-blue" onclick="next()">No hospital</button>
+      <button class="btn-blue" onclick="next()">Outro</button>
+    </div>
+
+    <div class="step-content" data-step="4">
+      <h2>Condições do óbito</h2>
+      <p>O óbito ocorreu de causa natural ou externa?</p>
+      <button class="btn-blue" onclick="next()">Natural</button>
+      <button class="btn-blue" onclick="next()">Externa</button>
+    </div>
+
+    <div class="step-content" data-step="5">
+      <h2>Condições do óbito</h2>
+      <p>A pessoa estava sozinha ou acompanhada?</p>
+      <button class="btn-blue" onclick="next()">Sozinha</button>
+      <button class="btn-blue" onclick="next()">Acompanhada</button>
+    </div>
+
+    <div class="step-content" data-step="6">
+      <h2>Sobre a pessoa</h2>
+      <p>A pessoa era acometida de alguma doença prévia e/ou era assistida por médico?</p>
+      <button class="btn-blue" onclick="next()">Sim</button>
+      <button class="btn-blue" onclick="next()">Não</button>
+    </div>
+
+    <div class="step-content" data-step="7">
+      <h2>Sobre a pessoa</h2>
+      <p>A pessoa falecida era assistida por profissional de saúde em casa?</p>
+      <button class="btn-blue" onclick="next()">Sim</button>
+      <button class="btn-blue" onclick="next()">Não</button>
+    </div>
+
+    <div class="step-content" data-step="8">
+      <h2>Informações do Solicitante</h2>
+      <p>Informe seu grau de parentesco com a pessoa falecida:</p>
+      <select onchange="next()">
+        <option value="">Escolha</option>
+        <option>Filho(a)</option>
+        <option>Esposo(a)</option>
+        <option>Irmão(ã)</option>
+        <option>Outro</option>
+      </select>
+    </div>
+
+    <div class="step-content" data-step="9">
+      <h2>Formulário de Solicitação</h2>
+      <input type="text" placeholder="Nome"><br>
+      <input type="text" placeholder="Documento (RG, CPF, etc)"><br>
+      <input type="text" placeholder="Telefone"><br>
+      <input type="text" placeholder="Endereço do Solicitante"><br>
+      <input type="text" placeholder="Endereço da pessoa falecida"><br>
+      <button class="btn-blue">Concluir</button>
+    </div>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
