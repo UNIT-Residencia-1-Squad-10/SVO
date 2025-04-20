@@ -1,0 +1,38 @@
+/*
+  📘 Boas Práticas em JavaScript
+
+  ✨ Organização e Legibilidade
+  - Use nomes de variáveis e funções descritivos e claros (ex: getUserData, totalAmount).
+  - Escreva funções pequenas e com responsabilidade única.
+  - Quebre trechos complexos em funções auxiliares para facilitar a leitura.
+  - Comente partes importantes, mas evite comentários redundantes.
+
+  ✨ Declaração de Variáveis
+  - Sempre prefira `const` e `let` ao invés de `var`.
+    → Use `const` para valores que não mudam.
+    → Use `let` para valores que mudam ao longo do tempo.
+
+  ✨ Manipulação de DOM
+  - Sempre verifique se os elementos existem antes de manipulá-los.
+  - Prefira `document.querySelector` e `querySelectorAll` pela flexibilidade.
+  - Evite acoplamento excessivo com IDs — prefira classes quando possível.
+
+  ✨ Condicionais e Validações
+  - Use `===` e `!==` no lugar de `==` e `!=` para evitar coerção de tipo.
+  - Valide sempre entradas do usuário.
+  - Use `try/catch` para capturar erros em trechos críticos (ex: conversões de dados, requisições, etc.).
+
+  ✨ Boas Práticas Gerais
+  - Mantenha seu código indentado e padronizado (2 ou 4 espaços).
+  - Evite repetição de código (DRY: Don’t Repeat Yourself).
+  - Modularize o código sempre que possível (separando por responsabilidade).
+  - Escreva mensagens de erro claras e úteis no console.
+
+  ✨ Extras úteis
+  - Use template strings (`` `Olá, ${nome}` ``) ao invés de concatenação com `+`.
+  - Use arrow functions (`() => {}`) quando quiser funções curtas e sem `this`.
+  - Evite poluir o escopo global — use funções ou módulos para encapsular.
+
+  ✅ Código limpo é mais importante que código "esperto".
+
+*/
