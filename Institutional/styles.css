@@ -22,7 +22,6 @@ html {
 body {
   background: var(--white2);
   color: var(--dark);
-  overflow-x: hidden;
 }
 
 /* layout principal em duas colunas */
@@ -166,6 +165,9 @@ h3 {
   margin-top: 10rem;
   background-color: var(--white);
   display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .structure__content {
@@ -177,6 +179,8 @@ h3 {
   align-items: flex-start;
   gap: 17px;
   align-self: stretch;
+  position: relative;
+  z-index: 1;
 }
 
 .structure__title {
@@ -200,30 +204,47 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 3rem;
+  position: absolute;
   align-items: center;
-  position: relative;
-  left: -8rem;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+
+  height: auto;
+  width: 100vw;
+  top: 15%;
+  left: 30%;
+  z-index: 2;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  padding-bottom: 1rem;
 }
 .structure__card {
   display: flex;
-  width: 340.446px;
-  height: 168px;
-  padding: 140px 14.277px;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+}
+.structure__elements {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 308px;
+  padding: 2rem;
+  overflow-x: auto;
   gap: 3.5rem;
   border-radius: 5.1rem;
   background: var(--white);
   box-shadow: 0px 5.192px 5.192px 0px rgba(0, 0, 0, 0.25);
-  position: relative;
-}
 
+  justify-content: center;
+}
 .structure__card-img {
-  position: absolute;
-  top: -4rem;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-bottom: 0px;
+  width: 13rem;
+  height: 13rem;
+  position: relative;
+  top: 6rem;
+  z-index: 3;
 }
 .structure__card-icone {
   width: 20.767px;
