@@ -150,6 +150,7 @@ body {
   }
   
   .content {
+    display: flex;
     margin-top: 50px;
     max-width: 600px;
     margin: 0 auto;
