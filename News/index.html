@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="/shared/reset.css">
     <link rel="stylesheet" href="/shared/styles.css">
     <link rel="stylesheet" href="styles.css">
-   <script src="/shared/components.js" defer></script>
+    <script src="/shared/components.js" defer></script>
 
-   <script type="module">
-    import { loadNews } from './script.js';
-  
-    const newsContainer = document.querySelector('.news__grid--left');
-    const newsHighlightContainer = document.querySelector('.news__main');
-    const dataLocation = '../data/news.json'; 
+    <script type="module">
+      import { loadNews } from './script.js';
+    
+      const highlightContainer = document.querySelector('.news__container--highlight');
+      const mainContainer = document.querySelector('.news__container--main');
+      const lastNewsContainer = document.querySelector('.news__container--lastNews');
+      const dataLocation = '../data/news.json';
 
-    loadNews(newsContainer, dataLocation);
+      loadNews(highlightContainer, mainContainer, lastNewsContainer, dataLocation);
 
-  </script>
-
+    </script>
   </head>
   <body>
     <svo-header></svo-header>
@@ -27,19 +27,18 @@
       <div class="news">
         <div class="news__panel--left">
           <div class="news__title--left">Notícias Principais</div>
-          <div class="news__main"> <!-- A notícia em destaque será carregada dinamicamente aqui --></div>
-          <div class="news__grid--left">
-            <!-- As notícias serão carregadas aqui de maneira dinâmica -->
+          <div class="news__container--highlight">
+            <!-- A notícia em destaque será carregada dinamicamente aqui -->
+          </div>
+          <div class="news__container--main">
+            <!-- As notícias principais serão carregadas aqui de maneira dinâmica -->
           </div>
         </div>
     
         <div class="news__panel--right">
           <div class="news__title--right">Últimas Notícias</div>
-          <div class="news__grid--right">
-            <div class="news__card--right">Last New 1</div>
-            <div class="news__card--right">Last New 2</div>
-            <div class="news__card--right">Last New 3</div>
-            <div class="news__card--right">Last New 4</div>
+          <div class="news__container--lastNews">
+            <!-- As últimas notícias serão carregadas aqui de maneira dinâmica -->
           </div>
         </div>
       </div>
