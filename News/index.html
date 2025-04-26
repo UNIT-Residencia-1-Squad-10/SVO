@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="/shared/styles.css">
     <link rel="stylesheet" href="styles.css">
    <script src="/shared/components.js" defer></script>
+
+   <script type="module">
+    import { loadNews } from './script.js';
+  
+    const newsContainer = document.querySelector('.news__grid--left');
+    const newsHighlightContainer = document.querySelector('.news__main');
+    const dataLocation = '../data/news.json'; 
+
+    loadNews(newsContainer, dataLocation);
+
+  </script>
+
   </head>
   <body>
     <svo-header></svo-header>
@@ -15,16 +27,9 @@
       <div class="news">
         <div class="news__panel--left">
           <div class="news__title--left">Notícias Principais</div>
-          <div class="news__main">Main New</div>
+          <div class="news__main"> <!-- A notícia em destaque será carregada dinamicamente aqui --></div>
           <div class="news__grid--left">
-            <div class="news__card--left">New 1</div>
-            <div class="news__card--left">New 2</div>
-            <div class="news__card--left">New 3</div>
-            <div class="news__card--left">New 4</div>
-            <div class="news__card--left">New 5</div>
-            <div class="news__card--left">New 6</div>
-            <div class="news__card--left">New 7</div>
-            <div class="news__card--left">New 8</div>
+            <!-- As notícias serão carregadas aqui de maneira dinâmica -->
           </div>
         </div>
     

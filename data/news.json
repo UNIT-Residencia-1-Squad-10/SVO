@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Atualização no Sistema de Verificação de Óbitos",
+        "content": "O sistema de verificação de óbitos foi atualizado para incluir novos relatórios automatizados. A atualização visa melhorar a eficiência no processamento de dados.",
+        "author": "Equipe SVO",
+        "date": "2025-04-23T09:00:00Z",
+        "image": "https://example.com/images/atualizacao-sistema.jpg",
+        "highlightNew": false,
+        "mainNew": true,
+        "lastNew": false
+    },
+    {
+        "id": 2,
+        "title": "Treinamento para Novos Colaboradores",
+        "content": "Um treinamento será realizado na próxima semana para capacitar novos colaboradores no uso do sistema de verificação de óbitos. Inscrições estão abertas até sexta-feira.",
+        "author": "Recursos Humanos",
+        "date": "2025-04-22T14:00:00Z",
+        "image": "https://example.com/images/treinamento.jpg",
+        "highlightNew": false,
+        "mainNew": true,
+        "lastNew": false
+    },
+    {
+        "id": 3,
+        "title": "Relatório Mensal de Atividades Disponível",
+        "content": "O relatório mensal de atividades do SVO já está disponível para consulta. Ele inclui dados sobre óbitos verificados, causas registradas e tempo médio de processamento.",
+        "author": "Departamento de Estatísticas",
+        "date": "2025-04-21T10:30:00Z",
+        "image": "https://example.com/images/relatorio.jpg",
+        "highlightNew": false,
+        "mainNew": true,
+        "lastNew": false
+    },
+    {
+        "id": 4,
+        "title": "Manutenção Programada no Sistema",
+        "content": "O sistema de verificação de óbitos estará fora do ar para manutenção programada no próximo sábado, das 22h às 4h. Pedimos desculpas por qualquer inconveniente.",
+        "author": "Equipe de TI",
+        "date": "2025-04-20T16:00:00Z",
+        "image": "https://example.com/images/manutencao.jpg",
+        "highlightNew": false,
+        "mainNew": true,
+        "lastNew": false
+    },
+    {
+        "id": 5,
+        "title": "Nova Política de Privacidade Implementada",
+        "content": "A nova política de privacidade do SVO foi implementada para garantir maior segurança e transparência no tratamento de dados sensíveis.",
+        "author": "Departamento Jurídico",
+        "date": "2025-04-19T08:00:00Z",
+        "image": "https://example.com/images/politica-privacidade.jpg",
+        "highlightNew": false,
+        "mainNew": true,
+        "lastNew": false
+    },
+    {
+        "id": 6,
+        "title": "Reunião Semanal de Alinhamento",
+        "content": "A reunião semanal de alinhamento será realizada na próxima segunda-feira às 9h. Todos os departamentos estão convidados a participar.",
+        "author": "Coordenação Geral",
+        "date": "2025-04-18T11:00:00Z",
+        "image": "https://example.com/images/reuniao.jpg",
+        "highlightNew": false,
+        "mainNew": true,
+        "lastNew": false
+    }
+]
