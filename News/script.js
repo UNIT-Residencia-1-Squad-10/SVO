@@ -1,25 +1,55 @@
 import { NewsType } from './enums.js';
 
+function parseDate(date) {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(date).toLocaleDateString('pt-BR', options);
+}
+
 export function loadHighlightNews(container, newsItem) {
     const highlightCard = document.createElement("div");
     highlightCard.classList.add("news__card--highlight");
+    highlightCard.style.backgroundImage = `url('${newsItem.image}')`;
+
     highlightCard.innerHTML = `
-        <h2>${newsItem.title}</h2>
-        <p>${newsItem.date}</p>
-        <p>${newsItem.content}</p>
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="meta">
+                <span class="date">${parseDate(newsItem.date)}</span>
+                <img src="assets/icon.png" alt="Icone de autor">
+                <span class="author">${newsItem.author}</span>
+            </div>
+            <h2 class="title">${newsItem.title}</h2>
+        </div>
     `;
+
+    // Será extraido da URL o ID do card para montar a notícia em outra página
+    highlightCard.addEventListener("click", () => {
+        window.location.href = `new_details.html?id=${newsItem.id}`;
+    });
     container.appendChild(highlightCard);
 }
 
 export function loadMainNews(container, newsItems) {
     newsItems.forEach(item => {
-        const mainCard = document.createElement("div");
-        mainCard.classList.add("news__card--main");
-        mainCard.innerHTML = `
-            <h2>${item.title}</h2>
-            <p>${item.date}</p>
+        const card = document.createElement("div");
+        card.classList.add("news-card-main");
+        card.innerHTML = `
+            <div class="news-card-main-image">
+                <img src="${item.image}" alt="${item.title}">
+            </div>
+            <div class="news-card-main-content">
+                <div class="news-card-main-title-container">
+                    <h3 class="news-card-main-title">${item.title}</h3>
+                </div>
+                <div class="news-card-main-text-container">
+                    <p class="news-card-main-text">${item.content}</p>
+                </div>
+                <div class="news-card-main-link-container">
+                    <a href="new_details.html?id=${item.id}" class="news-card-main-link">Saiba mais</a>
+                </div>
+            </div>
         `;
-        container.appendChild(mainCard);
+        container.appendChild(card);
     });
 }
 
