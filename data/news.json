@@ -5,7 +5,7 @@
         "content": "Uma nova ferramenta de gestão foi implementada para otimizar os processos administrativos e melhorar a eficiência das operações.",
         "author": "Equipe de TI",
         "date": "2025-04-25T10:00:00Z",
-        "image": "https://example.com/images/gestao.jpg",
+        "image": "assets/highlight.png",
         "type": "highlight"
     },
     {
@@ -14,7 +14,7 @@
         "content": "Um treinamento será realizado para reforçar os procedimentos internos e garantir a conformidade com as políticas administrativas.",
         "author": "Recursos Humanos",
         "date": "2025-04-24T14:00:00Z",
-        "image": "https://example.com/images/treinamento.jpg",
+        "image": "assets/SubNew_ImageContainer.png",
         "type": "main"
     },
     {
@@ -23,7 +23,7 @@
         "content": "O manual de políticas administrativas foi atualizado com novas diretrizes para melhorar a governança corporativa.",
         "author": "Departamento Jurídico",
         "date": "2025-04-23T09:00:00Z",
-        "image": "https://example.com/images/manual.jpg",
+        "image": "assets/SubNew_ImageContainer2.png",
         "type": "main"
     },
     {
@@ -32,7 +32,7 @@
         "content": "O relatório de desempenho administrativo do último mês já está disponível para consulta no portal interno.",
         "author": "Departamento de Estatísticas",
         "date": "2025-04-22T11:00:00Z",
-        "image": "https://example.com/images/relatorio.jpg",
+        "image": "assets/SubNew_ImageContainer3.png",
         "type": "main"
     },
     {
@@ -41,7 +41,7 @@
         "content": "Uma nova política de segurança de dados foi implementada para proteger informações sensíveis e garantir a conformidade com a LGPD.",
         "author": "Departamento Jurídico",
         "date": "2025-04-21T08:00:00Z",
-        "image": "https://example.com/images/seguranca.jpg",
+        "image": "assets/highlight.png",
         "type": "main"
     },
     {
@@ -50,7 +50,7 @@
         "content": "O sistema administrativo estará fora do ar para manutenção programada no próximo sábado, das 22h às 4h.",
         "author": "Equipe de TI",
         "date": "2025-04-20T16:00:00Z",
-        "image": "https://example.com/images/manutencao.jpg",
+        "image": "assets/SubNew_ImageContainer.png",
         "type": "main"
     },
     {
@@ -59,7 +59,7 @@
         "content": "Uma reunião de planejamento estratégico será realizada para definir as metas administrativas do próximo trimestre.",
         "author": "Coordenação Geral",
         "date": "2025-04-19T09:00:00Z",
-        "image": "https://example.com/images/planejamento.jpg",
+        "image": "assets/SubNew_ImageContainer2.png",
         "type": "main"
     },
     {
@@ -68,7 +68,7 @@
         "content": "Uma nova ferramenta foi implementada para melhorar o controle de estoque e reduzir desperdícios.",
         "author": "Equipe de Logística",
         "date": "2025-04-18T10:00:00Z",
-        "image": "https://example.com/images/estoque.jpg",
+        "image": "assets/SubNew_ImageContainer3.png",
         "type": "main"
     },
     {
@@ -77,7 +77,7 @@
         "content": "O sistema de pagamentos foi atualizado para incluir novas funcionalidades e melhorar a experiência do usuário.",
         "author": "Equipe de TI",
         "date": "2025-04-17T15:00:00Z",
-        "image": "https://example.com/images/pagamentos.jpg",
+        "image": "assets/SubNew_ImageContainer4.png",
         "type": "main"
     },
     {
