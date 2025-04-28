@@ -96,28 +96,6 @@ class MeuHeader extends HTMLElement {
 }
 customElements.define("svo-header", MeuHeader);
 
-//SUAVIZAÇÃO NA TRANSIÇÃO DE PÁGINAS
-document.querySelectorAll('a[data-link]').forEach(link => {
-  link.addEventListener('click', async e => {
-    e.preventDefault();
-
-    const url = link.getAttribute('href');
-    const res = await fetch(url);
-    const html = await res.text();
-
-    // Extrai só o <main> da nova página (ou a parte que quiser atualizar)
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const newContent = doc.querySelector('main');
-
-    document.querySelector('main').innerHTML = newContent.innerHTML;
-
-    // Atualiza o histórico
-    window.history.pushState(null, '', url);
-  });
-});
-
-
 class MeuFooter extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
