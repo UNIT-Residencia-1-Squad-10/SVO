@@ -204,6 +204,7 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 3rem;
+  position: absolute;
   align-items: center;
   overflow-x: scroll;
   padding: 3rem; /* Ajusta espaçamento */
