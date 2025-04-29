@@ -1,0 +1,35 @@
+/*
+  Padrão BEM - Boas Práticas
+
+  BEM (Block Element Modifier) é uma metodologia para nomear classes CSS de forma
+  clara, reutilizável e escalável. Ele organiza o CSS de modo a evitar conflitos e facilitar a manutenção.
+
+  Estrutura:
+  - Block: representa um componente independente (ex: .menu, .form, .card)
+  - Element: é uma parte do bloco, ligada semanticamente a ele (ex: .menu__item, .form__label)
+  - Modifier: define variações de estilo ou estado do bloco/elemento (ex: .menu--active, .form__label--error)
+
+  Convenções:
+  - Use `__` para separar blocos de elementos.
+  - Use `--` para modificadores de estilo ou comportamento.
+  - Use nomes descritivos e semânticos.
+  - Evite seletores aninhados profundamente e uso excessivo de IDs.
+  - Mantenha as classes coesas: uma classe deve representar um único propósito.
+
+  Exemplo:
+  .button            -> Bloco principal
+  .button__icon      -> Elemento do bloco
+  .button--primary   -> Modificador de estilo do bloco
+
+  Vantagens:
+  ✅ Maior legibilidade do código
+  ✅ Reutilização de componentes
+  ✅ Facilidade de manutenção e escalabilidade
+  ✅ Evita conflitos de estilo entre componentes
+
+  Recomendações:
+  - Prefira nomes em inglês, curtos e significativos.
+  - Evite misturar responsabilidade visual com estrutural.
+  - Combine BEM com um reset ou normalize para melhores resultados.
+
+*/

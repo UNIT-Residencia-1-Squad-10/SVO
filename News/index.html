@@ -3,18 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NEWS</title>
-    <link rel="stylesheet" href="/shared/styles.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <title>Notícias</title>
+    <link rel="stylesheet" href="/shared/reset.css">
+    <link rel="stylesheet" href="/shared/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="/shared/components.js" defer></script>
+
+    <script type="module">
+      import { loadNews } from './script.js';
+    
+      const highlightContainer = document.querySelector('.news__container--highlight');
+      const mainContainer = document.querySelector('.news__container--main');
+      const lastNewsContainer = document.querySelector('.news__container--lastNews');
+      const dataLocation = '../data/news.json';
+
+      loadNews(highlightContainer, mainContainer, lastNewsContainer, dataLocation);
+
+    </script>
   </head>
   <body>
     <svo-header></svo-header>
-
     <main>
-      <h2>Bem-vindo à página de <span>NOTÍCIAS</span></h2>
+      <div class="news">
+        <div class="news__panel--left">
+          <div class="news__title--left">Notícias Principais</div>
+          <div class="news__container--highlight">
+            <!-- A notícia em destaque será carregada dinamicamente aqui -->
+          </div>
+          <div class="news__container--main">
+            <!-- As notícias principais serão carregadas aqui de maneira dinâmica -->
+          </div>
+        </div>
+    
+        <div class="news__panel--right">
+          <div class="news__title--right">Últimas Notícias</div>
+          <div class="news__container--lastNews">
+            <!-- As últimas notícias serão carregadas aqui de maneira dinâmica -->
+          </div>
+        </div>
+      </div>
     </main>
-
     <svo-footer></svo-footer>
   </body>
 </html>
