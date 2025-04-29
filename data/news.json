@@ -86,7 +86,7 @@
         "content": "Informamos que o próximo feriado administrativo será na segunda-feira, dia 28 de abril.",
         "author": "Recursos Humanos",
         "date": "2025-04-16T08:00:00Z",
-        "image": "https://example.com/images/feriado.jpg",
+        "image": "assets/SubNew_ImageContainer.png",
         "type": "last"
     },
     {
@@ -95,7 +95,7 @@
         "content": "Uma nova política de home office foi implementada para flexibilizar o trabalho remoto dos colaboradores.",
         "author": "Recursos Humanos",
         "date": "2025-04-15T09:00:00Z",
-        "image": "https://example.com/images/homeoffice.jpg",
+        "image": "assets/SubNew_ImageContainer.png",
         "type": "last"
     },
     {
@@ -104,7 +104,7 @@
         "content": "Uma campanha foi lançada para conscientizar os colaboradores sobre a importância da organização administrativa.",
         "author": "Comunicação Interna",
         "date": "2025-04-14T10:00:00Z",
-        "image": "https://example.com/images/conscientizacao.jpg",
+        "image": "assets/SubNew_ImageContainer.png",
         "type": "last"
     },
     {
@@ -113,7 +113,7 @@
         "content": "Uma nova ferramenta foi implementada para facilitar o controle de ponto dos colaboradores.",
         "author": "Recursos Humanos",
         "date": "2025-04-13T11:00:00Z",
-        "image": "https://example.com/images/controleponto.jpg",
+        "image": "assets/svoEnter.jpg",
         "type": "last"
     },
     {
@@ -122,7 +122,7 @@
         "content": "O sistema de relatórios foi atualizado para incluir novos gráficos e análises detalhadas.",
         "author": "Departamento de Estatísticas",
         "date": "2025-04-12T14:00:00Z",
-        "image": "https://example.com/images/relatorios.jpg",
+        "image": "assets/svoLab.jpg",
         "type": "last"
     },
     {
@@ -131,7 +131,7 @@
         "content": "Uma nova política de sustentabilidade foi implementada para reduzir o impacto ambiental das operações administrativas.",
         "author": "Departamento de Sustentabilidade",
         "date": "2025-04-11T13:00:00Z",
-        "image": "https://example.com/images/sustentabilidade.jpg",
+        "image": "assets/svoPeople.jpg",
         "type": "last"
     }
 ]

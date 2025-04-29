@@ -56,10 +56,19 @@ export function loadMainNews(container, newsItems) {
 export function loadLastNews(container, newsItems) {
     newsItems.forEach(item => {
         const lastNewsCard = document.createElement("div");
-        lastNewsCard.classList.add("news__card--lastNews");
+        lastNewsCard.classList.add("news-card-latest");
+        lastNewsCard.style.backgroundImage = `url(${item.image})`;
         lastNewsCard.innerHTML = `
-            <h3>${item.title}</h3>
-            <p>${item.date}</p>
+            <div class="news-card-latest-overlay"></div>
+            <div class="news-card-latest-content">
+                <h3 class="news-card-latest-title">${item.title}<h3>
+                <div class="news-card-latest-meta">
+                <span class="date">${parseDate(item.date)}</span>
+                <div class="news-card-latest-author">
+                    <img src="assets/icon.png" alt="Icone de autor">
+                    <span>${item.author}</span></div>
+                </div>
+            </div>
         `;
         container.appendChild(lastNewsCard);
     });
