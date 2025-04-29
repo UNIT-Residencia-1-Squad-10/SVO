@@ -24,35 +24,40 @@ body {
   color: var(--dark);
 }
 
-/* layout principal em duas colunas */
-.layout {
+/* seção de atividades (conteúdo principal) */
+.container-title {
+  margin: 0 2rem;
+}
+.main__title {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  max-width: 980px;
-  margin: 2rem auto;
-}
-
-/* seção de atividades (conteúdo principal) */
-.main_title {
-  display: flex;
+  align-items: center;
   max-width: 980px;
   height: 64px;
   margin: 5rem auto;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   border-radius: 5px;
   background: var(--blue);
   color: var(--white);
   font-size: 2rem;
   font-weight: 700;
+  min-width: 200px;
+}
+/* layout principal em duas colunas */
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 980px;
+  margin: 2rem auto;
 }
 .activity {
   display: flex;
   flex-direction: column;
   flex: 2;
   gap: 5.5rem;
+  min-height: 673px;
   max-width: 810px;
   padding: 6.3rem 5rem;
   background-color: var(--white);
@@ -72,22 +77,23 @@ body {
 /* aside */
 
 .sidebar {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 4.4rem;
+  flex: 1;
+  min-height: 673px;
+  justify-content: space-between;
 }
 
 .news,
 .laws {
   display: flex;
-  width: 100%;
-  max-width: 280px;
-  padding: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  width: 100%;
+  max-width: 280px;
+  padding: 2rem;
   gap: 2rem;
   border-radius: 1.3rem;
   background: var(--white3);
@@ -152,15 +158,47 @@ h3 {
   color: var(--dark);
   font-weight: 400;
 }
+/* media query - Seção Atividades */
 @media (max-width: 1024px) {
-  .sidebar {
-    display: none; /* Esconde o aside em telas menores que 768px */
+  .layout {
+    flex-direction: column;
+    margin: 2rem;
   }
-  .main_title {
+  .sidebar {
+    flex-direction: row;
+    gap: 3rem;
+    min-height: auto;
+    max-width: 810px;
+    width: 100%;
+  }
+  .laws,
+  .news {
+    height: 333px;
+    max-width: 375px;
+  }
+  .main__title {
     max-width: 810px;
   }
 }
 
+@media (max-width: 715px) {
+  .sidebar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .laws,
+  .news {
+    max-width: 600px;
+    align-items: center;
+  }
+  .activity {
+    max-width: 600px;
+  }
+  .main__title {
+    max-width: 600px;
+  }
+}
+/* Seção da estrutura administrativa */
 .structure {
   margin-top: 10rem;
   background-color: var(--white);
@@ -206,7 +244,7 @@ h3 {
   gap: 3rem;
   position: absolute;
   align-items: center;
-  scroll-behavior: smooth;
+
   overflow-x: scroll;
 
   height: auto;
@@ -214,6 +252,7 @@ h3 {
   top: 15%;
   left: 30%;
   z-index: 2;
+
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;
   padding-bottom: 1rem;
