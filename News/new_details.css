@@ -1,0 +1,12 @@
+.news-container{
+  display:flex;
+  flex-direction: column;
+  padding: 10px 18rem;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: large;
+  font-weight: bold;
+
+}
