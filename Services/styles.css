@@ -184,15 +184,6 @@ body {
   .btn-blue:hover {
     background-color: #0366c0;
   }
-  
-  input, select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
   .sidebar{
     margin-left: 200px;
   }
@@ -209,7 +200,7 @@ body {
     margin-top: 20px;
     margin-right: 50px;
     flex: 1;
-    padding: 40px;
+    padding: 30px;
     background-color: #f8f9fa;
     display: flex;
     flex-direction: column;
@@ -222,7 +213,17 @@ body {
     display: flex;
     flex-direction: row;
   }
-  
-  .input{
-    width: 500px;
+     
+  input {
+    width: 100%;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
   }
