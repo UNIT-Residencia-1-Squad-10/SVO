@@ -16,7 +16,6 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  line-height: normal;
 }
 
 body {
@@ -25,14 +24,12 @@ body {
 }
 
 /* seção de atividades (conteúdo principal) */
-.container-title {
-  margin: 0 2rem;
-}
+
 .main__title {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 980px;
+  max-width: 1080px;
   height: 64px;
   margin: 5rem auto;
   gap: 10px;
@@ -46,10 +43,10 @@ body {
 /* layout principal em duas colunas */
 .layout {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
-  max-width: 980px;
+  max-width: 1080px;
   margin: 2rem auto;
 }
 .activity {
@@ -59,7 +56,7 @@ body {
   gap: 5.5rem;
   min-height: 673px;
   max-width: 810px;
-  padding: 6.3rem 5rem;
+  padding: 6.3rem 4rem;
   background-color: var(--white);
   border-radius: 1.3rem;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
@@ -73,6 +70,7 @@ body {
 .activity__p {
   font-size: 1.6rem;
   font-weight: 300;
+  line-height: 1.7;
 }
 /* aside */
 
@@ -92,8 +90,8 @@ body {
   justify-content: center;
   align-items: start;
   width: 100%;
-  max-width: 280px;
-  padding: 2rem;
+  max-width: 580px;
+  padding: 2rem 4rem;
   gap: 2rem;
   border-radius: 1.3rem;
   background: var(--white3);
@@ -124,6 +122,7 @@ h3 {
 .news__item-h4 {
   font-size: 1.6rem;
   font-weight: 400;
+  line-height: 1.5;
 }
 .news__item-p {
   text-align: center;
@@ -135,7 +134,19 @@ h3 {
   text-decoration: none;
   color: var(--dark);
 }
-
+.title-bar {
+  align-self: center;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 9.9rem;
+}
+.title-bar__decoration {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: #fbb802;
+  border-radius: 9.9rem;
+}
 .laws__item {
   display: flex;
   flex-direction: row;
@@ -159,10 +170,27 @@ h3 {
   font-weight: 400;
 }
 /* Responsividade - Seção Atividades */
+
+@media (max-width: 1141px) {
+  .main__title {
+    max-width: 1000px;
+  }
+  .layout {
+    max-width: 1000px;
+  }
+}
 @media (max-width: 1024px) {
+  .container-title {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .main__title {
+    margin: 5rem auto;
+  }
   .layout {
     flex-direction: column;
     margin: 2rem;
+    align-items: center;
   }
   .sidebar {
     flex-direction: row;
@@ -199,10 +227,13 @@ h3 {
   .laws,
   .news {
     max-width: 600px;
+    width: 100%;
+    padding: 2rem;
   }
 
   .activity {
     max-width: 600px;
+    padding: 6.3rem 2rem;
   }
   .main__title {
     max-width: 600px;
