@@ -50,62 +50,15 @@
         </section>
 
         <aside class="sidebar">
-          <div class="news">
-            <h3 class="news__h3">Notícias</h3>
-            <div class="news__item">
-              <img
-                class="news__item-img"
-                src="assets/Image.png"
-                alt="Imagem relacionada à mudança de endereço do SVO"
-              />
-              <div class="news__item-content">
-                <a href="#" class="laws__item-link">
-                  <h4 class="news__item-h4">
-                    Mudança de endereço do SVO prevista para Setembro.
-                  </h4>
-                </a>
-                <p class="news__item-p">25-02-2025</p>
-              </div>
-            </div>
-            <div class="news__item">
-              <img
-                class="news__item-img"
-                src="assets/Image.png"
-                alt="Imagem relacionada à mudança de endereço do SVO"
-              />
-              <div class="news__item-content">
-                <a href="#" class="laws__item-link">
-                  <h4 class="news__item-h4">
-                    Mudança de endereço do SVO prevista para Setembro.
-                  </h4>
-                </a>
-                <p class="news__item-p">25-02-2025</p>
-              </div>
-            </div>
-            <div class="news__item">
-              <img
-                class="news__item-img"
-                src="assets/Image.png"
-                alt="Imagem relacionada à mudança de endereço do SVO"
-              />
-              <div class="news__item-content">
-                <a href="#" class="laws__item-link">
-                  <h4 class="news__item-h4">
-                    Mudança de endereço do SVO prevista para Setembro.
-                  </h4>
-                </a>
-                <p class="news__item-p">25-02-2025</p>
-              </div>
-            </div>
-          </div>
-
           <div class="laws">
             <h3 class="laws__h3">Leis e normas</h3>
-            <!-- Cogitando o dowload do arquivo, invés de ir para a página -->
+            <div class="title-bar">
+              <div class="title-bar__decoration"></div>
+            </div>
             <a
               class="laws__item"
-              href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2006/prt1405_29_06_2006.html"
-              target="_blank"
+              href="assets/pdf/portaria1.405_2006.pdf"
+              download="portaria-1.405_2006.pdf"
             >
               <h4 class="laws__text">Portaria nº 1.405/2006</h4>
               <img
@@ -116,8 +69,8 @@
             </a>
             <a
               class="laws__item"
-              href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2014/prt0183_30_01_2014.html"
-              target="_blank"
+              href="assets/pdf/portaria182_2014.pdf"
+              download="portaria-183_2014.pdf"
             >
               <h4 class="laws__text">Portaria nº 183/2014</h4>
               <img
@@ -128,8 +81,8 @@
             </a>
             <a
               class="laws__item"
-              href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2015/prt0048_20_01_2015.html"
-              target="_blank"
+              href="assets/pdf/portaria48_2015.pdf"
+              download="portaria-48_2015.pdf"
             >
               <h4 class="laws__text">Portaria nº 48/2015</h4>
               <img
@@ -138,6 +91,55 @@
                 alt="Icone de uma seta, indicando que é clicável"
               />
             </a>
+          </div>
+          <div class="news">
+            <h3 class="news__h3">Notícias</h3>
+            <div class="title-bar">
+              <div class="title-bar__decoration"></div>
+            </div>
+            <div class="news__item">
+              <img
+                class="news__item-img"
+                src="assets/not_1.png"
+                alt="Imagem relacionada à mudança de endereço do SVO"
+              />
+              <div class="news__item-content">
+                <a href="#" class="news__item-link">
+                  <h4 class="news__item-h4">
+                    Nova Ferramenta de Gestão Administrativa
+                  </h4>
+                </a>
+                <p class="news__item-p">25-02-2025</p>
+              </div>
+            </div>
+            <div class="news__item">
+              <img
+                class="news__item-img"
+                src="assets/not_2.png"
+                alt="Imagem relacionada à mudança de endereço do SVO"
+              />
+              <div class="news__item-content">
+                <a href="#" class="news__item-link">
+                  <h4 class="news__item-h4">Nova Política de Home Office</h4>
+                </a>
+                <p class="news__item-p">25-02-2025</p>
+              </div>
+            </div>
+            <div class="news__item">
+              <img
+                class="news__item-img"
+                src="assets/not_3.png"
+                alt="Imagem relacionada à mudança de endereço do SVO"
+              />
+              <div class="news__item-content">
+                <a href="#" class="news__item-link">
+                  <h4 class="news__item-h4">
+                    Campanha de Conscientização Administrativa
+                  </h4>
+                </a>
+                <p class="news__item-p">25-02-2025</p>
+              </div>
+            </div>
           </div>
         </aside>
       </div>
@@ -160,17 +162,17 @@
               src="assets/Vector-right.svg"
               alt="Icone que representa seta direita"
             />
-            <p class="structure__text">ver completo</p>
+            <a class="structure__link">Ver completo</a>
           </div>
         </div>
         <div class="structure__cards">
-          <div class="structure__card">
+          <div class="container__card">
             <img
               src="assets/superintendencia.svg"
               alt="Ícone de superintendência"
               class="structure__card-img"
             />
-            <div class="structure__elements">
+            <div class="structure__card">
               <h3 class="structure__card-title">Superintendente</h3>
               <div class="structure__card-content">
                 <div class="structure__card-element">
@@ -202,14 +204,14 @@
               </div>
             </div>
           </div>
-          <div class="structure__card">
+          <div class="container__card">
             <img
               src="assets/superintendencia.svg"
               alt="Ícone de superintendência"
               class="structure__card-img"
             />
-            <div class="structure__elements">
-              <h3 class="structure__card-title">Acessoria Técnica</h3>
+            <div class="structure__card">
+              <h3 class="structure__card-title">Superintendente1</h3>
               <div class="structure__card-content">
                 <div class="structure__card-element">
                   <img
@@ -240,14 +242,14 @@
               </div>
             </div>
           </div>
-          <div class="structure__card">
+          <div class="container__card">
             <img
               src="assets/superintendencia.svg"
               alt="Ícone de superintendência"
               class="structure__card-img"
             />
-            <div class="structure__elements">
-              <h3 class="structure__card-title">Superintendente</h3>
+            <div class="structure__card">
+              <h3 class="structure__card-title">Superintendente2</h3>
               <div class="structure__card-content">
                 <div class="structure__card-element">
                   <img
@@ -278,14 +280,14 @@
               </div>
             </div>
           </div>
-          <div class="structure__card">
+          <div class="container__card">
             <img
               src="assets/superintendencia.svg"
               alt="Ícone de superintendência"
               class="structure__card-img"
             />
-            <div class="structure__elements">
-              <h3 class="structure__card-title">Superintendente</h3>
+            <div class="structure__card">
+              <h3 class="structure__card-title">Superintendente3</h3>
               <div class="structure__card-content">
                 <div class="structure__card-element">
                   <img
@@ -316,14 +318,14 @@
               </div>
             </div>
           </div>
-          <div class="structure__card">
+          <div class="container__card">
             <img
               src="assets/superintendencia.svg"
               alt="Ícone de superintendência"
               class="structure__card-img"
             />
-            <div class="structure__elements">
-              <h3 class="structure__card-title">Superintendente</h3>
+            <div class="structure__card">
+              <h3 class="structure__card-title">Superintendente4</h3>
               <div class="structure__card-content">
                 <div class="structure__card-element">
                   <img
@@ -354,14 +356,14 @@
               </div>
             </div>
           </div>
-          <div class="structure__card">
+          <div class="container__card">
             <img
               src="assets/superintendencia.svg"
               alt="Ícone de superintendência"
               class="structure__card-img"
             />
-            <div class="structure__elements">
-              <h3 class="structure__card-title">Superintendente</h3>
+            <div class="structure__card">
+              <h3 class="structure__card-title">Superintendente5</h3>
               <div class="structure__card-content">
                 <div class="structure__card-element">
                   <img
@@ -370,7 +372,7 @@
                     alt="Icone do nome"
                   />
                   <p class="structure__card-p">
-                    Letícia Ribeiro de Araujo Barroso
+                    Patricia Ribeiro de Araujo Barroso
                   </p>
                 </div>
                 <div class="structure__card-element">

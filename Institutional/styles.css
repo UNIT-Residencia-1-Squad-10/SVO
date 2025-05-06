@@ -16,7 +16,6 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  line-height: normal;
 }
 
 body {
@@ -25,14 +24,12 @@ body {
 }
 
 /* seção de atividades (conteúdo principal) */
-.container-title {
-  margin: 0 2rem;
-}
+
 .main__title {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 980px;
+  max-width: 1080px;
   height: 64px;
   margin: 5rem auto;
   gap: 10px;
@@ -46,10 +43,10 @@ body {
 /* layout principal em duas colunas */
 .layout {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
-  max-width: 980px;
+  max-width: 1080px;
   margin: 2rem auto;
 }
 .activity {
@@ -59,7 +56,7 @@ body {
   gap: 5.5rem;
   min-height: 673px;
   max-width: 810px;
-  padding: 6.3rem 5rem;
+  padding: 6.3rem 4rem;
   background-color: var(--white);
   border-radius: 1.3rem;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
@@ -73,6 +70,7 @@ body {
 .activity__p {
   font-size: 1.6rem;
   font-weight: 300;
+  line-height: 1.7;
 }
 /* aside */
 
@@ -92,8 +90,8 @@ body {
   justify-content: center;
   align-items: start;
   width: 100%;
-  max-width: 280px;
-  padding: 2rem;
+  max-width: 580px;
+  padding: 2rem 4rem;
   gap: 2rem;
   border-radius: 1.3rem;
   background: var(--white3);
@@ -124,14 +122,30 @@ h3 {
 .news__item-h4 {
   font-size: 1.6rem;
   font-weight: 400;
+  line-height: 1.5;
 }
 .news__item-p {
   text-align: center;
   color: rgba(0, 0, 0, 0.76);
   font-weight: 200;
 }
-.laws {
-  height: 270px;
+.news__item-link,
+.laws__item-link {
+  text-decoration: none;
+  color: var(--dark);
+}
+.title-bar {
+  align-self: center;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 9.9rem;
+}
+.title-bar__decoration {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: #fbb802;
+  border-radius: 9.9rem;
 }
 .laws__item {
   display: flex;
@@ -145,10 +159,7 @@ h3 {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
 }
-.laws__item-link {
-  text-decoration: none;
-  color: var(--dark);
-}
+
 .laws__h3,
 .news__h3 {
   font-size: 2rem;
@@ -158,11 +169,28 @@ h3 {
   color: var(--dark);
   font-weight: 400;
 }
-/* media query - Seção Atividades */
+/* Responsividade - Seção Atividades */
+
+@media (max-width: 1141px) {
+  .main__title {
+    max-width: 1000px;
+  }
+  .layout {
+    max-width: 1000px;
+  }
+}
 @media (max-width: 1024px) {
+  .container-title {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .main__title {
+    margin: 5rem auto;
+  }
   .layout {
     flex-direction: column;
     margin: 2rem;
+    align-items: center;
   }
   .sidebar {
     flex-direction: row;
@@ -170,14 +198,24 @@ h3 {
     min-height: auto;
     max-width: 810px;
     width: 100%;
+    align-items: stretch;
   }
+
   .laws,
   .news {
-    height: 333px;
     max-width: 375px;
+  }
+  .laws {
+    justify-content: start;
   }
   .main__title {
     max-width: 810px;
+  }
+  .news__item-h4 {
+    max-width: 375px;
+  }
+  .news__item-p {
+    align-self: start;
   }
 }
 
@@ -189,34 +227,43 @@ h3 {
   .laws,
   .news {
     max-width: 600px;
-    align-items: center;
+    width: 100%;
+    padding: 2rem;
   }
+
   .activity {
     max-width: 600px;
+    padding: 6.3rem 2rem;
   }
   .main__title {
     max-width: 600px;
   }
+  .news__item-img {
+    width: 70px;
+    height: 50px;
+  }
 }
+
 /* Seção da estrutura administrativa */
 .structure {
   margin-top: 10rem;
   background-color: var(--white);
   display: flex;
-  height: 100vh;
+  height: 715px;
   position: relative;
   overflow: hidden;
 }
 
 .structure__content {
-  background-color: var(--blue);
   display: flex;
-  width: 577px;
-  padding: 268px 30px;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+
+  background-color: var(--blue);
+  width: 40.07vw;
+
+  padding: 0 30px;
   gap: 17px;
-  align-self: stretch;
   position: relative;
   z-index: 1;
 }
@@ -228,9 +275,16 @@ h3 {
 }
 .structure__text {
   color: var(--white);
-  width: 371px;
+  width: 25.76vw;
+
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 350;
+}
+.structure__link {
+  text-decoration: underline;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 350;
 }
 .structure__arrows {
   display: flex;
@@ -253,32 +307,34 @@ h3 {
   left: 30%;
   z-index: 2;
 
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
   -ms-overflow-style: none;
   padding-bottom: 1rem;
+  padding-left: 0.5rem;
 }
-.structure__card {
+.container__card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.structure__elements {
+.structure__card {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   width: 340px;
-  height: 308px;
+  height: 310px;
+
   padding: 2rem;
   overflow-x: auto;
   gap: 3.5rem;
   border-radius: 5.1rem;
   background: var(--white);
-  box-shadow: 0px 5.192px 5.192px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
 
   justify-content: center;
 }
+
 .structure__card-img {
-  margin-bottom: 0px;
   width: 13rem;
   height: 13rem;
   position: relative;
@@ -293,6 +349,7 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  align-items: center;
 }
 .structure__card-content {
   display: flex;
@@ -311,5 +368,71 @@ h3 {
 }
 
 .structure__button {
-  cursor: pointer; /* Muda cursor para hand pointer ao "pairar" (ENG: "hover") sob os botões do carrossel. */
+  cursor: pointer;
+}
+
+/* Responsividade - Seção Estrutura Administrativa */
+@media (max-width: 1200px) {
+  .structure {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .structure__content {
+    width: 100vw;
+    padding: 8rem 3rem;
+  }
+  .structure__arrows {
+    gap: 1.5rem;
+  }
+  .structure__text {
+    width: 92vw;
+    font-weight: 350;
+    font-size: 2rem;
+  }
+
+  .structure__cards {
+    position: relative;
+    top: auto;
+    left: 3%;
+    gap: 5rem;
+    overflow-y: hidden;
+  }
+  .structure__card {
+    width: 44.17vw;
+    height: 31.67vw;
+  }
+}
+
+@media (max-width: 786px) {
+  .structure__cards {
+    gap: 12rem;
+    left: 4.3%;
+  }
+  .structure__card {
+    width: 90vw;
+    height: 64.53vw;
+  }
+  h3.structure__card-title {
+    font-size: 2.2rem;
+  }
+  p.structure__card-p {
+    font-size: 2.2rem;
+  }
+  .structure__card-content {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 465px) {
+  .structure__card {
+    height: 75.53vw;
+  }
+}
+@media (max-width: 375px) {
+  .structure__card {
+    height: 90vw;
+  }
+  img.structure__card-img {
+    height: 10rem;
+  }
 }
