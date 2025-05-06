@@ -91,6 +91,8 @@ class MeuHeader extends HTMLElement {
 				</button>
 			</nav>
 		</header>
+		<!-- VLibras Widget -->
+		<vlibras-widget></vlibras-widget>
       `;
 	}
 }
