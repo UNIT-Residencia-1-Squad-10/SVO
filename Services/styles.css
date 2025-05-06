@@ -148,17 +148,7 @@ body {
     text-align: center;
     max-width: 200px;
   }
-  
-  .content {
-    display: flex;
-    margin-top: 50px;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }
+
   
   .step-content {
     display: none;
@@ -209,12 +199,15 @@ body {
   .step-content {
     display: none;
     text-align: center;
+    margin-top: 0px;
 
   }
-  
+
+      
   .content {
     margin-left: 50px;
     margin-top: 20px;
+    margin-right: 50px;
     flex: 1;
     padding: 40px;
     background-color: #f8f9fa;
@@ -222,9 +215,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 12px;
   }
+
   .container-layout{
     display: flex;
     flex-direction: row;
   }
   
+  .input{
+    width: 500px;
+  }
