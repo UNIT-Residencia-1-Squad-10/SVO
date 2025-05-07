@@ -1,5 +1,3 @@
-// Implementar navegação horizontal dos cards da 'Estrutura Administrativa' e alerta de links externos.
-
 document.addEventListener("DOMContentLoaded", () => {
   const cardsContainer = document.querySelector(".structure__cards");
   const leftArrow = document.querySelector(
@@ -9,20 +7,37 @@ document.addEventListener("DOMContentLoaded", () => {
     '.structure__arrows img[alt*="direita"]'
   );
 
-  const scrollAmount = 370; // Pixels para mover a cada clique
+  const scrollAmount = 370;
+
+  // Função de animação para o scroll suave
+  function smoothScroll(direction) {
+    const start = cardsContainer.scrollLeft;
+    const distance = direction * scrollAmount;
+    const duration = 500; //
+    const startTime = performance.now();
+
+    function animateScroll(time) {
+      const elapsedTime = time - startTime;
+      const progress = Math.min(elapsedTime / duration, 1);
+
+      cardsContainer.scrollLeft = start + distance * progress;
+
+      if (progress < 1) {
+        requestAnimationFrame(animateScroll);
+      }
+    }
+
+    requestAnimationFrame(animateScroll);
+  }
 
   leftArrow.addEventListener("click", () => {
     if (cardsContainer.scrollLeft <= 0) {
-      // Já está no começo -> vai pro final
       cardsContainer.scrollTo({
         left: cardsContainer.scrollWidth,
         behavior: "smooth",
       });
     } else {
-      cardsContainer.scrollBy({
-        left: -scrollAmount,
-        behavior: "smooth",
-      });
+      smoothScroll(-1);
     }
   });
 
@@ -30,16 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const maxScrollLeft =
       cardsContainer.scrollWidth - cardsContainer.clientWidth;
     if (cardsContainer.scrollLeft >= maxScrollLeft) {
-      // Já está no final -> volta pro começo
       cardsContainer.scrollTo({
         left: 0,
         behavior: "smooth",
       });
     } else {
-      cardsContainer.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth",
-      });
+      smoothScroll(1);
     }
   });
 
