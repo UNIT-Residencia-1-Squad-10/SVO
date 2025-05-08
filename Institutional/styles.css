@@ -4,12 +4,41 @@ html {
   font-size: 62.5%;
 }
 :root {
-  --yellow: #fbb802;
-  --blue: #01448a;
+  --primary-color: #fbb802;
+  --secundary-color: #01448a;
+
+  --body-bg: #f0f0f0;
+
   --white: #fff;
-  --white2: #f0f0f0;
-  --white3: #f9f9f9;
-  --dark: #000;
+  --institutional-structure-bg: #fff;
+  --institutional-text-color: #000;
+  --institutional-news-p: rgba(0, 0, 0, 0.76);
+  --institutional-activity-bg: #fff;
+  --institutional-sidebar-bg: #f9f9f9;
+  --institutional-sidebar-laws-item: #fff;
+  --institutional-sidebar-laws-svg: #000;
+  --institutional-structure-card-bg: #fff;
+  --institutional-structure-icon-bg: #fff;
+  --institutional-structure-icon: #000;
+}
+body.dark-mode {
+  --secundary-color: #002a53;
+  --institutional-structure-bg: linear-gradient(
+    180deg,
+    #000 47.5%,
+    #002a53 100%
+  );
+  --body-bg: #0a0a0a;
+
+  --institutional-text-color: #fff;
+  --institutional-news-p: rgba(255, 255, 255, 0.76);
+  --institutional-activity-bg: #303030;
+  --institutional-structure-card-bg: #303030;
+  --institutional-sidebar-bg: #303030;
+  --institutional-sidebar-laws-item: #000;
+  --institutional-sidebar-laws-svg: #fff;
+  --institutional-structure-icon-bg: #303030;
+  --institutional-structure-icon: #fff;
 }
 * {
   margin: 0;
@@ -19,8 +48,8 @@ html {
 }
 
 body {
-  background: var(--white2);
-  color: var(--dark);
+  background: var(--body-bg);
+  color: var(--institutional-text-color);
 }
 
 /* seção de atividades (conteúdo principal) */
@@ -34,7 +63,7 @@ body {
   margin: 5rem auto;
   gap: 10px;
   border-radius: 5px;
-  background: var(--blue);
+  background: var(--secundary-color);
   color: var(--white);
   font-size: 2rem;
   font-weight: 700;
@@ -57,12 +86,12 @@ body {
   min-height: 673px;
   max-width: 810px;
   padding: 6.3rem 4rem;
-  background-color: var(--white);
+  background-color: var(--institutional-activity-bg);
   border-radius: 1.3rem;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .activity__h2 {
-  color: var(--yellow);
+  color: var(--primary-color);
   font-size: 2.4rem;
   font-weight: 700;
 }
@@ -94,11 +123,11 @@ body {
   padding: 2rem 4rem;
   gap: 2rem;
   border-radius: 1.3rem;
-  background: var(--white3);
+  background: var(--institutional-sidebar-bg);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 h3 {
-  color: var(--yellow);
+  color: var(--primary-color);
 }
 
 .news__item {
@@ -126,13 +155,13 @@ h3 {
 }
 .news__item-p {
   text-align: center;
-  color: rgba(0, 0, 0, 0.76);
+  color: var(--institutional-news-p);
   font-weight: 200;
 }
 .news__item-link,
 .laws__item-link {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--institutional-text-color);
 }
 
 .title-bar {
@@ -159,15 +188,21 @@ h3 {
   border-radius: 17px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
+  background-color: var(--institutional-sidebar-laws-item);
 }
-
+.laws__img {
+  color: var(--institutional-sidebar-laws-svg);
+  width: 8px;
+  height: 14px;
+  fill: none;
+}
 .laws__h3,
 .news__h3 {
   font-size: 2rem;
 }
 .laws__text {
   font-size: 1.6rem;
-  color: var(--dark);
+  color: var(--institutional-text-color);
   font-weight: 400;
 }
 /* Responsividade - Seção Atividades */
@@ -248,7 +283,7 @@ h3 {
 /* Seção da estrutura administrativa */
 .structure {
   margin-top: 10rem;
-  background-color: var(--white);
+  background: var(--institutional-structure-bg);
   display: flex;
   height: 715px;
   position: relative;
@@ -260,7 +295,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
 
-  background-color: var(--blue);
+  background-color: var(--secundary-color);
   width: 40.07vw;
 
   padding: 0 30px;
@@ -270,7 +305,7 @@ h3 {
 }
 
 .structure__title {
-  color: var(--yellow);
+  color: var(--primary-color);
   font-size: 2.2rem;
   font-weight: 800;
 }
@@ -331,18 +366,25 @@ h3 {
   overflow-x: auto;
   gap: 3.5rem;
   border-radius: 5.1rem;
-  background: var(--white);
+  background: var(--institutional-structure-card-bg);
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
 
   justify-content: center;
 }
-
-.structure__card-img {
-  width: 13rem;
-  height: 13rem;
+.container__card-svg {
+  background-color: var(--institutional-structure-icon-bg);
+  padding: 2rem;
+  border-radius: 75px;
   position: relative;
-  top: 6rem;
+  top: 5rem;
+  box-shadow: 0px 5.192px 5.192px 0px rgba(0, 0, 0, 0.25);
+
   z-index: 3;
+}
+.structure__card-svg {
+  width: 5rem;
+  height: 5rem;
+  color: var(--institutional-structure-icon);
 }
 .structure__card-icone {
   width: 20.767px;
@@ -361,7 +403,7 @@ h3 {
 }
 .structure__card-title {
   align-self: center;
-  color: var(--dark);
+  color: var(--institutional-text-color);
   font-size: 2rem;
   font-weight: 500;
 }
