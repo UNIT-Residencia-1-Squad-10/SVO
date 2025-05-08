@@ -18,9 +18,11 @@
     <div class="container-layout">  
       <section >
         <div class="sidebar" >
-          <div id="step-1" class="step">Etapa 1<br>Condições do óbito</div>
-          <div id="step-2" class="step">Etapa 2<br>Sobre a pessoa falecida</div>
-          <div id="step-3" class="step">Etapa 3<br>Informações do solicitante</div>
+          <div id="step-1" class="step">Início<br></div>
+
+          <div id="step-2" class="step">Etapa 1<br>Condições do óbito</div>
+          <div id="step-3" class="step">Etapa 2<br>Sobre a pessoa falecida</div>
+          <div id="step-4" class="step">Etapa 3<br>Informações do solicitante</div>
         </div>
       </section>
     
@@ -36,7 +38,7 @@
           <div class="step-content" data-step="2">
             <h2>Condições do óbito</h2>
             <p>A pessoa falecida possuía plano funerário?</p>
-            <button class="btn-blue" onclick="next()">Sim</button>
+            <button class="btn-blue" onclick="previous()">Sim</button>
             <button class="btn-blue" onclick="next()">Não</button>
           </div>
       
@@ -44,15 +46,15 @@
             <h2>Condições do óbito</h2>
             <p>O óbito ocorreu na residência, no hospital ou em outro lugar?</p>
             <button class="btn-blue" onclick="next()">Na residência</button>
-            <button class="btn-blue" onclick="next()">No hospital</button>
-            <button class="btn-blue" onclick="next()">Outro</button>
+            <button class="btn-blue" onclick="previous()">No hospital</button>
+            <button class="btn-blue" onclick="previous()">Outro</button>
           </div>
       
           <div class="step-content" data-step="4">
             <h2>Condições do óbito</h2>
             <p>O óbito ocorreu de causa natural ou externa?</p>
             <button class="btn-blue" onclick="next()">Natural</button>
-            <button class="btn-blue" onclick="next()">Externa</button>
+            <button class="btn-blue" onclick="previous()">Externa</button>
           </div>
       
           <div class="step-content" data-step="5">
@@ -88,7 +90,7 @@
             </select>
           </div>
       
-          <div class="step-content" data-step="9">
+          <div class="step-content" data-step="9" >
             <h2>Formulário de Solicitação</h2>
             <input type="text" placeholder="Nome"><br>
             <input type="text" placeholder="Documento (RG, CPF, etc)"><br>

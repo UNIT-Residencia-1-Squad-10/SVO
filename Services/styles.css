@@ -148,17 +148,7 @@ body {
     text-align: center;
     max-width: 200px;
   }
-  
-  .content {
-    display: flex;
-    margin-top: 50px;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }
+
   
   .step-content {
     display: none;
@@ -194,8 +184,42 @@ body {
   .btn-blue:hover {
     background-color: #0366c0;
   }
-  
-  input, select {
+  .sidebar{
+    margin-left: 200px;
+  }
+  .step-content {
+    display: none;
+    text-align: center;
+    margin-top: 0px;
+
+  }
+
+      
+  .content {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+    flex: 1;
+    padding: 30px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+  }
+
+  .container-layout{
+    display: flex;
+    flex-direction: row;
+  }
+     
+  input {
+    width: 100%;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -203,28 +227,3 @@ body {
     border: 1px solid #ccc;
     font-size: 16px;
   }
-  .sidebar{
-    margin-left: 200px;
-  }
-  .step-content {
-    display: none;
-    text-align: center;
-
-  }
-  
-  .content {
-    margin-left: 50px;
-    margin-top: 20px;
-    flex: 1;
-    padding: 40px;
-    background-color: #f8f9fa;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .container-layout{
-    display: flex;
-    flex-direction: row;
-  }
-  

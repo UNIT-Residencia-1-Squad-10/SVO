@@ -53,7 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 2;
-  gap: 5.5rem;
+  gap: 3rem;
   min-height: 673px;
   max-width: 810px;
   padding: 6.3rem 4rem;
@@ -134,6 +134,7 @@ h3 {
   text-decoration: none;
   color: var(--dark);
 }
+
 .title-bar {
   align-self: center;
   width: 100%;
@@ -270,13 +271,13 @@ h3 {
 
 .structure__title {
   color: var(--yellow);
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 800;
 }
 .structure__text {
   color: var(--white);
   width: 25.76vw;
-
+  line-height: 1.2;
   font-size: 16px;
   font-weight: 350;
 }
@@ -309,6 +310,8 @@ h3 {
 
   scrollbar-width: none;
   -ms-overflow-style: none;
+  scroll-behavior: smooth;
+
   padding-bottom: 1rem;
   padding-left: 0.5rem;
 }
@@ -388,7 +391,7 @@ h3 {
   .structure__text {
     width: 92vw;
     font-weight: 350;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .structure__cards {
