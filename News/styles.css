@@ -58,3 +58,35 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Paginação */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  font-size: 1rem;
+  border: 1px solid var(--navbar-background-color);
+  background-color: white;
+  color: var(--navbar-background-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.pagination button:hover {
+  background-color: var(--navbar-background-color);
+  color: white;
+}
+
+.pagination button.active {
+  background-color: var(--navbar-background-color);
+  color: white;
+  font-weight: bold;
+}
+
