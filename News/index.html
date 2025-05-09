@@ -7,19 +7,14 @@
     <link rel="stylesheet" href="/shared/reset.css">
     <link rel="stylesheet" href="/shared/styles.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cards.css">
     <script src="/shared/components.js" defer></script>
     <script src="/shared/vlibras-widget.js" defer></script>
-
     <script type="module">
-      import { loadNews } from './script.js';
-    
-      const highlightContainer = document.querySelector('.news__container--highlight');
-      const mainContainer = document.querySelector('.news__container--main');
-      const lastNewsContainer = document.querySelector('.news__container--lastNews');
-      const dataLocation = '../data/news.json';
-
-      loadNews(highlightContainer, mainContainer, lastNewsContainer, dataLocation);
-
+      import { renderNewsCards, CardSize } from './script.js';
+      renderNewsCards('.news__container--highlight', CardSize.BIG, 'highlight');
+      renderNewsCards('.news__container--main', CardSize.MED, 'main');
+      renderNewsCards('.news__container--lastNews', CardSize.SMALL, 'last');
     </script>
   </head>
   <body>
@@ -34,6 +29,7 @@
           <div class="news__container--main">
             <!-- As notícias principais serão carregadas aqui de maneira dinâmica -->
           </div>
+          <div class="pagination" id="pagination-main"></div>
         </div>
     
         <div class="news__panel--right">

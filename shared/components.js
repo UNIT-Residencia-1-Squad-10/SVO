@@ -55,9 +55,6 @@ class MeuHeader extends HTMLElement {
 						<a class="navbar__link" id="services" href="/Services/index.html" data-link>Serviços</a>
 					</li>
 					<li class="navbar__item">
-						<a class="navbar__link" id="contact" href="" data-link>Contato</a>
-					</li>
-					<li class="navbar__item">
 						<a class="navbar__link" id="talkWithUs" href="" data-link>Fale Conosco</a>
 					</li>
 				</ul>

@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias</title>
-    <link rel="stylesheet" href="/shared/reset.css">
-    <link rel="stylesheet" href="/shared/styles.css" />
-    <link rel="stylesheet" href="new_details.css" />
-    <script src="/shared/components.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias</title>
+  <link rel="stylesheet" href="/shared/reset.css">
+  <link rel="stylesheet" href="/shared/styles.css" />
+  <link rel="stylesheet" href="new_details.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cards.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <script src="/shared/components.js" defer></script>
+  <script src="/shared/vlibras-widget.js" defer></script>
+  <script type="module">
+    import { renderNewsCards, CardSize } from './script.js';
+    renderNewsCards('.grid-leia-mais', CardSize.SMALL, 'main');
+  </script>
 </head>
 <body>
-    <svo-header></svo-header>
-    <main>
-      <div class="news-container">
-     <h1> Nova sede do SVO é implantado em Aracaju para expandir seu alcance</h1>
-<p>O Serviço de Verificação de Óbito (SVO) anunciou a inauguração de uma nova sede em Aracaju, reforçando sua presença na região e ampliando seu alcance para melhor atender a população.</p>
-<div class="autor-do-texto">
-<img src="assets/3971219.png">
-<p>Pedro Ximenes</p>
-    </div>
-  <div class="imagem-noticia">
-  <img src="assets/793714739.png">
-  </div>
-    <div class="texto-da-noticia">
-<article>A iniciativa faz parte de um projeto de expansão que busca oferecer serviços mais acessíveis e eficientes na análise de causas de morte. De acordo com a coordenação do SVO, a nova unidade conta com tecnologia de ponta para a digitalização de registros, exames laboratoriais avançados e modernização dos laboratórios para análises histopatológicas. Essas melhorias vão agilizar a emissão de laudos e garantir diagnósticos mais precisos, beneficiando tanto os familiares dos falecidos quanto o sistema de saúde como um todo.
-  Além da modernização estrutural, a nova sede do SVO em Aracaju fortalecerá a integração com órgãos de saúde pública e instituições acadêmicas, permitindo o compartilhamento de dados epidemiológicos e contribuindo para o desenvolvimento de estratégias de prevenção de doenças.
-  A expansão do SVO para Aracaju é um passo importante para aprimorar a transparência e confiabilidade dos registros de mortalidade, além de garantir um atendimento mais ágil e humanizado. A expectativa é que a nova unidade melhore significativamente a capacidade de investigação de óbitos de causa desconhecida ou natural na região.
-  
-  Impacto na Saúde Pública
-  Com a nova sede, o SVO poderá atender um número maior de casos, reduzindo a sobrecarga de outras unidades e permitindo uma investigação mais detalhada de óbitos sem causa evidente. Isso contribuirá diretamente para o aprimoramento das estatísticas de saúde e para o desenvolvimento de políticas públicas mais eficazes na prevenção de doenças.
-  Especialistas da área destacam que a ampliação do serviço também terá impacto positivo na formação de novos profissionais, já que a unidade em Aracaju oferecerá oportunidades para estudantes e pesquisadores da área médica realizarem estudos e treinamentos voltados à patologia.
-  
-  Atendimento e infraestrutura
-  A nova sede do SVO contará com uma estrutura moderna, equipada com laboratórios de última geração e um ambiente projetado para proporcionar um atendimento humanizado às famílias que buscam esclarecimentos sobre as causas dos óbitos de seus entes queridos. Além disso, a unidade contará com uma equipe multidisciplinar altamente qualificada para garantir eficiência e precisão nos laudos periciais.
-  
-  Para mais informações sobre os novos serviços oferecidos pela sede do SVO em Aracaju, os interessados podem acessar o site oficial ou entrar em contato com a unidade.
-  
-  </article>
-    </div>
-  </div>
-</main>
-      <svo-footer></svo-footer>
+  <svo-header></svo-header>
+  <main>
+    <div class="noticia-container">
+      <section class="intro-noticia">
+        <h1 class="titulo-noticia">Nova sede do SVO é implantado em Aracaju para expandir seu alcance</h1>
+        <p class="subtitulo-noticia">
+          O Serviço de Verificação de Óbito (SVO) anunciou a inauguração de uma nova sede em Aracaju, reforçando sua presença na região e ampliando seu alcance para melhor atender a população.
+        </p>
+        <div class="autor-info">
+          <img src="assets/3971219.png" alt="Pedro Ximenes">
+          <div>
+            <p class="autor-nome">Pedro Ximenes</p>
+            <div class="redes-sociais">
+              <i class="fi fi-brands-instagram"></i>
+              <i class="fi fi-brands-facebook"></i>
+              <i class="fi fi-brands-twitter-alt-circle"></i>
+              <i class="fi fi-brands-linkedin"></i>
+              <i class="fi fi-sr-envelope"></i>
+            </div>
+          </div>
+        </div>
+        <div class="imagem-noticia">
+          <img src="assets/793714739.png" alt="Nova sede do SVO">
+        </div>
+      </section>
 
+      <div class="texto-da-noticia">
+        <article>
+          A iniciativa faz parte de um projeto de expansão que busca oferecer serviços mais acessíveis e eficientes na análise de causas de morte. De acordo com a coordenação do SVO, a nova unidade conta com tecnologia de ponta para a digitalização de registros, exames laboratoriais avançados e modernização dos laboratórios para análises histopatológicas. Essas melhorias vão agilizar a emissão de laudos e garantir diagnósticos mais precisos, beneficiando tanto os familiares dos falecidos quanto o sistema de saúde como um todo.
+          Além da modernização estrutural, a nova sede do SVO em Aracaju fortalecerá a integração com órgãos de saúde pública e instituições acadêmicas, permitindo o compartilhamento de dados epidemiológicos e contribuindo para o desenvolvimento de estratégias de prevenção de doenças.
+          A expansão do SVO para Aracaju é um passo importante para aprimorar a transparência e confiabilidade dos registros de mortalidade, além de garantir um atendimento mais ágil e humanizado. A expectativa é que a nova unidade melhore significativamente a capacidade de investigação de óbitos de causa desconhecida ou natural na região.
+          Impacto na Saúde Pública
+          Com a nova sede, o SVO poderá atender um número maior de casos, reduzindo a sobrecarga de outras unidades e permitindo uma investigação mais detalhada de óbitos sem causa evidente. Isso contribuirá diretamente para o aprimoramento das estatísticas de saúde e para o desenvolvimento de políticas públicas mais eficazes na prevenção de doenças.
+          Especialistas da área destacam que a ampliação do serviço também terá impacto positivo na formação de novos profissionais, já que a unidade em Aracaju oferecerá oportunidades para estudantes e pesquisadores da área médica realizarem estudos e treinamentos voltados à patologia.
+          Atendimento e infraestrutura
+          A nova sede do SVO contará com uma estrutura moderna, equipada com laboratórios de última geração e um ambiente projetado para proporcionar um atendimento humanizado às famílias que buscam esclarecimentos sobre as causas dos óbitos de seus entes queridos. Além disso, a unidade contará com uma equipe multidisciplinar altamente qualificada para garantir eficiência e precisão nos laudos periciais.
+          Para mais informações sobre os novos serviços oferecidos pela sede do SVO em Aracaju, os interessados podem acessar o site oficial ou entrar em contato com a unidade.
+        </article>
+      </div>
+
+      <h1 class="leia-mais-titulo">Leia mais</h1>
+      <div class="underline"></div>
+      <div class="grid-leia-mais">
+        <!-- Os cards serão carregados dinamicamente aqui -->
+      </div>
+    </div>
+  </main>
+  <svo-footer></svo-footer>
 </body>
 </html>
