@@ -6,51 +6,60 @@ document.addEventListener("DOMContentLoaded", () => {
   const rightArrow = document.querySelector(
     '.structure__arrows img[alt*="direita"]'
   );
-
   const scrollAmount = 370;
 
-  // Função de animação para o scroll suave
+  // DUPLICAR OS CARDS
+  const cards = [...cardsContainer.children];
+  cards.forEach((card) => {
+    const clone = card.cloneNode(true);
+    clone.classList.add("clone");
+    cardsContainer.appendChild(clone);
+  });
+
+  // Flag para bloquear cliques durante a animação
+  let isScrolling = false;
+
+  // Scroll suave com bloqueio de múltiplos cliques
   function smoothScroll(direction) {
+    if (isScrolling) return;
+    isScrolling = true;
+
     const start = cardsContainer.scrollLeft;
     const distance = direction * scrollAmount;
-    const duration = 500; //
+    const duration = 500;
     const startTime = performance.now();
 
     function animateScroll(time) {
       const elapsedTime = time - startTime;
       const progress = Math.min(elapsedTime / duration, 1);
-
       cardsContainer.scrollLeft = start + distance * progress;
 
       if (progress < 1) {
         requestAnimationFrame(animateScroll);
+      } else {
+        isScrolling = false;
       }
     }
 
     requestAnimationFrame(animateScroll);
   }
 
-  leftArrow.addEventListener("click", () => {
-    if (cardsContainer.scrollLeft <= 0) {
-      cardsContainer.scrollTo({
-        left: cardsContainer.scrollWidth,
-        behavior: "smooth",
-      });
-    } else {
-      smoothScroll(-1);
-    }
+  rightArrow.addEventListener("click", () => {
+    smoothScroll(1);
   });
 
-  rightArrow.addEventListener("click", () => {
-    const maxScrollLeft =
-      cardsContainer.scrollWidth - cardsContainer.clientWidth;
+  leftArrow.addEventListener("click", () => {
+    smoothScroll(-1);
+  });
+
+  // Loop infinito ao atingir o fim/início
+  cardsContainer.addEventListener("scroll", () => {
+    const maxScrollLeft = cardsContainer.scrollWidth / 2;
+
     if (cardsContainer.scrollLeft >= maxScrollLeft) {
-      cardsContainer.scrollTo({
-        left: 0,
-        behavior: "smooth",
-      });
-    } else {
-      smoothScroll(1);
+      cardsContainer.scrollLeft -= maxScrollLeft;
+    } else if (cardsContainer.scrollLeft <= 0) {
+      cardsContainer.scrollLeft += maxScrollLeft;
     }
   });
 
@@ -61,9 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const confirmed = confirm(
         "Você será redirecionado para outro site. Deseja continuar?"
       );
-      if (!confirmed) {
-        e.preventDefault();
-      }
+      if (!confirmed) e.preventDefault();
     });
   });
 });
