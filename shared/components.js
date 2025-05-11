@@ -105,7 +105,7 @@ class MeuFooter extends HTMLElement {
 <footer class="footer">
 <div class="footer__container">
   <div class="footer__column">
-    <img class="footer__img" src="assets/logo svo branco.png" alt="Logo SVO">
+    <img class="footer__img" src="/Home/assets/logo-svo.svg" alt="Logo SVO">
     <div class="footer__section">
       <h4 class="footer__title">Serviço de Verificação de Óbito - SVO</h4>
       <div class="footer__elements">
@@ -202,7 +202,7 @@ class MeuFooter extends HTMLElement {
       <div class="footer_decoration"></div>
     <div class="footer__news">
       <div class="footer__new">
-        <img class="footer__new-img" src="assets/not_1.png" alt="Imagem relacionada a notícia">
+        <img class="footer__new-img" src="/Home/assets/not_1.png" alt="Imagem relacionada a notícia">
         <div class="footer__new-informations">
           <h4 class="footer__new-title">Hemose recebe certificado de qualificação técnica da Hemobrás</h4>
   
@@ -213,7 +213,7 @@ class MeuFooter extends HTMLElement {
         </div>
       </div>
       <div class="footer__new">
-        <img class="footer__new-img" src="assets/not_1.png" alt="Imagem relacionada a notícia">
+        <img class="footer__new-img" src="/Home/assets/not_1.png" alt="Imagem relacionada a notícia">
         <div class="footer__new-informations">
           <h4 class="footer__new-title">Hemose recebe certificado de qualificação técnica da Hemobrás</h4>
   

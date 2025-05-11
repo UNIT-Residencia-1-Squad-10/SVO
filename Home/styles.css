@@ -241,8 +241,8 @@ body {
   max-width: 500px;
   padding-left: 100px;
 }
-
-h1 {
+/* Evitar colocar alterações sem classes, acaba alterando a barra de navegação e o rodapé */
+/* h1 {
   color: #fbb802;
   font-size: x-large;
   width: 240px;
@@ -251,7 +251,7 @@ h1 {
 p {
   font-size: medium;
   width: 230px;
-}
+} */
 
 .btn-yellow {
   background: #fcb900;
@@ -332,12 +332,4 @@ p {
 .agenda td {
   border: 1px solid #ccc;
   padding: 8px;
-}
-
-footer {
-  background: #003366;
-  color: white;
-  padding: 20px 30px;
-  display: flex;
-  justify-content: space-between;
 }
