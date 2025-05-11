@@ -29,6 +29,7 @@
   --footer-news-information: #303030;
   --footer-news-bottom: #666666;
   --footer-text-geral: #ffffff;
+  --footer-link-hover: #fbb802;
 }
 
 *,
@@ -288,7 +289,7 @@ a.footer__link {
   font-size: 1.6rem;
 }
 a.footer__link:hover {
-  color: var(--primary-color);
+  color: var(--footer-link-hover);
 }
 
 .footer__news {
