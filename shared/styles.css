@@ -204,6 +204,20 @@ body {
   background-color: var(--main-yellow-color-hover);
 }
 
+@media (max-width: 1100px) {
+  .info-bar__item--hidden {
+    display: none;
+  }
+  .navbar__theme-toggle--hidden-sm {
+    display: none;
+  }
+  .navbar__accessibility-font-size-btn--hidden-sm {
+    display: none;
+  }
+  .navbar__request-service--hidden-sm {
+    display: none;
+  }
+}
 /* Footer */
 
 .footer {

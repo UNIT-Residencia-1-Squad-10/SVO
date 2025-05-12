@@ -30,7 +30,7 @@ class MeuHeader extends HTMLElement {
 					<p class="info-bar__text">ouvidoria.fsph@fsph.se.gov.br</p>
 				</div>
 
-				<div class="info-bar__item">
+				<div class="info-bar__item info-bar__item--hidden">
 					<div class="info-bar__item-circle">
 						<i class="fa-solid fa-location-dot"></i>
 					</div>
@@ -64,7 +64,7 @@ class MeuHeader extends HTMLElement {
 				</ul>
 
 				<!-- Modo claro/escuro -->
-				<div class="navbar__theme-toggle">
+				<div class="navbar__theme-toggle navbar__theme-toggle--hidden-sm">
 					<input
 						type="checkbox"
 						id="navbar__theme-toggle-checkbox"
@@ -82,12 +82,12 @@ class MeuHeader extends HTMLElement {
 				</div>
 
 				<!-- Acessibilidade (tamanho da fonte) -->
-				<button class="navbar__accessibility-font-size-btn" id="fontSizeButton">
+				<button class="navbar__accessibility-font-size-btn navbar__accessibility-font-size-btn--hidden-sm" id="fontSizeButton">
 					Aa <span id="fontSizeLevel">(1/3)</span>
 				</button>
 
 				<!-- Botão de solicitar remoção -->
-				<button class="navbar__request-service">
+				<button class="navbar__request-service navbar__request-service--hidden-sm">
 					Solicitar Remoção
 				</button>
 			</nav>
