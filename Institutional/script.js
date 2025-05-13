@@ -6,7 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const rightArrow = document.querySelector(
     '.structure__arrows img[alt*="direita"]'
   );
-  const scrollAmount = 370;
+
+  // Calcular scrollAmount dinamicamente com base no primeiro card e gap
+  let scrollAmount;
+  const firstCard = cardsContainer.querySelector(":scope > *:not(.clone)");
+
+  if (firstCard) {
+    const cardStyles = window.getComputedStyle(cardsContainer);
+    const gap = parseFloat(cardStyles.columnGap || cardStyles.gap || 0);
+    const cardWidth = firstCard.getBoundingClientRect().width;
+    scrollAmount = cardWidth + gap;
+  } else {
+    scrollAmount = 300; // fallback
+  }
 
   // DUPLICAR OS CARDS
   const cards = [...cardsContainer.children];
@@ -16,10 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     cardsContainer.appendChild(clone);
   });
 
-  // Flag para bloquear cliques durante a animação
   let isScrolling = false;
 
-  // Scroll suave com bloqueio de múltiplos cliques
   function smoothScroll(direction) {
     if (isScrolling) return;
     isScrolling = true;
@@ -52,10 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
     smoothScroll(-1);
   });
 
-  // Loop infinito ao atingir o fim/início
   cardsContainer.addEventListener("scroll", () => {
     const maxScrollLeft = cardsContainer.scrollWidth / 2;
-
     if (cardsContainer.scrollLeft >= maxScrollLeft) {
       cardsContainer.scrollLeft -= maxScrollLeft;
     } else if (cardsContainer.scrollLeft <= 0) {
@@ -63,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Confirmar antes de abrir links externos
   const lawLinks = document.querySelectorAll(".laws__item");
   lawLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
