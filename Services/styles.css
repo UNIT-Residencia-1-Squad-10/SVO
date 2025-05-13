@@ -1,17 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 body {
     font-size: medium;
     margin: 0;
-    font-family: Arial, sans-serif;
     display: flex;
     height: 100vh;
   }
   h2{
+    padding: 40px;
     font-weight: bold;
+    color: #666666;
+    font-size: x-large;
+  
   }
   
   .sidebar {
     width: 240px;
-    background-color: #01448A;
+    background-color:var(--navbar-background-color);
     color: white;
     border-radius: 5%;
     padding: 20px;
@@ -89,7 +100,7 @@ body {
   .div1{   
     background-image: F8F8F8;
     background-color: F8F8F8;
-    font-family: 'Times New Roman', Times, serif;
+
     border-radius: 10%;
   }
   .a{
@@ -130,6 +141,9 @@ body {
     padding: .100rem .50rem !important;
   }
    
+  .mini{
+    font-size: small;
+  }
   .sidebar {
     display: flex;
     justify-content: center;
@@ -139,14 +153,15 @@ body {
   }
   
   .step {
-    background-color: #ffffff;
+    background-color: #01448A;
     border: 2px solid #01448A;
-    color: #01448A;
+    color: #f3f3f4;
     padding: 15px 20px;
     border-radius: 10px;
     font-weight: 500;
     text-align: center;
     max-width: 200px;
+    
   }
 
   
@@ -158,8 +173,12 @@ body {
     
   }
 
-  .p{
-    margin-top: 40px;
+  p{
+    color: #666666;
+  }
+  h8{
+    padding: 20px;
+    padding-bottom: 40px;
   }
 
   .h2{
@@ -185,6 +204,7 @@ body {
     background-color: #0366c0;
   }
   .sidebar{
+    height: 419px;
     margin-left: 200px;
   }
   .step-content {
@@ -193,13 +213,17 @@ body {
     margin-top: 0px;
 
   }
-
-      
+  .h2{
+    color: #666666;
+  }
+    
   .content {
+    height: 419px;
     margin-left: 50px;
     margin-top: 20px;
     margin-right: 50px;
     flex: 1;
+    width: 700px;
     padding: 30px;
     background-color: #f8f9fa;
     display: flex;
@@ -226,4 +250,11 @@ body {
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 16px;
+  }
+
+  h7{
+    left: 0%;
+    padding-left: 0px;
+    text-align: left;
+    font-size: x-small;
   }
