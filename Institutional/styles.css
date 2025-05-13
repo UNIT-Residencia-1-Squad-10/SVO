@@ -21,7 +21,13 @@ html {
   --institutional-structure-card-bg: #fff;
   --institutional-structure-icon-bg: #fff;
   --institutional-structure-icon: #000;
+
+  --dezesseis-px: 1.6rem;
+  --dezoito-px: 1.8rem;
+  --vinte-px: 2rem;
+  --vinte_e_dois-px: 2.2rem;
 }
+
 body.dark-mode {
   --secundary-color: #002a53;
   --institutional-structure-bg: linear-gradient(
@@ -40,6 +46,14 @@ body.dark-mode {
   --institutional-sidebar-laws-svg: #fff;
   --institutional-structure-icon-bg: #303030;
   --institutional-structure-icon: #fff;
+
+  --info-background-color: #002a57;
+  --navbar-background-color: #00152a;
+
+  --footer-bg: #001b37;
+  --footer-news-bg: #363636;
+  --footer-news-information: #f8f8f8;
+  --footer-news-bottom: #f8f8f8;
 }
 * {
   margin: 0;
@@ -66,7 +80,7 @@ body {
   border-radius: 5px;
   background: var(--secundary-color);
   color: var(--white);
-  font-size: 2rem;
+  font-size: var(--vinte-px);
   font-weight: 700;
   min-width: 200px;
 }
@@ -98,7 +112,7 @@ body {
 }
 
 .activity__p {
-  font-size: 1.6rem;
+  font-size: var(--dezesseis-px);
   font-weight: 300;
   line-height: 1.7;
 }
@@ -126,8 +140,6 @@ body {
   border-radius: 1.3rem;
   background: var(--institutional-sidebar-bg);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-}
-h3 {
   color: var(--primary-color);
 }
 
@@ -135,6 +147,7 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+  transition: transform 0.3s ease;
 }
 .news__item-content {
   display: flex;
@@ -150,7 +163,7 @@ h3 {
 }
 
 .news__item-h4 {
-  font-size: 1.6rem;
+  font-size: var(--dezesseis-px);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -190,7 +203,14 @@ h3 {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   background-color: var(--institutional-sidebar-laws-item);
+  transition: transform 0.3s ease;
 }
+
+.laws__item:hover,
+.news__item:hover {
+  transform: scale(1.05);
+}
+
 .laws__img {
   color: var(--institutional-sidebar-laws-svg);
   width: 8px;
@@ -199,10 +219,10 @@ h3 {
 }
 .laws__h3,
 .news__h3 {
-  font-size: 2rem;
+  font-size: var(--vinte-px);
 }
 .laws__text {
-  font-size: 1.6rem;
+  font-size: var(--dezesseis-px);
   color: var(--institutional-text-color);
   font-weight: 400;
 }
@@ -405,12 +425,12 @@ h3 {
 .structure__card-title {
   align-self: center;
   color: var(--institutional-text-color);
-  font-size: 2rem;
+  font-size: var(--vinte-px);
   font-weight: 500;
 }
 
 .structure__card-p {
-  font-size: 1.8rem;
+  font-size: var(--dezoito-px);
 }
 
 .structure__button {
@@ -434,7 +454,7 @@ h3 {
   .structure__text {
     width: 92vw;
     font-weight: 350;
-    font-size: 1.6rem;
+    font-size: var(--dezesseis-px);
   }
 
   .structure__cards {
@@ -453,12 +473,13 @@ h3 {
 @media (max-width: 786px) {
   .structure__cards {
     gap: 12rem;
-    left: 4.3%;
+    left: 6.3%;
   }
   .structure__card {
-    width: 90vw;
-    height: 64.53vw;
+    width: 85vw;
+    height: 50.53vw;
   }
+
   h3.structure__card-title {
     font-size: 2.2rem;
   }
