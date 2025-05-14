@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SERVICES</title>
-    <link rel="stylesheet" href="/shared/reset.css" />
+    <link rel="stylesheet" href="/shared/reset.css">
     <link rel="stylesheet" href="/shared/styles.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="/shared/components.js" defer></script>
     <script src="/shared/vlibras-widget.js" defer></script>
+
+
   </head>
   <body>
     <svo-header></svo-header>
 
-    <div class="container-layout">
+    <div class="container-layout">  
       <section>
 
         <div class="sidebar" >
@@ -23,16 +25,17 @@
           <div id="step-4" class="step"><div  style="text-align: left; display: flex;"><img src="assets/quad3.png"><div><h7>Etapa 3</h7><br><div style="width: 120px; margin-left: 9px;">Informações do solicitante</div></div></div></div>
         </div>
       </section>
-
-      <section style="text-align: center">
+    
+      <section style="text-align: center;">
+    
         <div class="content">
-          <div class="step-content" data-step="1">
+          <div class="step-content"  data-step="1">
             <h2>Triagem</h2>
             <p>Responda às perguntas a seguir para iniciar a solicitação de remoção de corpo.</p>
             <br><br><br>
             <button class="btn-blue" onclick="next()">Iniciar</button>
           </div>
-
+      
           <div class="step-content" data-step="2">
             <h2>Condições do óbito</h2>
             <p>A pessoa falecida possuía plano funerário?</p>
@@ -40,7 +43,7 @@
             <button class="btn-blue" onclick="previous()">Sim</button>
             <button class="btn-blue" onclick="next()">Não</button>
           </div>
-
+      
           <div class="step-content" data-step="3">
             <h2>Condições do óbito</h2>
             <p>O óbito ocorreu na residência, no hospital ou em outro lugar?</p>
@@ -49,7 +52,7 @@
             <button class="btn-blue" onclick="previous()">No hospital</button>
             <button class="btn-blue" onclick="previous()">Outro</button>
           </div>
-
+      
           <div class="step-content" data-step="4">
             <h2>Condições do óbito</h2>
             <p>O óbito ocorreu de causa natural ou externa?</p>
@@ -57,7 +60,7 @@
             <button class="btn-blue" onclick="next()">Natural</button>
             <button class="btn-blue" onclick="previous()">Externa</button>
           </div>
-
+      
           <div class="step-content" data-step="5">
             <h2>Condições do óbito</h2>
             <p>A pessoa estava sozinha ou acompanhada?</p>
@@ -65,7 +68,7 @@
             <button class="btn-blue" onclick="next()">Sozinha</button>
             <button class="btn-blue" onclick="next()">Acompanhada</button>
           </div>
-
+      
           <div class="step-content" data-step="6">
             <h2>Sobre a pessoa</h2>
             <p>A pessoa era acometida de alguma doença prévia e/ou era assistida por médico?</p>
@@ -73,7 +76,7 @@
             <button class="btn-blue" onclick="next()">Sim</button>
             <button class="btn-blue" onclick="next()">Não</button>
           </div>
-
+      
           <div class="step-content" data-step="7">
             <h2>Sobre a pessoa</h2>
             <p>A pessoa falecida era assistida por profissional de saúde em casa?</p>
@@ -81,7 +84,7 @@
             <button class="btn-blue" onclick="next()">Sim</button>
             <button class="btn-blue" onclick="next()">Não</button>
           </div>
-
+      
           <div class="step-content" data-step="8">
             <h2>Informações do Solicitante</h2>
             <p>Informe seu grau de parentesco com a pessoa falecida:</p>
@@ -106,8 +109,8 @@
           </div>
         </div>
       </section>
-    </div>
-    <script src="script.js"></script>
+      </div>
+      <script src="script.js"></script>
 
     <svo-footer></svo-footer>
   </body>
