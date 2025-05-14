@@ -213,123 +213,108 @@ body {
   text-decoration: none;
 }
 
-.btn-destaque {
-  background: #fcb900;
-  border: none;
-  padding: 8px 12px;
-  margin-left: 15px;
-  cursor: pointer;
-}
+  .btn-yellow {
+    background: #fcb900;
+    border-radius: 12px;
+    color: #f5f5f5;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-left: 8px;
+    color: #01448a;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .metrics {
+    display: flex;
+    justify-content: space-around;
+    background: #fcb900;
+    padding: 20px 0;
+    color: #003366;
+    font-weight: bold;
+    border-right: #003366;
+  }
+  
+  .metric-item span {
+    display: block;
+    font-size: 0.9em;
+    margin-top: 5px;
+    border-right: #003366;
+    border: #003366;
+  }
 
-.hero {
-  display: flex;
-  background: linear-gradient(to right, #003366 60%, #ffffff 40%);
-  color: white;
-  padding: 50px 30px;
-  background-image: url("assets/hero3.png");
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  padding-left: 50px;
-  color: white;
-}
+  .metric-item{
+    border-right: #003366;
+    border-left: #003366;
+  }
+  .numero{
+    font-weight: 1300;
+    padding-left: 40px;
+    align-items: center;
+    font-size: x-large;
+  }
+  
+  .solicitacao {
+    padding-top: 0px;
+    display: flex;
+    padding: 00px;
+    border-radius: 7%;
+    height: 400px;
+    width: 1256px;
+  }
+  form-solicitacao{
+    background-color: white; 
+    padding-left: 0px; 
+    height: 280px; 
+    width: 1200px;
+  }
 
-.hero-content {
-  max-width: 500px;
-  padding-left: 100px;
-}
-/* Evitar colocar alterações sem classes, acaba alterando a barra de navegação e o rodapé */
-/* h1 {
-  color: #fbb802;
-  font-size: x-large;
-  width: 240px;
-}
+  
+  .form-solicitacao input {
+    margin-left: 200px;
+    margin-right: 100px;
+    padding: 8px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+  }
+  
+  .servicos {
+    padding: 30px;
+  }
+  
+  .agenda table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .agenda th, .agenda td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  footer {
+    background: #003366;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-p {
-  font-size: medium;
-  width: 230px;
-} */
-
-.btn-yellow {
-  background: #fcb900;
-  border-radius: 12px;
-  color: #f5f5f5;
-  padding: 10px 15px;
-  margin-top: 10px;
-  cursor: pointer;
-  border: none;
-}
-
-.metrics {
-  display: flex;
-  justify-content: space-around;
-  background: #fcb900;
-  padding: 20px 0;
-  color: #003366;
-  font-weight: bold;
-  border-right: #003366;
-}
-
-.metric-item span {
-  display: block;
-  font-size: 0.9em;
-  margin-top: 5px;
-  border-right: #003366;
-  border: #003366;
-}
-
-.metric-item {
-  border-right: #003366;
-  border-left: #003366;
-}
-.numero {
-  font-weight: 1300;
-  padding-left: 40px;
-  align-items: center;
-  font-size: x-large;
-}
-
-.solicitacao {
-  display: flex;
-  padding: 30px;
-  gap: 20px;
-  border-radius: 7%;
-  height: 400px;
-  width: 700px;
-}
-
-.form-solicitacao input {
-  padding: 8px;
-  margin-right: 10px;
-}
-
-.cards {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-}
-
-.card {
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 8px;
-  width: 200px;
-}
-
-.servicos {
-  padding: 30px;
-}
-
-.agenda table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.agenda th,
-.agenda td {
-  border: 1px solid #ccc;
-  padding: 8px;
-}
+  h2{
+    padding-top: 85px;
+    font-size: medium;
+    padding-left: 10px; 
+    padding-bottom: 5px; 
+    color: rgb(84, 84, 220); 
+  }
