@@ -17,11 +17,12 @@
 
     <div class="container-layout">  
       <section>
+
         <div class="sidebar" >
           <div id="step-1" class="step">Início<br></div>
-          <div id="step-2" class="step"><h7>Etapa 1</h7><br>Condições do óbito</div>
-          <div id="step-3" class="step"><h7>Etapa 2</h7><br>Sobre a pessoa falecida</div>
-          <div id="step-4" class="step"><h7>Etapa 3</h7><br>Informações do solicitante</div>
+          <div id="step-2" class="step" ><div  style="text-align: left; display: flex;"><img src="assets/quad1.png"><div><h7>Etapa 1</h7><br><div style="width: 120px; margin-left: 9px;">Condições do óbito</div></div></div></div>
+          <div id="step-3" class="step"><div  style="text-align: left; display: flex;"><img src="assets/quad2.png"><div><h7>Etapa 2</h7><br><div style="width: 120px; margin-left: 9px;">Sobre a pessoa falecida</div></div></div></div>
+          <div id="step-4" class="step"><div  style="text-align: left; display: flex;"><img src="assets/quad3.png"><div><h7>Etapa 3</h7><br><div style="width: 120px; margin-left: 9px;">Informações do solicitante</div></div></div></div>
         </div>
       </section>
     
@@ -30,13 +31,15 @@
         <div class="content">
           <div class="step-content"  data-step="1">
             <h2>Triagem</h2>
-            <h8>Responda às perguntas a seguir para iniciar a solicitação de remoção de corpo.</h8>
+            <p>Responda às perguntas a seguir para iniciar a solicitação de remoção de corpo.</p>
+            <br><br><br>
             <button class="btn-blue" onclick="next()">Iniciar</button>
           </div>
       
           <div class="step-content" data-step="2">
             <h2>Condições do óbito</h2>
             <p>A pessoa falecida possuía plano funerário?</p>
+            <br><br><br>
             <button class="btn-blue" onclick="previous()">Sim</button>
             <button class="btn-blue" onclick="next()">Não</button>
           </div>
@@ -44,6 +47,7 @@
           <div class="step-content" data-step="3">
             <h2>Condições do óbito</h2>
             <p>O óbito ocorreu na residência, no hospital ou em outro lugar?</p>
+            <br><br><br>
             <button class="btn-blue" onclick="next()">Na residência</button>
             <button class="btn-blue" onclick="previous()">No hospital</button>
             <button class="btn-blue" onclick="previous()">Outro</button>
@@ -52,6 +56,7 @@
           <div class="step-content" data-step="4">
             <h2>Condições do óbito</h2>
             <p>O óbito ocorreu de causa natural ou externa?</p>
+            <br><br><br>
             <button class="btn-blue" onclick="next()">Natural</button>
             <button class="btn-blue" onclick="previous()">Externa</button>
           </div>
@@ -59,6 +64,7 @@
           <div class="step-content" data-step="5">
             <h2>Condições do óbito</h2>
             <p>A pessoa estava sozinha ou acompanhada?</p>
+            <br><br><br>
             <button class="btn-blue" onclick="next()">Sozinha</button>
             <button class="btn-blue" onclick="next()">Acompanhada</button>
           </div>
@@ -66,6 +72,7 @@
           <div class="step-content" data-step="6">
             <h2>Sobre a pessoa</h2>
             <p>A pessoa era acometida de alguma doença prévia e/ou era assistida por médico?</p>
+           <br><br><br>
             <button class="btn-blue" onclick="next()">Sim</button>
             <button class="btn-blue" onclick="next()">Não</button>
           </div>
@@ -73,6 +80,7 @@
           <div class="step-content" data-step="7">
             <h2>Sobre a pessoa</h2>
             <p>A pessoa falecida era assistida por profissional de saúde em casa?</p>
+            <br><br><br>
             <button class="btn-blue" onclick="next()">Sim</button>
             <button class="btn-blue" onclick="next()">Não</button>
           </div>
@@ -90,8 +98,9 @@
           </div>
       
           <div class="step-content" data-step="9" >
-            <h2>Formulário de Solicitação</h2>
-            <input type="text" placeholder="Nome"><br>
+            <h2>Informações do Solicitante</h2>
+            <p>Formulário de Solicitação</p>
+            <input type="text" placeholder="Nome" ><br>
             <input type="text" placeholder="Documento (RG, CPF, etc)"><br>
             <input type="text" placeholder="Telefone"><br>
             <input type="text" placeholder="Endereço do Solicitante"><br>
