@@ -1,60 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-
 html {
   font-size: 62.5%;
 }
 
-:root {
-  --primary-color: #fbb802;
-  --secundary-color: #01448a;
-
-  --body-bg: #f0f0f0;
-
-  --white: #fff;
-  --institutional-structure-bg: #fff;
-  --institutional-text-color: #000;
-  --institutional-news-p: rgba(0, 0, 0, 0.76);
-  --institutional-activity-bg: #fff;
-  --institutional-sidebar-bg: #f9f9f9;
-  --institutional-sidebar-laws-item: #fff;
-  --institutional-sidebar-laws-svg: #000;
-  --institutional-structure-card-bg: #fff;
-  --institutional-structure-icon-bg: #fff;
-  --institutional-structure-icon: #000;
-
-  --dezesseis-px: 1.6rem;
-  --dezoito-px: 1.8rem;
-  --vinte-px: 2rem;
-  --vinte_e_dois-px: 2.2rem;
-}
-
-body.dark-mode {
-  --secundary-color: #002a53;
-  --institutional-structure-bg: linear-gradient(
-    180deg,
-    #000 47.5%,
-    #002a53 100%
-  );
-  --body-bg: #0a0a0a;
-
-  --institutional-text-color: #fff;
-  --institutional-news-p: rgba(255, 255, 255, 0.76);
-  --institutional-activity-bg: #303030;
-  --institutional-structure-card-bg: #303030;
-  --institutional-sidebar-bg: #303030;
-  --institutional-sidebar-laws-item: #000;
-  --institutional-sidebar-laws-svg: #fff;
-  --institutional-structure-icon-bg: #303030;
-  --institutional-structure-icon: #fff;
-
-  --info-background-color: #002a57;
-  --navbar-background-color: #00152a;
-
-  --footer-bg: #001b37;
-  --footer-news-bg: #363636;
-  --footer-news-information: #f8f8f8;
-  --footer-news-bottom: #f8f8f8;
-}
 * {
   margin: 0;
   padding: 0;
@@ -79,7 +26,7 @@ body {
   gap: 10px;
   border-radius: 5px;
   background: var(--secundary-color);
-  color: var(--white);
+  color: var(--text-white);
   font-size: var(--vinte-px);
   font-weight: 700;
   min-width: 200px;
@@ -331,7 +278,7 @@ body {
   font-weight: 800;
 }
 .structure__text {
-  color: var(--white);
+  color: var(--text-white);
   width: 25.76vw;
   line-height: 1.2;
   font-size: 16px;
@@ -339,7 +286,7 @@ body {
 }
 .structure__link {
   text-decoration: underline;
-  color: var(--white);
+  color: var(--text-white);
   font-size: 16px;
   font-weight: 350;
 }
