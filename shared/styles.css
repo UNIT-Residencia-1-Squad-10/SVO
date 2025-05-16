@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 :root {
   /* BODY STYLES */
   --font-family: "Roboto", sans-serif;
   --background-color: #f0f0f0;
+  --body-bg: #f0f0f0;
   --body-text-color: #666666;
   --main-yellow-color: #fbb802;
   --main-yellow-color-hover: #ffd971;
+  --primary-color: #fbb802;
+  --secundary-color: #01448a;
 
   /* HEADER STYLES */
   --info-background-color: #002a57;
@@ -33,9 +34,47 @@
   --footer-news-bottom: #666666;
   --footer-text-geral: #ffffff;
   --footer-link-hover: #fbb802;
+
+  /* INSTITUTIONAL STYLES */
+  --text-white: #fff;
+  --institutional-structure-bg: #fff;
+  --institutional-text-color: #000;
+  --institutional-news-p: rgba(0, 0, 0, 0.76);
+  --institutional-activity-bg: #fff;
+  --institutional-sidebar-bg: #f9f9f9;
+  --institutional-sidebar-laws-item: #fff;
+  --institutional-sidebar-laws-svg: #000;
+  --institutional-structure-card-bg: #fff;
+  --institutional-structure-icon-bg: #fff;
+  --institutional-structure-icon: #000;
+
+  /* SERVICES STYLES */
+  --services-sidebar-bg: #01448a;
+  --services-step-active-bg: rgba(255, 255, 255, 0.18);
+  --sevices-content-bg: #f8f9fa;
+  --services--content-text: #666666;
+  --services--content-btn: rgb(182, 185, 4);
+  --services-content-btn-bg: #01448a;
+
+  /* FONT SIZE */
+  --dezesseis-px: 1.6rem;
+  --dezoito-px: 1.8rem;
+  --vinte-px: 2rem;
+  --vinte_e_dois-px: 2.2rem;
 }
 /* Modo Escuro */
 body.dark-mode {
+  /* FOOTER SYLES */
+  --footer-bg: #001b37;
+  --footer-news-bg: #363636;
+  --footer-news-information: #f8f8f8;
+  --footer-news-bottom: #f8f8f8;
+
+  /* HEADER STYLES */
+  --info-background-color: #002a57;
+  --navbar-background-color: #00152a;
+
+  /* INSTITUTIONAL STYLES */
   --secundary-color: #002a53;
   --institutional-structure-bg: linear-gradient(
     180deg,
@@ -43,7 +82,6 @@ body.dark-mode {
     #002a53 100%
   );
   --body-bg: #0a0a0a;
-
   --institutional-text-color: #fff;
   --institutional-news-p: rgba(255, 255, 255, 0.76);
   --institutional-activity-bg: #303030;
@@ -54,13 +92,13 @@ body.dark-mode {
   --institutional-structure-icon-bg: #303030;
   --institutional-structure-icon: #fff;
 
-  --info-background-color: #002a57;
-  --navbar-background-color: #00152a;
-
-  --footer-bg: #001b37;
-  --footer-news-bg: #363636;
-  --footer-news-information: #f8f8f8;
-  --footer-news-bottom: #f8f8f8;
+  /* SERVICES STYLES */
+  --services-sidebar-bg: #001224;
+  --services-step-active-bg: rgba(255, 255, 255, 0.099);
+  --sevices-content-bg: #303030;
+  --services--content-text: #fff;
+  --services--content-btn: #000;
+  --services-content-btn-bg: #01448a;
 }
 
 *,
