@@ -19,6 +19,7 @@ html {
   line-height: normal;
 }
 
+
 body {
   background: var(--white2);
   color: var(--dark);
@@ -37,11 +38,18 @@ body {
     font-size: 2rem;
     font-weight: 700;
   }
+
+  .layout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
   .summary {
     display: flex;
     flex-direction: column;
     flex: 2;
-    gap: 5.5rem;
+    gap: 2.5rem;
     max-width: 810px;
     padding: 6.3rem 5rem;
     background-color: var(--white);
@@ -60,21 +68,20 @@ body {
   }
 
 .professionals__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     gap: 6rem;
-    justify-content: center;
-    flex-wrap: wrap;
     margin-top: 3rem;
     margin-left: 7.5rem;
     margin-right: 7.5rem;
   }
   
 .card__professionals {
-    width: 200px;
+    width: 50%;
     text-align: center;
     flex-direction: column;
     padding-bottom: 10px;
-    
     font-family: Arial, sans-serif;
   }
   
@@ -93,6 +100,7 @@ body {
   }
   
 .card__professionals__name {
+    font-size: 2rem;
     font-weight: bold;
     margin-top: 10px;
   }
