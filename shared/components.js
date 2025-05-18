@@ -136,11 +136,11 @@ class MeuHeader extends HTMLElement {
           <div class="navbar__theme-toggle mobile-navbar__theme-toggle">
             <input
               type="checkbox"
-              id="navbar__theme-toggle-checkbox"
+              id="navbar__theme-toggle-checkbox2"
               class="navbar__theme-toggle-checkbox"
             />
             <label
-              for="navbar__theme-toggle-checkbox"
+              for="navbar__theme-toggle-checkbox2"
               class="navbar__theme-toggle-label"
             >
               <span class="navbar__theme-toggle-slider">
@@ -300,9 +300,7 @@ customElements.define("svo-footer", MeuFooter);
 
 // Lógica do dark-mode
 const body = document.body;
-const button = document.getElementById("navbar__theme-toggle-checkbox");
-
-// Verifica se já tem preferência salva no localStorage
+const buttons = document.querySelectorAll(".navbar__theme-toggle-checkbox");
 const savedTheme = localStorage.getItem("darkMode");
 
 let isDark = false;
@@ -318,18 +316,20 @@ if (savedTheme !== null) {
 // Aplica o tema conforme detectado
 if (isDark) {
   body.classList.add("dark-mode");
-  button.checked = true;
+  buttons.forEach((btn) => (btn.checked = true));
 } else {
   body.classList.remove("dark-mode");
-  button.checked = false;
+  buttons.forEach((btn) => (btn.checked = false));
 }
 
 // Listener para alternar tema manualmente
-button.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
-  const isDarkMode = body.classList.contains("dark-mode");
-  localStorage.setItem("darkMode", isDarkMode);
-  button.checked = isDarkMode;
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    const isDarkMode = body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDarkMode);
+    buttons.forEach((b) => (b.checked = isDarkMode));
+  });
 });
 
 // Menu mobile
