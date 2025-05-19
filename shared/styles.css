@@ -62,6 +62,14 @@
   --vinte-px: 2rem;
   --vinte_e_dois-px: 2.2rem;
 }
+body.font-medium {
+  --dezesseis-px: 1.8rem;
+}
+
+body.font-large {
+  --dezesseis-px: 2rem;
+}
+
 /* Modo Escuro */
 body.dark-mode {
   /* FOOTER SYLES */
@@ -87,7 +95,7 @@ body.dark-mode {
   --institutional-activity-bg: #303030;
   --institutional-structure-card-bg: #303030;
   --institutional-sidebar-bg: #303030;
-  --institutional-sidebar-laws-item: #000;
+  --institutional-sidebar-laws-item: #3e3d3d;
   --institutional-sidebar-laws-svg: #fff;
   --institutional-structure-icon-bg: #303030;
   --institutional-structure-icon: #fff;

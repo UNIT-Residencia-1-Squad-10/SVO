@@ -298,7 +298,7 @@ class MeuFooter extends HTMLElement {
 }
 customElements.define("svo-footer", MeuFooter);
 
-// Lógica do dark-mode
+// LÓGICA DO DARK-MODE
 const body = document.body;
 const buttons = document.querySelectorAll(".navbar__theme-toggle-checkbox");
 const savedTheme = localStorage.getItem("darkMode");
@@ -306,14 +306,14 @@ const savedTheme = localStorage.getItem("darkMode");
 let isDark = false;
 
 if (savedTheme !== null) {
-  // Usa o tema salvo
+  // USA O TEMA SALVO
   isDark = savedTheme === "true";
 } else {
-  // Detecta preferência do sistema
+  // DETECTA A PREFERÊNCIA DO SISTEMA
   isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
 
-// Aplica o tema conforme detectado
+// APLICAR O TEMA CONFORME DETECTADO
 if (isDark) {
   body.classList.add("dark-mode");
   buttons.forEach((btn) => (btn.checked = true));
@@ -322,7 +322,7 @@ if (isDark) {
   buttons.forEach((btn) => (btn.checked = false));
 }
 
-// Listener para alternar tema manualmente
+// LISTENER PARA ALTERNAR O TEMA MANUALMENTE
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
@@ -332,7 +332,7 @@ buttons.forEach((btn) => {
   });
 });
 
-// Menu mobile
+// MENU MOBILE
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
@@ -346,10 +346,30 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.classList.toggle("ativo");
   });
 
-  // Fechar o menu ao clicar em um link
+  // FECHAR O MENU AO CLICAR EM UM LINK
   document.querySelectorAll(".navbar__link").forEach((link) => {
     link.addEventListener("click", () => {
       mobileMenu.classList.remove("ativo");
     });
   });
+});
+
+// ACESSIBILIDADE
+const acessibility = document.querySelector(
+  ".navbar__accessibility-font-size-btn"
+);
+const fontLevel = document.querySelector("#fontSizeLevel");
+
+acessibility.addEventListener("click", () => {
+  if (body.classList.contains("font-medium")) {
+    body.classList.remove("font-medium");
+    body.classList.add("font-large");
+    fontLevel.textContent = "(3/3)";
+  } else if (body.classList.contains("font-large")) {
+    body.classList.remove("font-large");
+    fontLevel.textContent = "(1/3)";
+  } else {
+    body.classList.add("font-medium");
+    fontLevel.textContent = "(2/3)";
+  }
 });

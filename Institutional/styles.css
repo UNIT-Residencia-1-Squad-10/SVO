@@ -281,7 +281,7 @@ body {
   color: var(--text-white);
   width: 25.76vw;
   line-height: 1.2;
-  font-size: 16px;
+  font-size: var(--dezesseis-px);
   font-weight: 350;
 }
 .structure__link {
@@ -296,25 +296,22 @@ body {
   gap: 1rem;
   align-items: center;
 }
+
 .structure__cards {
   display: flex;
   flex-direction: row;
   gap: 3rem;
   position: absolute;
   align-items: center;
-
   overflow-x: scroll;
-
   height: auto;
   width: 100vw;
   top: 15%;
   left: 30%;
   z-index: 2;
-
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
-
   padding-bottom: 1rem;
   padding-left: 0.5rem;
 }
@@ -329,7 +326,6 @@ body {
   flex-direction: column;
   width: 340px;
   height: 310px;
-
   padding: 2rem;
   overflow-x: auto;
   gap: 3.5rem;
@@ -382,8 +378,12 @@ body {
 
 .structure__button {
   cursor: pointer;
+  transition: transform 0.5s ease;
 }
 
+.structure__button:hover {
+  transform: scale(1.1);
+}
 /* Responsividade - Seção Estrutura Administrativa */
 @media (max-width: 1200px) {
   .structure {
@@ -401,7 +401,6 @@ body {
   .structure__text {
     width: 92vw;
     font-weight: 350;
-    font-size: var(--dezesseis-px);
   }
 
   .structure__cards {
