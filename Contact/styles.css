@@ -1,0 +1,129 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: var(--body-bg);
+  color: var(--institutional-text-color);
+}
+
+/* Barra de título da página */
+.main__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1080px;
+  height: 64px;
+  margin: 5rem auto;
+  gap: 10px;
+  border-radius: 5px;
+  background: var(--secundary-color);
+  color: var(--text-white);
+  font-size: var(--vinte-px);
+  font-weight: 700;
+  min-width: 200px;
+}
+
+/* Formulário */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 5rem auto;
+  width: 1034px;
+  height: 524px;
+  border-radius: 12.105px;
+  background: var(--contact-form-bg);
+  box-shadow: 0px 2.793px 3.725px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form__title {
+  color: var(--contact-form-title-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0.5px;
+  margin-bottom: 5rem;
+}
+.form__part {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.form__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 626px;
+}
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.input-wrapper .form__icon {
+  position: absolute;
+  right: 14px;
+  top: 30%;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  color: var(--contact-svg-color);
+}
+
+.input-wrapper input {
+  width: 290px;
+  padding: 0.8rem 3rem;
+  font-size: 14px;
+  border-radius: 13px;
+  border: 2px solid #000;
+  background: var(--contact-form-input-bg);
+}
+
+.input-wrapper input::placeholder {
+  color: var(--contact-form-input-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s;
+}
+
+.input-wrapper input:focus::placeholder {
+  opacity: 0;
+}
+.input-wrapper:focus-within svg {
+  opacity: 0;
+}
+
+.input-text-box input {
+  width: 626px;
+  height: 119px;
+  text-align: center;
+}
+
+.submit {
+  padding: 0.8rem 2rem;
+  border-radius: 13px;
+  border: solid 1px #000;
+  background: #01448a;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
