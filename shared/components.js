@@ -136,11 +136,11 @@ class MeuHeader extends HTMLElement {
           <div class="navbar__theme-toggle mobile-navbar__theme-toggle">
             <input
               type="checkbox"
-              id="navbar__theme-toggle-checkbox"
+              id="navbar__theme-toggle-checkbox2"
               class="navbar__theme-toggle-checkbox"
             />
             <label
-              for="navbar__theme-toggle-checkbox"
+              for="navbar__theme-toggle-checkbox2"
               class="navbar__theme-toggle-label"
             >
               <span class="navbar__theme-toggle-slider">
@@ -298,41 +298,41 @@ class MeuFooter extends HTMLElement {
 }
 customElements.define("svo-footer", MeuFooter);
 
-// Lógica do dark-mode
+// LÓGICA DO DARK-MODE
 const body = document.body;
-const button = document.getElementById("navbar__theme-toggle-checkbox");
-
-// Verifica se já tem preferência salva no localStorage
+const buttons = document.querySelectorAll(".navbar__theme-toggle-checkbox");
 const savedTheme = localStorage.getItem("darkMode");
 
 let isDark = false;
 
 if (savedTheme !== null) {
-  // Usa o tema salvo
+  // USA O TEMA SALVO
   isDark = savedTheme === "true";
 } else {
-  // Detecta preferência do sistema
+  // DETECTA A PREFERÊNCIA DO SISTEMA
   isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
 
-// Aplica o tema conforme detectado
+// APLICAR O TEMA CONFORME DETECTADO
 if (isDark) {
   body.classList.add("dark-mode");
-  button.checked = true;
+  buttons.forEach((btn) => (btn.checked = true));
 } else {
   body.classList.remove("dark-mode");
-  button.checked = false;
+  buttons.forEach((btn) => (btn.checked = false));
 }
 
-// Listener para alternar tema manualmente
-button.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
-  const isDarkMode = body.classList.contains("dark-mode");
-  localStorage.setItem("darkMode", isDarkMode);
-  button.checked = isDarkMode;
+// LISTENER PARA ALTERNAR O TEMA MANUALMENTE
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    const isDarkMode = body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDarkMode);
+    buttons.forEach((b) => (b.checked = isDarkMode));
+  });
 });
 
-// Menu mobile
+// MENU MOBILE
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
@@ -346,10 +346,30 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.classList.toggle("ativo");
   });
 
-  // Fechar o menu ao clicar em um link
+  // FECHAR O MENU AO CLICAR EM UM LINK
   document.querySelectorAll(".navbar__link").forEach((link) => {
     link.addEventListener("click", () => {
       mobileMenu.classList.remove("ativo");
     });
   });
+});
+
+// ACESSIBILIDADE
+const acessibility = document.querySelector(
+  ".navbar__accessibility-font-size-btn"
+);
+const fontLevel = document.querySelector("#fontSizeLevel");
+
+acessibility.addEventListener("click", () => {
+  if (body.classList.contains("font-medium")) {
+    body.classList.remove("font-medium");
+    body.classList.add("font-large");
+    fontLevel.textContent = "(3/3)";
+  } else if (body.classList.contains("font-large")) {
+    body.classList.remove("font-large");
+    fontLevel.textContent = "(1/3)";
+  } else {
+    body.classList.add("font-medium");
+    fontLevel.textContent = "(2/3)";
+  }
 });
