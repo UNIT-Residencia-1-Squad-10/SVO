@@ -56,6 +56,12 @@
   --services--content-btn: rgb(182, 185, 4);
   --services-content-btn-bg: #01448a;
 
+  /* CONTACT STYLES */
+  --contact-form-bg: #f8f9fa;
+  --contact-form-title-color: #002a57;
+  --contact-form-input-bg: #fff;
+  --contact-form-input-color: rgba(0, 0, 0, 0.64);
+  --contact-svg-color: rgba(0, 0, 0, 0.84);
   /* FONT SIZE */
   --dezesseis-px: 1.6rem;
   --dezoito-px: 1.8rem;
@@ -107,6 +113,13 @@ body.dark-mode {
   --services--content-text: #fff;
   --services--content-btn: #000;
   --services-content-btn-bg: #01448a;
+
+  /* CONTACT STYLES */
+  --contact-form-bg: #303030;
+  --contact-form-title-color: #fff;
+  --contact-form-input-bg: #7e7e7e;
+  --contact-form-input-color: #ffffffca;
+  --contact-svg-color: ##ffffffca;
 }
 
 *,
