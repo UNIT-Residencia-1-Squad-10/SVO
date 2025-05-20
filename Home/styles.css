@@ -345,11 +345,6 @@ body {
     height: 250px;
   }
   
-  
-  .servicos {
-    padding: 30px;
-  }
-  
   .agenda table {
     width: 100%;
     border-collapse: collapse;
@@ -377,7 +372,7 @@ body {
   }
 
   select{
-    width: 200px;
+    width: 300px;
     padding: 8px;
     border-radius: 15px;
     background-color: #003366;
