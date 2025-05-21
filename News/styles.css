@@ -1,5 +1,9 @@
 @import url("../shared/styles.css");
 
+body {
+  background: var(--body-bg);
+}
+
 .news {
   display: flex;
   padding: 50px 160px;
@@ -12,6 +16,8 @@
   flex-direction: column;
   padding: 8px;
   gap: 16px;
+  position: relative; 
+  padding-bottom: 80px; 
 }
 
 .news__title--left,
@@ -61,19 +67,23 @@
 
 /* Paginação */
 .pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--body-bg);
+  padding: 16px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 24px;
   gap: 10px;
 }
 
 .pagination button {
   padding: 6px 12px;
   font-size: 1rem;
-  border: 1px solid var(--navbar-background-color);
-  background-color: white;
-  color: var(--navbar-background-color);
+  border: none;
+  background-color: var(--news-pagination-bt);
+  color: var(--news-pagitation-text);
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
@@ -85,14 +95,14 @@
 }
 
 .pagination button.active {
-  background-color: var(--navbar-background-color);
+  background-color: var(--news-pagination-bt-active);
   color: white;
   font-weight: bold;
 }
 
 .faq-container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
 }
@@ -102,6 +112,7 @@
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem 0;
+  color: var(--faq-title);
 }
 .faq-item {
   margin-bottom: 10px;

@@ -62,6 +62,13 @@
   --contact-form-input-bg: #fff;
   --contact-form-input-color: rgba(0, 0, 0, 0.64);
   --contact-svg-color: rgba(0, 0, 0, 0.84);
+
+  /* NEWS STYLES */
+  --news-pagination-bt: transparent; 
+  --news-pagination-bt-active: #01448a;
+  --news-pagitation-text: #000000;
+  --faq-title: #000000;
+
   /* FONT SIZE */
   --dezesseis-px: 1.6rem;
   --dezoito-px: 1.8rem;
@@ -122,6 +129,12 @@ body.dark-mode {
   --contact-form-input-bg: #7e7e7e;
   --contact-form-input-color: #ffffffca;
   --contact-svg-color: ##ffffffca;
+
+  /* NEWS STYLES */
+  --news-pagination-bt: transparent; 
+  --news-pagination-bt-active: #01448a;
+  --news-pagitation-text: #ffffff;
+  --faq-title: #fff;
 }
 
 *,
