@@ -70,10 +70,12 @@
 }
 body.font-medium {
   --dezesseis-px: 1.8rem;
+  --dezoito-px: 2rem;
 }
 
 body.font-large {
   --dezesseis-px: 2rem;
+  --dezoito-px: 2.2rem;
 }
 
 /* Modo Escuro */
