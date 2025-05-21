@@ -15,6 +15,10 @@ body {
 }
 
 /* Barra de título da página */
+.main {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 .main__title {
   display: flex;
   justify-content: center;
@@ -40,7 +44,7 @@ body {
   justify-content: center;
   gap: 2rem;
   margin: 5rem auto;
-  width: 1034px;
+  max-width: 1080px;
   height: 524px;
   border-radius: 12.105px;
   background: var(--contact-form-bg);
@@ -51,10 +55,10 @@ body {
   color: var(--contact-form-title-color);
   text-align: center;
   font-family: Roboto;
-  font-size: 32px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 64px;
+  line-height: 36px;
   letter-spacing: 0.5px;
   margin-bottom: 5rem;
 }
@@ -84,28 +88,28 @@ body {
   color: var(--contact-svg-color);
 }
 
-.input-wrapper input {
+.input-wrapper input,
+.input-text-box input {
   width: 290px;
   padding: 0.8rem 3rem;
-  font-size: 14px;
   border-radius: 13px;
   border: 2px solid #000;
   background: var(--contact-form-input-bg);
 }
 
-.input-wrapper input::placeholder {
+.input-wrapper input::placeholder,
+.input-text-box input::placeholder {
   color: var(--contact-form-input-color);
-  font-size: 20px;
+  font-size: var(--dezoito-px);
   font-weight: 700;
   line-height: 64px;
   letter-spacing: 0.5px;
   transition: opacity 0.2s;
 }
 
-.input-wrapper input:focus::placeholder {
-  opacity: 0;
-}
-.input-wrapper:focus-within svg {
+.input-wrapper input:focus::placeholder,
+.input-wrapper:focus-within svg,
+.input-text-box input:focus::placeholder {
   opacity: 0;
 }
 
@@ -122,8 +126,56 @@ body {
   background: #01448a;
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: var(--dezoito-px);
   font-style: normal;
   font-weight: 900;
   letter-spacing: 0.5px;
+}
+
+@media (max-width: 764px) {
+  .input-wrapper input::placeholder,
+  .input-text-box input::placeholder {
+    font-size: var(--dezesseis-px);
+  }
+  .form__buttons {
+    max-width: 530px;
+  }
+  .input-text-box input {
+    max-width: 530px;
+  }
+  .input-wrapper input {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 644px) {
+  .form__buttons {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 500px;
+  }
+  .form {
+    height: 100%;
+    padding: 5rem 2rem;
+  }
+  .input-wrapper input {
+    width: 100%;
+    max-width: 500px;
+  }
+  .input-text-box {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+  }
+  .main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 333px) {
+  .main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
