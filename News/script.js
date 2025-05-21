@@ -126,7 +126,7 @@ export const CardSize = {
         </div>
       `;
     }
-  
+    card.onclick = () => window.location.href = `new_details.html?id=${item.id}`;
     return card;
   }
   
