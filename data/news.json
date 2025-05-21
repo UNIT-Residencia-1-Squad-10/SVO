@@ -1,137 +1,182 @@
 [
-    {
-        "id": 1,
-        "title": "Nova Ferramenta de Gestão Administrativa",
-        "content": "Uma nova ferramenta de gestão foi implementada para otimizar os processos administrativos e melhorar a eficiência das operações.",
-        "author": "Equipe de TI",
-        "date": "2025-04-25T10:00:00Z",
-        "image": "assets/highlight.png",
-        "type": "highlight"
-    },
-    {
-        "id": 2,
-        "title": "Treinamento sobre Procedimentos Internos",
-        "content": "Um treinamento será realizado para reforçar os procedimentos internos e garantir a conformidade com as políticas administrativas.",
-        "author": "Recursos Humanos",
-        "date": "2025-04-24T14:00:00Z",
-        "image": "assets/SubNew_ImageContainer.png",
-        "type": "main"
-    },
-    {
-        "id": 3,
-        "title": "Atualização no Manual de Políticas Administrativas",
-        "content": "O manual de políticas administrativas foi atualizado com novas diretrizes para melhorar a governança corporativa.",
-        "author": "Departamento Jurídico",
-        "date": "2025-04-23T09:00:00Z",
-        "image": "assets/SubNew_ImageContainer2.png",
-        "type": "main"
-    },
-    {
-        "id": 4,
-        "title": "Relatório de Desempenho Mensal Disponível",
-        "content": "O relatório de desempenho administrativo do último mês já está disponível para consulta no portal interno.",
-        "author": "Departamento de Estatísticas",
-        "date": "2025-04-22T11:00:00Z",
-        "image": "assets/SubNew_ImageContainer3.png",
-        "type": "main"
-    },
-    {
-        "id": 5,
-        "title": "Nova Política de Segurança de Dados",
-        "content": "Uma nova política de segurança de dados foi implementada para proteger informações sensíveis e garantir a conformidade com a LGPD.",
-        "author": "Departamento Jurídico",
-        "date": "2025-04-21T08:00:00Z",
-        "image": "assets/highlight.png",
-        "type": "main"
-    },
-    {
-        "id": 6,
-        "title": "Manutenção Programada no Sistema Administrativo",
-        "content": "O sistema administrativo estará fora do ar para manutenção programada no próximo sábado, das 22h às 4h.",
-        "author": "Equipe de TI",
-        "date": "2025-04-20T16:00:00Z",
-        "image": "assets/SubNew_ImageContainer.png",
-        "type": "main"
-    },
-    {
-        "id": 7,
-        "title": "Reunião de Planejamento Estratégico",
-        "content": "Uma reunião de planejamento estratégico será realizada para definir as metas administrativas do próximo trimestre.",
-        "author": "Coordenação Geral",
-        "date": "2025-04-19T09:00:00Z",
-        "image": "assets/SubNew_ImageContainer2.png",
-        "type": "main"
-    },
-    {
-        "id": 8,
-        "title": "Nova Ferramenta de Controle de Estoque",
-        "content": "Uma nova ferramenta foi implementada para melhorar o controle de estoque e reduzir desperdícios.",
-        "author": "Equipe de Logística",
-        "date": "2025-04-18T10:00:00Z",
-        "image": "assets/SubNew_ImageContainer3.png",
-        "type": "main"
-    },
-    {
-        "id": 9,
-        "title": "Atualização no Sistema de Pagamentos",
-        "content": "O sistema de pagamentos foi atualizado para incluir novas funcionalidades e melhorar a experiência do usuário.",
-        "author": "Equipe de TI",
-        "date": "2025-04-17T15:00:00Z",
-        "image": "assets/SubNew_ImageContainer4.png",
-        "type": "main"
-    },
-    {
-        "id": 10,
-        "title": "Aviso de Feriado Administrativo",
-        "content": "Informamos que o próximo feriado administrativo será na segunda-feira, dia 28 de abril.",
-        "author": "Recursos Humanos",
-        "date": "2025-04-16T08:00:00Z",
-        "image": "assets/SubNew_ImageContainer.png",
-        "type": "last"
-    },
-    {
-        "id": 11,
-        "title": "Nova Política de Home Office",
-        "content": "Uma nova política de home office foi implementada para flexibilizar o trabalho remoto dos colaboradores.",
-        "author": "Recursos Humanos",
-        "date": "2025-04-15T09:00:00Z",
-        "image": "assets/SubNew_ImageContainer.png",
-        "type": "last"
-    },
-    {
-        "id": 12,
-        "title": "Campanha de Conscientização Administrativa",
-        "content": "Uma campanha foi lançada para conscientizar os colaboradores sobre a importância da organização administrativa.",
-        "author": "Comunicação Interna",
-        "date": "2025-04-14T10:00:00Z",
-        "image": "assets/SubNew_ImageContainer.png",
-        "type": "last"
-    },
-    {
-        "id": 13,
-        "title": "Nova Ferramenta de Controle de Ponto",
-        "content": "Uma nova ferramenta foi implementada para facilitar o controle de ponto dos colaboradores.",
-        "author": "Recursos Humanos",
-        "date": "2025-04-13T11:00:00Z",
-        "image": "assets/svoEnter.jpg",
-        "type": "last"
-    },
-    {
-        "id": 14,
-        "title": "Atualização no Sistema de Relatórios",
-        "content": "O sistema de relatórios foi atualizado para incluir novos gráficos e análises detalhadas.",
-        "author": "Departamento de Estatísticas",
-        "date": "2025-04-12T14:00:00Z",
-        "image": "assets/svoLab.jpg",
-        "type": "last"
-    },
-    {
-        "id": 15,
-        "title": "Nova Política de Sustentabilidade",
-        "content": "Uma nova política de sustentabilidade foi implementada para reduzir o impacto ambiental das operações administrativas.",
-        "author": "Departamento de Sustentabilidade",
-        "date": "2025-04-11T13:00:00Z",
-        "image": "assets/svoPeople.jpg",
-        "type": "last"
-    }
+  {
+    "id": 1,
+    "title": "Nova Ferramenta de Gestão Administrativa",
+    "content": "Uma nova ferramenta de gestão foi implementada para otimizar os processos administrativos e melhorar a eficiência das operações.",
+    "author": "Equipe de TI",
+    "date": "2025-04-25T10:00:00Z",
+    "image": "assets/highlight.png",
+    "type": "highlight"
+  },
+  {
+    "id": 2,
+    "title": "Treinamento sobre Procedimentos Internos",
+    "content": "Um treinamento será realizado para reforçar os procedimentos internos e garantir a conformidade com as políticas administrativas.",
+    "author": "Recursos Humanos",
+    "date": "2025-04-24T14:00:00Z",
+    "image": "assets/SubNew_ImageContainer.png",
+    "type": "main"
+  },
+  {
+    "id": 3,
+    "title": "Atualização no Manual de Políticas Administrativas",
+    "content": "O manual de políticas administrativas foi atualizado com novas diretrizes para melhorar a governança corporativa.",
+    "author": "Departamento Jurídico",
+    "date": "2025-04-23T09:00:00Z",
+    "image": "assets/SubNew_ImageContainer2.png",
+    "type": "main"
+  },
+  {
+    "id": 4,
+    "title": "Relatório de Desempenho Mensal Disponível",
+    "content": "O relatório de desempenho administrativo do último mês já está disponível para consulta no portal interno.",
+    "author": "Departamento de Estatísticas",
+    "date": "2025-04-22T11:00:00Z",
+    "image": "assets/SubNew_ImageContainer3.png",
+    "type": "main"
+  },
+  {
+    "id": 5,
+    "title": "Nova Política de Segurança de Dados",
+    "content": "Uma nova política de segurança de dados foi implementada para proteger informações sensíveis e garantir a conformidade com a LGPD.",
+    "author": "Departamento Jurídico",
+    "date": "2025-04-21T08:00:00Z",
+    "image": "assets/highlight.png",
+    "type": "main"
+  },
+  {
+    "id": 6,
+    "title": "Manutenção Programada no Sistema Administrativo",
+    "content": "O sistema administrativo estará fora do ar para manutenção programada no próximo sábado, das 22h às 4h.",
+    "author": "Equipe de TI",
+    "date": "2025-04-20T16:00:00Z",
+    "image": "assets/SubNew_ImageContainer.png",
+    "type": "main"
+  },
+  {
+    "id": 7,
+    "title": "Reunião de Planejamento Estratégico",
+    "content": "Uma reunião de planejamento estratégico será realizada para definir as metas administrativas do próximo trimestre.",
+    "author": "Coordenação Geral",
+    "date": "2025-04-19T09:00:00Z",
+    "image": "assets/SubNew_ImageContainer2.png",
+    "type": "main"
+  },
+  {
+    "id": 8,
+    "title": "Nova Ferramenta de Controle de Estoque",
+    "content": "Uma nova ferramenta foi implementada para melhorar o controle de estoque e reduzir desperdícios.",
+    "author": "Equipe de Logística",
+    "date": "2025-04-18T10:00:00Z",
+    "image": "assets/SubNew_ImageContainer3.png",
+    "type": "main"
+  },
+  {
+    "id": 9,
+    "title": "Atualização no Sistema de Pagamentos",
+    "content": "O sistema de pagamentos foi atualizado para incluir novas funcionalidades e melhorar a experiência do usuário.",
+    "author": "Equipe de TI",
+    "date": "2025-04-17T15:00:00Z",
+    "image": "assets/SubNew_ImageContainer4.png",
+    "type": "main"
+  },
+  {
+    "id": 10,
+    "title": "Aviso de Feriado Administrativo",
+    "content": "Informamos que o próximo feriado administrativo será na segunda-feira, dia 28 de abril.",
+    "author": "Recursos Humanos",
+    "date": "2025-04-16T08:00:00Z",
+    "image": "assets/SubNew_ImageContainer.png",
+    "type": "main"
+  },
+  {
+    "id": 11,
+    "title": "Nova Política de Home Office",
+    "content": "Uma nova política de home office foi implementada para flexibilizar o trabalho remoto dos colaboradores.",
+    "author": "Recursos Humanos",
+    "date": "2025-04-15T09:00:00Z",
+    "image": "assets/svoEnter.jpg",
+    "type": "main"
+  },
+  {
+    "id": 12,
+    "title": "Campanha de Conscientização Administrativa",
+    "content": "Uma campanha foi lançada para conscientizar os colaboradores sobre a importância da organização administrativa.",
+    "author": "Comunicação Interna",
+    "date": "2025-04-14T10:00:00Z",
+    "image": "assets/svoLab.jpg",
+    "type": "main"
+  },
+  {
+    "id": 13,
+    "title": "Nova Ferramenta de Controle de Ponto",
+    "content": "Uma nova ferramenta foi implementada para facilitar o controle de ponto dos colaboradores.",
+    "author": "Recursos Humanos",
+    "date": "2025-04-13T11:00:00Z",
+    "image": "assets/svoEnter.jpg",
+    "type": "main"
+  },
+  {
+    "id": 14,
+    "title": "Atualização no Sistema de Relatórios",
+    "content": "O sistema de relatórios foi atualizado para incluir novos gráficos e análises detalhadas.",
+    "author": "Departamento de Estatísticas",
+    "date": "2025-04-12T14:00:00Z",
+    "image": "assets/svoLab.jpg",
+    "type": "main"
+  },
+  {
+    "id": 15,
+    "title": "Nova Política de Sustentabilidade",
+    "content": "Uma nova política de sustentabilidade foi implementada para reduzir o impacto ambiental das operações administrativas.",
+    "author": "Departamento de Sustentabilidade",
+    "date": "2025-04-11T13:00:00Z",
+    "image": "assets/svoPeople.jpg",
+    "type": "main"
+  },
+  {
+    "id": 16,
+    "title": "Sistema de Atendimento Modernizado",
+    "content": "O sistema de atendimento foi modernizado para agilizar o suporte aos colaboradores e setores administrativos.",
+    "author": "Equipe de TI",
+    "date": "2025-04-10T09:00:00Z",
+    "image": "assets/SubNew_ImageContainer2.png",
+    "type": "last"
+  },
+  {
+    "id": 17,
+    "title": "Campanha de Reciclagem Interna",
+    "content": "Uma nova campanha de reciclagem foi lançada para incentivar práticas sustentáveis dentro da organização.",
+    "author": "Departamento de Sustentabilidade",
+    "date": "2025-04-09T14:00:00Z",
+    "image": "assets/svoPeople.jpg",
+    "type": "last"
+  },
+  {
+    "id": 18,
+    "title": "Integração de Novos Colaboradores",
+    "content": "Foi realizado um evento de integração para dar boas-vindas aos novos colaboradores do setor administrativo.",
+    "author": "Recursos Humanos",
+    "date": "2025-04-08T11:00:00Z",
+    "image": "assets/svoEnter.jpg",
+    "type": "last"
+  },
+  {
+    "id": 19,
+    "title": "Atualização de Equipamentos de TI",
+    "content": "Novos equipamentos de TI foram adquiridos para melhorar a infraestrutura tecnológica do setor.",
+    "author": "Equipe de TI",
+    "date": "2025-04-07T16:00:00Z",
+    "image": "assets/svoLab.jpg",
+    "type": "last"
+  },
+  {
+    "id": 20,
+    "title": "Semana da Saúde no Trabalho",
+    "content": "Durante a Semana da Saúde, diversas atividades foram promovidas para o bem-estar dos colaboradores.",
+    "author": "Comunicação Interna",
+    "date": "2025-04-06T10:00:00Z",
+    "image": "assets/SubNew_ImageContainer.png",
+    "type": "last"
+  }
 ]
