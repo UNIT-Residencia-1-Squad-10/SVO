@@ -72,11 +72,22 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    align-items: start;
     gap: 6rem;
     margin-top: 3rem;
     margin-left: 7.5rem;
     margin-right: 7.5rem;
   }
+
+  @media (max-width: 768px) {
+    .professionals__container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+
   
 .card__professionals {
     width: 50%;
@@ -85,6 +96,9 @@ body {
     padding-bottom: 10px;
     font-family: Arial, sans-serif;    
     color: var(--services--content-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
 .card__professionals__photo {
@@ -112,6 +126,11 @@ body {
     border: none;
     font-size: 18px;
     cursor: pointer;
+    color: var(--services--content-text);
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    gap: 5px;
   }
   
 .card__professionals__details {
