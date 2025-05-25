@@ -20,9 +20,9 @@ html {
 }
 
 
-body {
-  background: var(--white2);
-  color: var(--dark);
+body {  
+  background-color: var(--body-bg);
+  color: var(--background-color);
 }
 .main_title {
     display: flex;
@@ -52,7 +52,7 @@ body {
     gap: 2.5rem;
     max-width: 810px;
     padding: 6.3rem 5rem;
-    background-color: var(--white);
+    background-color: var(--sevices-content-bg);
     border-radius: 1.3rem;
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
   }
@@ -63,6 +63,7 @@ body {
   }
   
   .summary__p {
+    color: var(--services--content-text);
     font-size: 1.6rem;
     font-weight: 300;
   }
@@ -82,7 +83,8 @@ body {
     text-align: center;
     flex-direction: column;
     padding-bottom: 10px;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;    
+    color: var(--services--content-text);
   }
   
 .card__professionals__photo {
@@ -116,6 +118,8 @@ body {
     display: none;
     margin-top: 10px;
     font-size: 14px;
+    color: var(--services--content-text);
+    background-color: var(--sevices-content-bg);
   }
 .yellow-line {
     height: 4px;
