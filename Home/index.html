@@ -1,105 +1,345 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>HOME</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
 
-		<!-- Header e Footer (não alterar) -->
-		 <link rel="stylesheet" href="/shared/reset.css">
-		<link rel="stylesheet" href="/shared/styles.css" />
-		<link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Header e Footer (não alterar) -->
+    <link rel="stylesheet" href="/shared/reset.css" />
+    <link rel="stylesheet" href="/shared/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
 
-		<script src="/shared/components.js" defer></script>
-	</head>
-	<body>
-		<svo-header></svo-header>
+    <script src="/shared/components.js" defer></script>
+  </head>
+  <body>
+    <svo-header></svo-header>
 
-		<section class="hero" >
-			<div class="hero-content">
-			<h1>      Cuidado e respeito em cada momento      </h1>
-			<p>O <h>SVO</h>  conta com uma equipe altamente capacitada para realizar a verificação do óbito de forma ágil e responsável.</p>
-			<br>   <br>   <br>
-			<button class="btn-yellow">Saiba mais</button>
-			</div>
-		</section>
+    <section class="hero">
+        <div class="hero-content">
+          <div class="hero-content-text">
+            <h1 class="hero__title">
+              Cuidado e respeito <br />
+              em cada momento
+            </h1>
+            <p class="hero__p">
+              O <span class="hero__span">SVO</span> conta com uma equipe
+              altamente capacitada para realizar a verificação do óbito de forma
+              ágil e responsável.
+            </p>
+          </div>
+          <a class="hero__button" href="/Institutional/index.html" data-link>Saiba mais</a>
+        </div>
+    </section>
+    <!-- Metricas -->
+    <section class="metrics">
+      <div class="metric-item metric-item--line">
+        <p class="metric__number">0.0+</p>
+        <p class="metric__text">Atendimentos Prestados</p>
+      </div>
+	  <div class="metric__line"></div>
+      <div class="metric-item metric-item--line">
+        <p class="metric__number">0.0+</p>
+        <p class="metric__text">Diagnósticos Realizados</p>
+      </div>
+	  <div class="metric__line"></div>
+      <div class="metric-item metric-item--line">
+        <p class="metric__number">0.0+</p>
+        <p class="metric__text">Investigações Epidemiológicas</p>
+      </div>
+	  <div class="metric__line"></div>
+      <div class="metric-item">
+        <p class="metric__number">0.0+</p>
+        <p class="metric__text">Resultados Emitidos</p>
+      </div>
+    </section>
 
-		<section class="metrics" style="margin-bottom: 0px;">
-			<div class="metric-item"><p class="numero">0.0+</p> <span>Atendimentos Prestados</span></div>
-			<div class="metric-item"><p class="numero">0.0+</p><span>Diagnósticos Realizados</span></div>
-			<div class="metric-item"><p class="numero">0.0+</p><span>Investigações Epidemiológicas</span></div>
-			<div class="metric-item"><p class="numero">0.0+</p><span>Resultados Emitidos</span></div>
-		</section>
+    <!-- Solicitação -->
+    <section class="request">
+      <div class="request__container">
+        <img class="request__img" src="assets/protocolo 1.png" alt="" />
+        <div class="request__part">
+          <h3 class="request__text">
+            Acompanhe sua solicitacao <span class="request__span">aqui</span>
+          </h3>
+          <input
+            type="text"
+            name="protocolo"
+            id="protocolo"
+            placeholder="Número do protocolo"
+          />
+          <button class="request__button">Consultar</button>
+        </div>
+      </div>
+    </section>
 
-		<section class="solicitacao" >
-			<div class="solicitar" >
-				<img src="images/hero4.png" alt="Imagem Laptop" style="width: 700px;">
-			</div>
-			<div class="form-solicitacao" style="height: 281px; width: 1300px; padding-left: 0px; padding-top: 0px; background-color: white;" >
-				<h2><b>Acompanhe sua solicitação</b><br><div style="color: rgb(171, 171, 46);">aqui</div></h2>
-				<input type="text" splaceholder="Nome do Protocolo" style="margin-left: 8px;"><br>
-				<button class="btn-yellow">Consultar</button>
-			</div>
-		</section>
+    <!-- Noticias -->
+    <section class="news">
+      <div class="news__part news__part-1">
+        <h2 class="news__title">Últimas Notícias</h2>
+        <p class="news__text">
+          Acompanhe aqui as notícias mais recentes do SVO.
+        </p>
+        <a href="/News/index.html" data-link" class="news__button">Todas as notícias</a>
+      </div>
+      <div class="news__itens">
+        <div class="news__item">
+          <img class="news__item-img" src="assets/Imagem 2.png" alt="" />
+          <div class="news__item-text">
+            <h3 class="news__item-title">
+              Nova Ferramenta de Gestão Administrativa
+            </h3>
+            <p class="news__item-description">
+              Uma nova ferramenta de gestão foi implementada para otimizar os
+              processos administrativos e melhorar a eficiência das operações.
+            </p>
+            <div class="news__item-bottom">
+              <a class="news__item-link" href="#">Saiba Mais</a>
+              <p class="notice__item-date">03/01/2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="news__item">
+          <img class="news__item-img" src="assets/Imagem 2.png" alt="" />
+          <div class="news__item-text">
+            <h3 class="news__item-title">
+              Nova Ferramenta de Gestão Administrativa
+            </h3>
+            <p class="news__item-description">
+              Uma nova ferramenta de gestão foi implementada para otimizar os
+              processos administrativos e melhorar a eficiência das operações.
+            </p>
+            <div class="news__item-bottom">
+              <a class="news__item-link" href="#">Saiba Mais</a>
+              <p class="notice__item-date">03/01/2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="news__item">
+          <img class="news__item-img" src="assets/Imagem 2.png" alt="" />
+          <div class="news__item-text">
+            <h3 class="news__item-title">
+              Nova Ferramenta de Gestão Administrativa
+            </h3>
+            <p class="news__item-description">
+              Uma nova ferramenta de gestão foi implementada para otimizar os
+              processos administrativos e melhorar a eficiência das operações.
+            </p>
+            <div class="news__item-bottom">
+              <a class="news__item-link" href="#">Saiba Mais</a>
+              <p class="notice__item-date">03/01/2025</p>
+            </div>
+          </div>
+        </div>
+        <!-- Repita o bloco acima conforme necessário -->
+      </div>      
+	  <div class="news__part news__part-2">
+        
+        <p class="news__text">
+          Acompanhe aqui as notícias mais recentes do SVO.
+        </p>
+        <a href="/News/index.html" data-link" class="news__button">Todas as notícias</a>
+      </div>
+    </section>
 
-		<section class="noticias" style="padding-left: 5px; " >
-			<h2 style="font-size: large; padding-top: 50px; padding-left: 30px;">Últimas Notícias</h2>
-			<div class="cards">
-			<div class="card">
-				Acompanhe aqui as notícias mais recentes da SVO
-				<button class="btn-trans">Todas as Notícias</button>
-			</div>
-			<div class="card1">
-				Acompanhe aqui as notícias mais recentes da SVO
-				<button class="btn-trans">Todas as Notícias</button>
-			</div>
-			<div class="card1">
-				Acompanhe aqui as notícias mais recentes da SVO
-				<button class="btn-trans">Todas as Notícias</button>
-			</div>
-			<div class="card1">
-				Acompanhe aqui as notícias mais recentes da SVO
-				<button class="btn-trans">Todas as Notícias</button>
-			</div>
-			<!-- Repita o bloco acima conforme necessário -->
-			</div>
-		</section>
+    <!-- Serviços -->
+    <section class="services">
+      <div class="services__content">
+        <h2 class="service__title">Serviços realizados pelo SVO</h2>
+        <div class="services__item" id="item1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+          >
+            <path
+              d="M17.2159 19.8359C15.7484 20.8859 13.948 21.5 12.0023 21.5C10.0567 21.5 8.2563 20.8859 6.78883 19.8359L9.50811 17.1172C10.2489 17.5203 11.1022 17.75 12.007 17.75C12.9119 17.75 13.7605 17.5203 14.506 17.1172L17.2252 19.8359H17.2159ZM21.4683 19.8734C23.0529 17.8391 24 15.2797 24 12.5C24 9.72031 23.0529 7.16094 21.4683 5.12656C21.8902 4.54062 21.8386 3.71563 21.3088 3.19063C20.7791 2.66563 19.9633 2.60938 19.3772 3.03125C17.3424 1.44688 14.7826 0.5 12.0023 0.5C9.22211 0.5 6.66224 1.44688 4.62747 3.03125C4.04141 2.60938 3.21625 2.66094 2.69115 3.19063C2.16605 3.72031 2.10979 4.54062 2.53174 5.12656C0.94706 7.16094 0 9.72031 0 12.5C0 15.2797 0.94706 17.8391 2.53174 19.8734C2.10979 20.4594 2.16136 21.2844 2.69115 21.8094C3.22094 22.3344 4.04141 22.3906 4.62747 21.9688C6.66224 23.5531 9.22211 24.5 12.0023 24.5C14.7826 24.5 17.3424 23.5531 19.3772 21.9688C19.9633 22.3906 20.7884 22.3391 21.3135 21.8094C21.8386 21.2797 21.8949 20.4594 21.4729 19.8734H21.4683ZM19.335 17.7125L16.6157 14.9938C17.0189 14.2531 17.2487 13.4 17.2487 12.4953C17.2487 11.5906 17.0189 10.7422 16.6157 9.99688L19.335 7.27813C20.3899 8.75469 21.0041 10.5547 21.0041 12.5C21.0041 14.4453 20.3899 16.2453 19.3397 17.7125H19.335ZM17.2159 5.16406L14.4966 7.88281C13.7558 7.47969 12.9025 7.25 11.9977 7.25C11.0928 7.25 10.2442 7.47969 9.49873 7.88281L6.77945 5.16406C8.2563 4.11406 10.0567 3.5 12.0023 3.5C13.948 3.5 15.7484 4.11406 17.2159 5.16406ZM7.38425 14.9984L4.66497 17.7172C3.61477 16.2453 3.00059 14.4453 3.00059 12.5C3.00059 10.5547 3.61477 8.75469 4.66497 7.2875L7.38425 10.0063C6.98105 10.7469 6.75132 11.6 6.75132 12.5047C6.75132 13.4094 6.98105 14.2578 7.38425 15.0031V14.9984ZM9.7519 12.5C9.7519 11.9033 9.989 11.331 10.411 10.909C10.8331 10.4871 11.4055 10.25 12.0023 10.25C12.5992 10.25 13.1716 10.4871 13.5936 10.909C14.0157 11.331 14.2528 11.9033 14.2528 12.5C14.2528 13.0967 14.0157 13.669 13.5936 14.091C13.1716 14.5129 12.5992 14.75 12.0023 14.75C11.4055 14.75 10.8331 14.5129 10.411 14.091C9.989 13.669 9.7519 13.0967 9.7519 12.5Z"
+              fill="#F8F8F8"
+            />
+          </svg>
+          <h3 class="services__item-title">Recolhimento/Guarda</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="13"
+            viewBox="0 0 24 13"
+            fill="none"
+          >
+            <path
+              d="M10.588 11.9979C11.369 12.6674 12.6372 12.6674 13.4182 11.9979L23.4143 3.42836C24.1952 2.75887 24.1952 1.67161 23.4143 1.00212C22.6333 0.332627 21.3651 0.332627 20.5841 1.00212L12 8.36119L3.41585 1.00748C2.63491 0.337982 1.36665 0.337982 0.585709 1.00748C-0.195236 1.67697 -0.195236 2.76423 0.585709 3.43372L10.5818 12.0032L10.588 11.9979Z"
+              fill="#F8F8F8"
+            />
+          </svg>
 
-		<section class="servicos" style="width: 900px; display: flex; background-color:rgb(239, 251, 251) ;
-		border-radius: 4%;">
-			<div style="width: 400px; padding-left: 60px;">
-				<h2 style="font-size: large;">Serviços realizados pelo SVO</h2>
-				<br>
-				<br>
-				<ul style="padding-left: 15px;">
-				<li>
-					<select >
-              			<option value="" ><img src="assets/sel1.png">Guarda</option>
-           			 </select>
-				</li>
-				<br>
-				<li>					
-					<select>
-              			<option value=""><img src="assets/sel2.png">Investigação Epidemiológica</option>
-           			 </select>
-				</li>
-				<br>
-				<li>
-					<select>
-              			<option value=""><img src="assets/sel3.png">Declaração de Óbito</option>
-           			 </select>
-				</li>
-				</ul>
-			</div>
-			<div>
-				<img src="assets/srSVO.png" style="width: 500px; padding-left: 50px;">
-			</div>
-		</section>
-		<section style="padding-top: 30px; height: 700px; display: flex;">
-			<img src="assets/horFuncion.png" style="height: 400px; padding-left: 40px; padding: 20px;">
-			<img src="assets/agenda.png" style="height: 500px; width: 800px; padding-left: 60px">
-		</section>
+        </div>
+		<div class="services__answer" id="item1-answer">
+			Serviço de recolhimento e guarda de corpos para exames no âmbito do SVO.
+		</div>
+        <div class="services__item" id="item2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+          >
+            <path
+              d="M19.501 10.2486C19.501 12.3998 18.8025 14.387 17.6259 15.9993L23.5605 21.9375C24.1465 22.5233 24.1465 23.4748 23.5605 24.0606C22.9746 24.6465 22.0229 24.6465 21.437 24.0606L15.5023 18.1224C13.8897 19.3035 11.9021 19.9971 9.75048 19.9971C4.36428 19.9971 0 15.6337 0 10.2486C0 4.86342 4.36428 0.5 9.75048 0.5C15.1367 0.5 19.501 4.86342 19.501 10.2486ZM9.75048 16.9976C10.6369 16.9976 11.5147 16.823 12.3337 16.4838C13.1527 16.1447 13.8969 15.6475 14.5237 15.0208C15.1505 14.3941 15.6477 13.6501 15.987 12.8313C16.3262 12.0125 16.5008 11.1349 16.5008 10.2486C16.5008 9.36228 16.3262 8.48466 15.987 7.66584C15.6477 6.84701 15.1505 6.103 14.5237 5.4763C13.8969 4.8496 13.1527 4.35247 12.3337 4.0133C11.5147 3.67413 10.6369 3.49956 9.75048 3.49956C8.86401 3.49956 7.98622 3.67413 7.16724 4.0133C6.34825 4.35247 5.6041 4.8496 4.97727 5.4763C4.35045 6.103 3.85322 6.84701 3.51398 7.66584C3.17475 8.48466 3.00015 9.36228 3.00015 10.2486C3.00015 11.1349 3.17475 12.0125 3.51398 12.8313C3.85322 13.6501 4.35045 14.3941 4.97727 15.0208C5.6041 15.6475 6.34825 16.1447 7.16724 16.4838C7.98622 16.823 8.86401 16.9976 9.75048 16.9976Z"
+              fill="#F8F8F8"
+            />
+          </svg>
+          <h3 class="services__item-title">Investigação Epidemiológica</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="13"
+            viewBox="0 0 24 13"
+            fill="none"
+          >
+            <path
+              d="M10.588 11.9979C11.369 12.6674 12.6372 12.6674 13.4182 11.9979L23.4143 3.42836C24.1952 2.75887 24.1952 1.67161 23.4143 1.00212C22.6333 0.332627 21.3651 0.332627 20.5841 1.00212L12 8.36119L3.41585 1.00748C2.63491 0.337982 1.36665 0.337982 0.585709 1.00748C-0.195236 1.67697 -0.195236 2.76423 0.585709 3.43372L10.5818 12.0032L10.588 11.9979Z"
+              fill="#F8F8F8"
+            />
+          </svg>
+        </div>
+		<div class="services__answer" id="item2-answer" >
+   				Serviço de recolhimento e guarda de corpos para exames no âmbito do SVO.
+  		</div>
+        <div class="services__item" id="item3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+          >
+            <path
+              d="M4 0.5C1.79375 0.5 0 1.84531 0 3.5V21.5C0 23.1547 1.79375 24.5 4 24.5H20C22.2062 24.5 24 23.1547 24 21.5V8H16C14.8938 8 14 7.32969 14 6.5V0.5H4ZM16 0.5V6.5H24L16 0.5ZM10 11.75C10 11.3375 10.45 11 11 11H13C13.55 11 14 11.3375 14 11.75V14H17C17.55 14 18 14.3375 18 14.75V16.25C18 16.6625 17.55 17 17 17H14V19.25C14 19.6625 13.55 20 13 20H11C10.45 20 10 19.6625 10 19.25V17H7C6.45 17 6 16.6625 6 16.25V14.75C6 14.3375 6.45 14 7 14H10V11.75Z"
+              fill="#F8F8F8"
+            />
+          </svg>
+          <h3 class="services__item-title">Declaração de Óbito</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="13"
+            viewBox="0 0 24 13"
+            fill="none"
+          >
+            <path
+              d="M10.588 11.9979C11.369 12.6674 12.6372 12.6674 13.4182 11.9979L23.4143 3.42836C24.1952 2.75887 24.1952 1.67161 23.4143 1.00212C22.6333 0.332627 21.3651 0.332627 20.5841 1.00212L12 8.36119L3.41585 1.00748C2.63491 0.337982 1.36665 0.337982 0.585709 1.00748C-0.195236 1.67697 -0.195236 2.76423 0.585709 3.43372L10.5818 12.0032L10.588 11.9979Z"
+              fill="#F8F8F8"
+            />
+          </svg>
+        </div>
+			<div class="services__answer" id="item3-answer">
+   				Serviço de recolhimento e guarda de corpos para exames no âmbito do SVO.
+  			</div>
+      </div>
+      <img class="services__img" src="assets/services.png" />
+    </section>
 
-  <svo-footer></svo-footer>
-	</body>
+    <!-- Agenda  -->
+    <section class="schedule">
+      <div class="schedule__hours">
+        <img class="schedule__img" src="assets/clock.png" alt="" />
+        <h3 class="schedule__hours-title">Horário de Funcionamento</h3>
+        <div class="schedule__hours-item">
+          <p>Plantão</p>
+          <p>Seg à Dom</p>
+          <p>07:00 - 22:00</p>
+        </div>
+        <div class="schedule__hours-item">
+          <p>Feriados e Pontos Facultativos:</p>
+          <p>07:00 - 20:00</p>
+        </div>
+        <p class="schedule__hours-description">
+          O serviço de recolhimento funciona 24hrs por dia
+        </p>
+      </div>
+      <div class="schedule__container">
+        <div class="schedule__decoration">
+          <div class="schedule__decoration-part">
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+          </div>
+          <div class="schedule__decoration-part">
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+          </div>
+          <div class="schedule__decoration-part">
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+          </div>
+          <div class="schedule__decoration-part">
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+          </div>
+          <div class="schedule__decoration-part">
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+          </div>
+          <div class="schedule__decoration-part">
+            <div class="schedule__decoration-square"></div>
+            <div class="schedule__decoration-square"></div>
+          </div>
+        </div>
+
+        <h3 class="schedule__title">Agenda Semanal</h3>
+        <div class="schedule__item schedule__item-line">
+          <p>Data</p>
+          <p>Hora</p>
+          <p>Evento</p>
+          <p>Local</p>
+        </div>
+        <div class="schedule__item schedule__event-1">
+          <p>28/03/2025</p>
+          <p>08:00</p>
+          <p>Nome do Evento</p>
+          <p>Local do Evento</p>
+        </div>
+        <div class="schedule__item schedule__event-2">
+          <p>28/03/2025</p>
+          <p>08:00</p>
+          <p>Nome do Evento</p>
+          <p>Local do Evento</p>
+        </div>
+        <div class="schedule__item schedule__event-3">
+          <p>28/03/2025</p>
+          <p>08:00</p>
+          <p>Nome do Evento</p>
+          <p>Local do Evento</p>
+        </div>
+        <div class="schedule__item schedule__event-4">
+          <p>28/03/2025</p>
+          <p>08:00</p>
+          <p>Nome do Evento</p>
+          <p>Local do Evento</p>
+        </div>
+        <div class="schedule__item schedule__event-5">
+          <p>28/03/2025</p>
+          <p>08:00</p>
+          <p>Nome do Evento</p>
+          <p>Local do Evento</p>
+        </div>
+      </div>
+    </section>
+
+    <svo-footer></svo-footer>
+	<script src="script.js"></script>
+  </body>
 </html>
