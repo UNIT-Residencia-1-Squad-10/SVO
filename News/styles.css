@@ -4,9 +4,15 @@ body {
   background: var(--body-bg);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .news {
   display: flex;
-  padding: 50px 160px;
+  padding: 50px 5vw;
   gap: 55px;
 }
 
@@ -26,7 +32,7 @@ body {
   background-color: var(--navbar-background-color);
   color: var(--background-color);
   border-radius: 8px;
-  font-size: 1.6rem;
+  font-size: var(--vinte-px);
   font-weight: 600;
   padding: 5px 15px;
   display: flex;
@@ -59,12 +65,6 @@ body {
   gap: 16px;
 }
 
-@media (max-width: 1366px) {
-  .news__container--main {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 /* Paginação */
 .pagination {
   position: absolute;
@@ -80,7 +80,7 @@ body {
 
 .pagination button {
   padding: 6px 12px;
-  font-size: 1rem;
+  font-size: var(--dezesseis-px);
   border: none;
   background-color: var(--news-pagination-bt);
   color: var(--news-pagitation-text);
@@ -109,7 +109,7 @@ body {
 
 .faq-container h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: var(--vinte-px);
   font-weight: bold;
   padding: 1rem 0;
   color: var(--faq-title);
@@ -118,7 +118,7 @@ body {
   margin-bottom: 10px;
   border-radius: 4px;
   overflow: hidden;
-  font-size: 1.5rem;
+  font-size: var(--dezesseis-px);
 }
 .faq-question {
   background-color: #004b8d;
@@ -143,4 +143,51 @@ body {
 }
 .faq-item.active .arrow {
   transform: rotate(90deg);
+}
+
+@media (max-width: 1366px) {
+  .news__container--main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .news {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .news__container--main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq-container {
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news {
+    padding: 20px;
+  }
+
+  .news__container--main {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-container {
+    margin: 40px auto;
+    padding: 0 10px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 12px 0;
+  }
+
+  .pagination button {
+    padding: 5px 10px;
+  }
 }

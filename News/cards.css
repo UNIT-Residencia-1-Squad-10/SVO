@@ -47,7 +47,7 @@
 .meta {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: var(--dezesseis-px);
   gap: 10px;
   margin-bottom: 10px;
 }
@@ -59,7 +59,7 @@
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: var(--vinte_e_dois-px);
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -80,6 +80,9 @@
 .news-card-main-image {
   height: 70%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .news-card-main-image img {
@@ -87,7 +90,8 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
 }
 
 .news-card-main-content {
@@ -109,12 +113,13 @@
 }
 
 .news-card-main-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
   color: #333;
 }
 
 .news-card-main-text {
-  font-size: 1rem;
+  font-size: var(--dez-px);
   color: #666;
   margin: 0;
   overflow: hidden;
@@ -127,13 +132,16 @@
 
 .news-card-main-link {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: var(--dez-px);
   color: black;
   text-decoration: none;
 }
 
-.news-card-main:has(.news-card-main-link:hover) .news-card-main-image img {
+.news-card-main:has(.news-card-main-link:hover) .news-card-main-image img,
+.news-card-main:has(.news-card-main-image:hover) .news-card-main-image img,
+.news-card-main:has(.news-card-main-content:hover) .news-card-main-image img {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 /* Últimas - SMALL */
@@ -189,7 +197,7 @@
 }
 
 .news-card-latest-author {
-  font-size: 12px;
+  font-size: var(--dezesseis-px);
   align-items: center;
   gap: 5px;
   display: flex;
@@ -209,5 +217,5 @@
   margin: 2rem auto;
   gap: 2rem;
   color: white;
-  font-size: 2rem;
+  font-size: var(--vinte-px);
 }
