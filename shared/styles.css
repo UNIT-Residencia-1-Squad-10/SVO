@@ -35,6 +35,34 @@
   --footer-text-geral: #ffffff;
   --footer-link-hover: #fbb802;
 
+  /* HOME STYLES */
+
+  --home-overlay: ;
+  --home-hero-img-bg: #01438a36;
+  --home-hero-bg: linear-gradient(180deg, #01448a 0%, #001224 100%);
+  --home-hero-button-hover: #01448a;
+  --home-metrics-bg: #fbb802;
+  --home-metrics-line: #01448a;
+  --home-metrics-color: #01448a;
+  --home-request-title: #01448a;
+  --home-request-bg: #fff;
+  --home-request-button-hover: #fff;
+  --home-news-title: #01448a;
+  --home-news-button-hover: #fff;
+  --home-news-button-bg-hover: #01448a;
+  --home-news-button: rgba(1, 68, 138, 0.97);
+  --home-news-button-border: #01448a;
+  --home-news-item-bg: #fff;
+  --home-news-item-text: #666;
+  --home-news-item-text2: #4a5254;
+  --home-services-title-color: #01448a;
+  --home-services-bg: rgb(239, 251, 251);
+  --home-services-img-bg: #011d3b8a;
+  --home-schedule-hours-bg: rgba(1, 68, 138, 0.94);
+  --home-schedule-container-bg: #f8f8f8;
+  --home-schedule-decoration-bg: #01448a;
+  --home-schedule-container-text: #666;
+
   /* INSTITUTIONAL STYLES */
   --text-white: #fff;
   --institutional-structure-bg: #fff;
@@ -64,7 +92,7 @@
   --contact-svg-color: rgba(0, 0, 0, 0.84);
 
   /* NEWS STYLES */
-  --news-pagination-bt: transparent; 
+  --news-pagination-bt: transparent;
   --news-pagination-bt-active: #01448a;
   --news-pagitation-text: #000000;
   --faq-title: #000000;
@@ -87,15 +115,53 @@ body.font-large {
 
 /* Modo Escuro */
 body.dark-mode {
+  /* HEADER STYLES */
+  --info-background-color: #002a57;
+  --navbar-background-color: #00152a;
+
   /* FOOTER SYLES */
   --footer-bg: #001b37;
   --footer-news-bg: #363636;
   --footer-news-information: #f8f8f8;
   --footer-news-bottom: #f8f8f8;
 
-  /* HEADER STYLES */
-  --info-background-color: #002a57;
-  --navbar-background-color: #00152a;
+  /* MOBILE STYLES */
+  --navbar-mobile-bg: #00152a;
+
+  /* HOME STYLES */
+  --home-hero-img-bg: #01193282;
+  --home-hero-bg: linear-gradient(180deg, #000 0%, #002a53 100%);
+  --home-metrics-bg: #002a53;
+  --home-metrics-line: #fbb802;
+  --home-metrics-color: #fbb802;
+  --home-request-title: #fbb802;
+  --home-request-bg: #343434;
+  --home-request-button-hover: #fff;
+  --home-news-title: #046ad4;
+  --home-news-button-bg-hover: #fbb802;
+  --home-news-button-hover: #001b37;
+  --home-news-button: #fbb802;
+  --home-news-button-border: #fbb802;
+  --home-news-item-bg: linear-gradient(
+    111deg,
+    #343434 1.8%,
+    #303030 99.99%,
+    #969696 100%
+  );
+  --home-news-item-text: #fff;
+  --home-news-item-text2: #fff;
+  --home-services-title-color: #fbb802;
+  --home-services-bg: linear-gradient(
+    120deg,
+    #363636 85.34%,
+    #969696 91.31%,
+    #303030 96.29%
+  );
+  --home-services-img-bg: #011d3b8a;
+  --home-schedule-hours-bg: #001b37;
+  --home-schedule-container-bg: #001b37;
+  --home-schedule-container-text: #f8f8f8;
+  --home-schedule-decoration-bg: #002a53;
 
   /* INSTITUTIONAL STYLES */
   --secundary-color: #002a53;
@@ -131,7 +197,7 @@ body.dark-mode {
   --contact-svg-color: ##ffffffca;
 
   /* NEWS STYLES */
-  --news-pagination-bt: transparent; 
+  --news-pagination-bt: transparent;
   --news-pagination-bt-active: #01448a;
   --news-pagitation-text: #ffffff;
   --faq-title: #fff;
