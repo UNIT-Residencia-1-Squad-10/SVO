@@ -1,5 +1,5 @@
 .noticia-container {
-  background: #fff;
+  background:  var(--body-bg);
   padding: 50px 0;
   display: flex;
   flex-direction: column;
@@ -18,15 +18,15 @@
 }
 
 .titulo-noticia {
-  font-size: 3.5rem;
+  font-size: var(--trinta-px);
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #000;
+ color: var(--title-news);
 }
 
 .subtitulo-noticia {
-  font-size: 1.4rem;
-  color: #555;
+  font-size: var(--dezesseis-px);
+  color: var(--subtitle-news);
   margin-bottom: 1.5rem;
 }
 
@@ -46,11 +46,13 @@
 .autor-nome {
   font-weight: bold;
   margin-bottom: 0.5rem;
+  font-size: var(--dez-px);
+  color:var(--title-news) ;
 }
 
 .redes-sociais i {
-  font-size: 1.2rem;
-  color: #333;
+  font-size: var(--dez-px);
+  color: var(--subtitle-news);
   margin-right: 0.5rem;
 }
 
@@ -63,14 +65,14 @@
 }
 
 .texto-da-noticia article {
-  color: #333;
-  font-size: 1.8rem;
+  color: var(--subtitle-news);
+  font-size: var(--dezesseis-px);
   line-height: 1.6;
   padding-top: 2rem;
 }
 
 .underline {
-  border-bottom: 4px solid #000;
+  border-bottom: 4px solid var(--title-news);
   border-radius: 4px;
   width: 120px;
   margin: 2rem auto 1rem;
@@ -86,7 +88,8 @@
 .leia-mais-titulo {
   text-align: center;
   margin-top: 3rem;
-  font-size: 3rem;
+  font-size:var(--trinta-px);
+  color: var(--title-news);
   font-weight: bold;
 }
 

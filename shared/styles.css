@@ -103,6 +103,7 @@
   --dezoito-px: 1.8rem;
   --vinte-px: 2rem;
   --vinte_e_dois-px: 2.2rem;
+  --trinta-px: 3rem;
 }
 body.font-medium {
   --dez-px: 1.2rem;
@@ -110,6 +111,7 @@ body.font-medium {
   --dezoito-px: 2rem;
   --vinte-px: 2.2rem;
   --vinte_e_dois-px: 2.4rem;
+  --trinta-px: 3.2rem;
 }
 
 body.font-large {
@@ -118,6 +120,8 @@ body.font-large {
   --dezoito-px: 2.2rem;
   --vinte-px: 2.4rem;
   --vinte_e_dois-px: 2.6rem;
+  --trinta-px: 3.4rem;
+
 }
 
 /* Modo Escuro */
@@ -208,6 +212,8 @@ body.dark-mode {
   --news-pagination-bt-active: #01448a;
   --news-pagitation-text: #ffffff;
   --faq-title: #fff;
+  --title-news:#fff;
+  --subtitle-news:#f0f0f0;
 }
 
 *,
