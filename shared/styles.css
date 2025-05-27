@@ -98,19 +98,26 @@
   --faq-title: #000000;
 
   /* FONT SIZE */
+  --dez-px: 1rem;
   --dezesseis-px: 1.6rem;
   --dezoito-px: 1.8rem;
   --vinte-px: 2rem;
   --vinte_e_dois-px: 2.2rem;
 }
 body.font-medium {
+  --dez-px: 1.2rem;
   --dezesseis-px: 1.8rem;
   --dezoito-px: 2rem;
+  --vinte-px: 2.2rem;
+  --vinte_e_dois-px: 2.4rem;
 }
 
 body.font-large {
+  --dez-px: 1.4rem;
   --dezesseis-px: 2rem;
   --dezoito-px: 2.2rem;
+  --vinte-px: 2.4rem;
+  --vinte_e_dois-px: 2.6rem;
 }
 
 /* Modo Escuro */
