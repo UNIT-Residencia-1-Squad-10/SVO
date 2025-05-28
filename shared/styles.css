@@ -551,7 +551,6 @@ body {
   flex-direction: column;
   gap: 5rem;
   max-width: 400px;
-  flex: 1 1 380px;
 }
 
 .footer__elements {

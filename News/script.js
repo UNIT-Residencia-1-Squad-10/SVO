@@ -68,6 +68,32 @@ export const CardSize = {
     }
   }
   
+  export async function renderFooterNews(containerSelectorOrElement, cardStyle, typeFilter) {
+    const container = typeof containerSelectorOrElement === 'string'
+      ? document.getElementById(containerSelectorOrElement)
+      : containerSelectorOrElement;
+
+    if (!container) {
+      console.error('Container não encontrado:', containerSelectorOrElement);
+      return;
+    }
+
+    try {
+      const response = await fetch('../data/news.json');
+      if (!response.ok) throw new Error('Falha ao carregar notícias');
+
+      const data = await response.json();
+      const filtered = data.filter(n => n.type === typeFilter);
+
+      filtered.slice(0, 2).forEach(item => {
+        const card = createCard(item, cardStyle);
+        container.appendChild(card);
+      });
+    } catch (error) {
+      console.error('Erro ao carregar ou renderizar as notícias:', error);
+    }
+  }
+
   // Criar um card baseado no tipo de estilo
   function createCard(item, cardStyle) {
     const card = document.createElement('div');
@@ -80,13 +106,13 @@ export const CardSize = {
         <div class="content">
           <div class="meta">
             <span class="date">${parseDate(item.date)}</span>
-            <img src="assets/icon.png" alt="Icone de autor">
+            <img src="../data/newsImages/icon.png" alt="Icone de autor">
             <span class="author">${item.author}</span>
           </div>
           <h2 class="title">${item.title}</h2>
         </div>
       `;
-      card.onclick = () => window.location.href = `new_details.html?id=${item.id}`;
+      card.onclick = () => window.location.href = `/News/new_details.html?id=${item.id}`;
     }
   
     else if (cardStyle === CardSize.MED) {
@@ -119,14 +145,14 @@ export const CardSize = {
           <div class="news-card-latest-meta">
             <span class="date">${parseDate(item.date)}</span>
             <div class="news-card-latest-author">
-              <img src="assets/icon.png" alt="Icone de autor">
+              <img src="../data/newsImages/icon.png" alt="Icone de autor">
               <span>${item.author}</span>
             </div>
           </div>
         </div>
       `;
     }
-    card.onclick = () => window.location.href = `new_details.html?id=${item.id}`;
+    card.onclick = () => window.location.href = `/News/new_details.html?id=${item.id}`;
     return card;
   }
   
