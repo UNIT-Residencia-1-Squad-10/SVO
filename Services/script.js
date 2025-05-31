@@ -29,6 +29,35 @@ function next() {
   }
 }
 function previous() {
+
+  if (currentStep < totalSteps) {
+    currentStep--;
+    updateStep();
+  }
+}
+function mostrarAlerta() {
+}
+
+function esconderAlerta() {
+}
+function previousPlano() {
+  alert('O serviço SVO é exclusivo pra quem não tem plano de saúde, o plano faz a verificação')
+  if (currentStep < totalSteps) {
+    currentStep--;
+    updateStep();
+  }
+}
+function previousHospOutro() {
+    alert('O serviço SVO é exclusivo para óbitos que aconteceram dentro do imóvel')
+
+  if (currentStep < totalSteps) {
+    currentStep--;
+    updateStep();
+  }
+}
+function previousCausaExterna() {
+  alert('O serviço SVO é exclusivo pra óbitos por causa natural')
+
   if (currentStep < totalSteps) {
     currentStep--;
     updateStep();
