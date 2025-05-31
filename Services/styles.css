@@ -1,52 +1,112 @@
-/* --------- Responsivo para Galaxy S22 (360px a 400px) --------- */
-@media (max-width: 400px) {
+/* --------- Responsivo para Galaxy S22 (360px a 768px) --------- */
+@media (max-width: 768px) {
+
+  body {
+    background: var(--body-bg);
+    font-size: small;
+    margin: 0;
+    width: 100%; /* Garante que o body ocupe toda a largura */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+  }
+
   .container-layout {
+    flex-direction: row; /* Empilha a sidebar e o conteúdo */
+    align-items: flex-start; /* Centraliza horizontalmente */
+    margin-top: 10px; /* Aumenta um pouco a margem superior */
+    margin-bottom: 10px; /* Aumenta um pouco a margem inferior */
+    padding: 10px; /* Adiciona um pouco de padding ao redor */
+    display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .sidebar {
-    width: 90%;
-    height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 12px;
+    width: 50px; /* Ocupa mais largura da tela */
+    height: 200px; /* Altura automática para se ajustar ao conteúdo */
+    flex-direction: row; /* Coloca os itens em linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    gap: 3px; /* Espaçamento menor entre os itens da sidebar */
+    padding: 3px; /* Reduz o padding interno */
+    border-radius: 12px; /* Ajusta o border-radius */
+    justify-content: flex-start; /* Centraliza os itens da sidebar */
+    align-items: flex-start; /* Alinha os itens verticalmente ao centro */
+    margin-bottom: 3px; /* Adiciona margem inferior para separar do conteúdo */
   }
+  .content {
+    width: 300px; /* Ocupa mais largura da tela */
+    height: 200px; /* Altura automática */
+    margin-left: 0; /* Remove a margem esquerda */
+    border-radius: 12px; /* Ajusta o border-radius */
+    padding: 15px; /* Adiciona um pouco de padding interno */
+    justify-content: flex-start; /* Centraliza os itens da sidebar */
+    align-items: flex-start; /* Alinha os itens verticalmente ao centro */
+    display: flex;
+    flex-direction: column;
+  }
+
 
   .sidebar__item {
-    width: 45%;
-    justify-content: center;
+    width: 40px; /* Largura automática para os itens */
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
   }
 
-  .content {
-    width: 90%;
-    margin-left: 0;
+  .sidebar__text {
+    width: 40px; /* Largura automática */
+    margin-left: 5px; /* Reduz a margem esquerda */
+  }
+
+  .sidebar__p {
+    width: 40px; /* Largura automática */
+    font-size: smaller; /* Diminui a fonte para textos menores */
+  }
+
+  .step{
+    width: 30px;
+    height: 50px;
+  }
+
+  .step-content{
+    padding: 10px; /* Reduz o padding do conteúdo */
+    font-size: small; /* Ajusta o tamanho da fonte */
+    width: 40px;
     height: auto;
-    padding: 20px;
+  }
+
+  .step-content.active {
+    padding: 10px; /* Reduz o padding do conteúdo ativo */
+    font-size: small; /* Ajusta o tamanho da fonte */
+    width: 40px;
+    height: auto;
   }
 
   .step-content__title {
-    font-size: large;
-    padding: 20px;
+    padding: 5px; /* Reduz o padding do título */
+    font-size: small; /* Ajusta o tamanho da fonte */
   }
 
-  .step__img {
-    width: 40px;
-    height: 40px;
+  input,
+  select {
+    max-width: 40%; /* Ocupa toda a largura disponível */
+    padding: 8px; /* Reduz o padding dos inputs */
+    margin: 8px 0; /* Reduz a margem dos inputs */
+    font-size: small; /* Diminui a fonte dos inputs */
   }
-}
+
+  .btn-blue {
+    padding: 8px 16px; /* Reduz o padding do botão */
+    font-size: small; /* Diminui a fonte do botão */
+    margin: 5px; /* Reduz a margem do botão */
+  }
+}  
 
 /* --------- Responsivo para iPad 9 (768px) --------- */
-@media (max-width: 850px) and (min-width: 401px) {
+@media (max-width: 850px){
   .container-layout {
     flex-direction: column;
     align-items: center;
   }
 
   .sidebar {
-    width: 80%;
+    width: 60%;
     height: auto;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,7 +121,7 @@
   }
 
   .content {
-    width: 80%;
+    width: 70%;
     margin-left: 0;
     height: auto;
     padding: 30px;
@@ -101,6 +161,7 @@ html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
 
 body {
   background: var(--body-bg);
