@@ -10,8 +10,6 @@
   }
 
   .container-layout {
-    flex-direction: row; /* Empilha a sidebar e o conteúdo */
-    align-items: flex-start; /* Centraliza horizontalmente */
     margin-top: 10px; /* Aumenta um pouco a margem superior */
     margin-bottom: 10px; /* Aumenta um pouco a margem inferior */
     padding: 10px; /* Adiciona um pouco de padding ao redor */
@@ -20,8 +18,8 @@
   }
 
   .sidebar {
-    width: 50px; /* Ocupa mais largura da tela */
-    height: 200px; /* Altura automática para se ajustar ao conteúdo */
+    max-width: 43%;
+    max-height: 63%;
     flex-direction: row; /* Coloca os itens em linha */
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
     gap: 3px; /* Espaçamento menor entre os itens da sidebar */
@@ -32,13 +30,10 @@
     margin-bottom: 3px; /* Adiciona margem inferior para separar do conteúdo */
   }
   .content {
-    width: 300px; /* Ocupa mais largura da tela */
-    height: 200px; /* Altura automática */
+    max-height: 40%;
     margin-left: 0; /* Remove a margem esquerda */
     border-radius: 12px; /* Ajusta o border-radius */
     padding: 15px; /* Adiciona um pouco de padding interno */
-    justify-content: flex-start; /* Centraliza os itens da sidebar */
-    align-items: flex-start; /* Alinha os itens verticalmente ao centro */
     display: flex;
     flex-direction: column;
   }
@@ -79,7 +74,7 @@
   }
 
   .step-content__title {
-    padding: 5px; /* Reduz o padding do título */
+    padding: 1px; /* Reduz o padding do título */
     font-size: small; /* Ajusta o tamanho da fonte */
   }
 
@@ -179,7 +174,6 @@ body {
 }
 
 .sidebar {
-  width: 240px;
   height: 500px;
   width: 300px;
   background-color: var(--services-sidebar-bg);
