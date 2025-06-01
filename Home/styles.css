@@ -49,7 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .hero-content-text {
   display: flex;
@@ -69,14 +69,14 @@ body {
 }
 .hero__title {
   color: #fbb802;
-  font-size: 32px;
+  font-size: var(--trinta-px);
   font-weight: 700;
   padding-bottom: 1rem;
   border-bottom: 2px solid #ffffff8d;
   width: 100%;
 }
 .hero__p {
-  font-size: 24px;
+  font-size: var(--vinte-px);
 }
 .hero__span {
   color: #fbb802;
@@ -88,7 +88,7 @@ body {
   padding: 1rem 3rem;
   cursor: pointer;
   border: none;
-  color: #fff;
+  color: #000000;
   font-size: 24px;
   font-weight: 500;
   text-decoration: none;
@@ -258,6 +258,7 @@ body {
 /* NOTICIAS */
 .news {
   display: flex;
+  align-items: center;
   gap: 2rem;
   margin: 0 auto 6.3rem auto;
 }
@@ -269,7 +270,7 @@ body {
 .news__title {
   color: var(--home-news-title);
   font-family: Roboto;
-  font-size: 32px;
+  font-size: var(--trinta-px);
   font-style: normal;
   font-weight: 700;
 }
@@ -355,6 +356,19 @@ body {
 .news__part-2 {
   display: none;
 }
+
+@media(max-width: 1600px) {
+    .news {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+  }
+
+  .news__part {
+    align-items: center;
+  }
+}
 @media (max-width: 1358px) {
   .news {
     flex-direction: column;
@@ -427,7 +441,7 @@ body {
 .service__title {
   color: var(--home-services-title-color);
   text-align: center;
-  font-size: 32px;
+  font-size: var(--trinta-px);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -480,6 +494,7 @@ body {
     overflow: hidden;
   }
   .services::before {
+    filter: blur(5px);
     content: "";
     position: absolute;
     top: 0;
@@ -528,7 +543,7 @@ body {
 }
 .schedule__hours {
   max-width: 399px;
-  padding: 0 1rem;
+  padding: 2rem 5rem;
   border-radius: 10px;
   background: var(--home-schedule-hours-bg);
   position: relative;
@@ -542,12 +557,12 @@ body {
 
 .schedule__hours-title {
   color: #fbb802;
-  width: 200px;
-  font-size: 32px;
+  width: 100%;
+  font-size: var(--trinta-px);
   font-weight: 700;
   line-height: 34px;
   letter-spacing: 0.5px;
-  padding: 5rem 2rem 1rem 2rem;
+  padding: 3rem 0;
 }
 .schedule__hours-item {
   margin: auto;
@@ -555,7 +570,7 @@ body {
   justify-content: space-between;
   padding: 0.5rem 0;
   color: #fff;
-  font-size: 16px;
+  font-size: var(--dezesseis-px);
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.5px;
@@ -564,7 +579,7 @@ body {
 }
 .schedule__hours-description {
   color: #fff;
-  font-size: 16px;
+  font-size: var(--dezesseis-px);
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.5px;
@@ -613,7 +628,7 @@ body {
 }
 .schedule__title {
   color: var(--home-schedule-container-text);
-  font-size: 24px;
+  font-size: var(--trinta-px);
   font-weight: 700;
   margin-bottom: 2rem;
 }
@@ -621,7 +636,7 @@ body {
   display: flex;
   justify-content: space-between;
   color: var(--home-schedule-container-text);
-  font-size: 16px;
+  font-size: var(--dezesseis-px);
   font-weight: 400;
   padding: 1rem 0;
   width: 100%;
@@ -652,13 +667,15 @@ body {
 @media (max-width: 545px) {
   .schedule {
     padding: 1rem;
+    width: 85%;
+    align-self: center;
   }
   .schedule__item {
     gap: 1rem;
     margin: auto;
   }
   .schedule__container {
-    padding: 4rem 0;
+    padding: 4rem 5rem;
     justify-content: space-between;
   }
   .schedule__title {
@@ -667,4 +684,14 @@ body {
   .schedule__item p {
     font-size: 12px;
   }
+  .request  {
+    width: 85%;
+    align-self: center;
+  }
+
+  .services {
+    width: 85%;
+    align-self: center;
+  }
+
 }

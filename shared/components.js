@@ -282,7 +282,14 @@ class MeuFooter extends HTMLElement {
 					</div>
 
 					<div class="footer__column">
-						<div class="footer__section" id="footer-news-container">
+						<div class="footer__section"> 
+							<h4 class="footer__title">Notícias Anteriores</h4>
+							<div class="footer_decoration"></div>
+							<div class="footer__elements">
+								<div class="footer__section" id="footer-news-container">
+									<!-- Noticias carregadas dinamicamente aqui -->
+								</div>
+							</div>
 						</div>
 					</div>
 
@@ -292,7 +299,7 @@ class MeuFooter extends HTMLElement {
 		`;
 		setTimeout(() => {
       const target = this.shadowRoot.getElementById('footer-news-container');
-      renderFooterNews(target, CardSize.SMALL, 'last');
+      renderFooterNews(target, CardSize.FOOTER, 'last');
     }, 10);
 	}
 }

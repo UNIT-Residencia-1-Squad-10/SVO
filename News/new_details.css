@@ -52,7 +52,7 @@
 
 .redes-sociais i {
   font-size: var(--dez-px);
-  color: var(--subtitle-news);
+  color: var(--social-media-icon-color);
   margin-right: 0.5rem;
 }
 
