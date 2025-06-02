@@ -219,3 +219,60 @@
   color: white;
   font-size: var(--vinte-px);
 }
+
+/* Estilos para notícias do footer */
+.news-card-footer {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 520px;
+  height: 140px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.news-card-footer-image {
+  overflow: hidden;
+}
+
+.news-card-footer-image img {
+  width: 160px;
+  height: 140px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.news-card-footer:hover .news-card-footer-image img {
+  transform: scale(1.05);
+}
+
+.news-card-footer-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.news-card-footer-title {
+  font-weight: 600;
+  font-size: var(--dezesseis-px);
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+.news-card-footer-text {
+  font-size: var(--dez-px);
+  color: #666;
+  margin-bottom: 0.4rem;
+}
+
+.news-card-footer-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #333;
+}

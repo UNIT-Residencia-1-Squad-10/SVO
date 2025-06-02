@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SERVICES</title>
+    <title>Serviços</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,17 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="icon" href="/shared/assets/favIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="/shared/reset.css" />
     <link rel="stylesheet" href="/shared/styles.css" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="/shared/components.js" defer></script>
+    <script type="module" src="/shared/components.js" defer></script>
     <script src="/shared/vlibras-widget.js" defer></script>
   </head>
   <body>
     <svo-header></svo-header>
 
     <div class="container-layout">
+      <section class="section">
         <div class="sidebar">
           <div id="step-1" class="step">Início<br /></div>
           <div id="step-2" class="step">
@@ -55,6 +56,9 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="section">
         <div class="content">
           <div class="step-content" data-step="1">
             <h2 class="step-content__title">Triagem</h2>
@@ -83,8 +87,12 @@
             </p>
             <br /><br /><br />
             <button class="btn-blue" onclick="next()">Na residência</button>
-            <button class="btn-blue" onclick="previousHospOutro()">No hospital</button>
-            <button class="btn-blue" onclick="previousHospOutro()">Outro</button>
+            <button class="btn-blue" onclick="previousHospOutro()">
+              No hospital
+            </button>
+            <button class="btn-blue" onclick="previousHospOutro()">
+              Outro
+            </button>
           </div>
 
           <div class="step-content" data-step="4">
@@ -94,7 +102,9 @@
             </p>
             <br /><br /><br />
             <button class="btn-blue" onclick="next()">Natural</button>
-            <button class="btn-blue" onclick="previousCausaExterna()">Externa</button>
+            <button class="btn-blue" onclick="previousCausaExterna()">
+              Externa
+            </button>
           </div>
 
           <div class="step-content" data-step="5">

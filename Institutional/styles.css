@@ -44,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 2;
-  gap: 3rem;
+  gap: 2rem;
   min-height: 673px;
   max-width: 810px;
   padding: 6.3rem 4rem;
@@ -52,15 +52,25 @@ body {
   border-radius: 1.3rem;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.activity__title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 .activity__h2 {
   color: var(--primary-color);
   font-size: 2.4rem;
   font-weight: 700;
 }
 
+.activity__title svg {
+  width: 20px;
+  color: #fbb802;
+}
 .activity__p {
   font-size: var(--dezesseis-px);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
 }
 /* aside */
@@ -314,6 +324,7 @@ body {
   scroll-behavior: smooth;
   padding-bottom: 1rem;
   padding-left: 0.5rem;
+  margin-bottom: 10vh;
 }
 .container__card {
   display: flex;

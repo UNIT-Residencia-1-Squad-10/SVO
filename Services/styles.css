@@ -1,107 +1,52 @@
-/* --------- Responsivo para Galaxy S22 (360px a 768px) --------- */
-@media (max-width: 768px) {
-
-  body {
-    background: var(--body-bg);
-    font-size: small;
-    margin: 0;
-    width: 100%; /* Garante que o body ocupe toda a largura */
-    height: auto; /* Altura automática para se ajustar ao conteúdo */
-  }
-
-  .container-layout {
-    margin-top: 10px; /* Aumenta um pouco a margem superior */
-    margin-bottom: 10px; /* Aumenta um pouco a margem inferior */
-    padding: 10px; /* Adiciona um pouco de padding ao redor */
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sidebar {
-    max-width: 43%;
-    max-height: 63%;
-    flex-direction: row; /* Coloca os itens em linha */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-    gap: 3px; /* Espaçamento menor entre os itens da sidebar */
-    padding: 3px; /* Reduz o padding interno */
-    border-radius: 12px; /* Ajusta o border-radius */
-    justify-content: flex-start; /* Centraliza os itens da sidebar */
-    align-items: flex-start; /* Alinha os itens verticalmente ao centro */
-    margin-bottom: 3px; /* Adiciona margem inferior para separar do conteúdo */
-  }
-  .content {
-    max-height: 40%;
-    margin-left: 0; /* Remove a margem esquerda */
-    border-radius: 12px; /* Ajusta o border-radius */
-    padding: 15px; /* Adiciona um pouco de padding interno */
-    display: flex;
-    flex-direction: column;
-  }
-
-
-  .sidebar__item {
-    width: 40px; /* Largura automática para os itens */
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-  }
-
-  .sidebar__text {
-    width: 40px; /* Largura automática */
-    margin-left: 5px; /* Reduz a margem esquerda */
-  }
-
-  .sidebar__p {
-    width: 40px; /* Largura automática */
-    font-size: smaller; /* Diminui a fonte para textos menores */
-  }
-
-  .step{
-    width: 30px;
-    height: 50px;
-  }
-
-  .step-content{
-    padding: 10px; /* Reduz o padding do conteúdo */
-    font-size: small; /* Ajusta o tamanho da fonte */
-    width: 40px;
-    height: auto;
-  }
-
-  .step-content.active {
-    padding: 10px; /* Reduz o padding do conteúdo ativo */
-    font-size: small; /* Ajusta o tamanho da fonte */
-    width: 40px;
-    height: auto;
-  }
-
-  .step-content__title {
-    padding: 1px; /* Reduz o padding do título */
-    font-size: small; /* Ajusta o tamanho da fonte */
-  }
-
-  input,
-  select {
-    max-width: 40%; /* Ocupa toda a largura disponível */
-    padding: 8px; /* Reduz o padding dos inputs */
-    margin: 8px 0; /* Reduz a margem dos inputs */
-    font-size: small; /* Diminui a fonte dos inputs */
-  }
-
-  .btn-blue {
-    padding: 8px 16px; /* Reduz o padding do botão */
-    font-size: small; /* Diminui a fonte do botão */
-    margin: 5px; /* Reduz a margem do botão */
-  }
-}  
-
-/* --------- Responsivo para iPad 9 (768px) --------- */
-@media (max-width: 850px){
+/* --------- Responsivo para Galaxy S22 (360px a 400px) --------- */
+/* @media (max-width: 400px) {
   .container-layout {
     flex-direction: column;
     align-items: center;
   }
 
   .sidebar {
-    width: 60%;
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .sidebar__item {
+    width: 45%;
+    justify-content: center;
+  }
+
+  .content {
+    width: 90%;
+    margin-left: 0;
+    height: 550px;
+    padding: 20px;
+  }
+
+  .step-content__title {
+    font-size: large;
+    padding: 20px;
+  }
+
+  .step__img {
+    width: 40px;
+    height: 40px;
+  }
+} */
+
+/* --------- Responsivo para iPad 9 (768px) --------- */
+/* @media (max-width: 850px) and (min-width: 401px) {
+  .container-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 80%;
     height: auto;
     flex-direction: row;
     flex-wrap: wrap;
@@ -116,15 +61,15 @@
   }
 
   .content {
-    width: 70%;
+    width: 80%;
     margin-left: 0;
     height: auto;
     padding: 30px;
   }
-}
+} */
 
 /* --------- Desktop (mantém como está) --------- */
-@media (min-width: 851px) {
+/* @media (min-width: 851px) {
   .container-layout {
     flex-direction: row;
     justify-content: center;
@@ -143,8 +88,7 @@
     height: 500px;
     padding: 30px;
   }
-}
-
+} */
 
 html {
   font-size: 62.5%;
@@ -156,7 +100,6 @@ html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
 
 body {
   background: var(--body-bg);
@@ -174,11 +117,12 @@ body {
 }
 
 .sidebar {
-  height: 500px;
+  width: 240px;
+  height: 550px;
   width: 300px;
   background-color: var(--services-sidebar-bg);
   color: var(--text-white);
-  border-radius: 5%;
+  border-radius: 20px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -240,7 +184,7 @@ body {
 }
 
 .content {
-  height: 500px;
+  height: 550px;
   margin-left: 50px;
   flex: 1;
   width: 700px;
@@ -305,4 +249,54 @@ select {
 
 input {
   font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .container-layout {
+    flex-direction: column;
+    align-items: center;
+    margin: 34px 0;
+  }
+  .sidebar {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    flex-direction: row;
+    max-width: 700px;
+    width: 100%;
+    height: initial;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 0;
+    padding: 20px 0;
+  }
+  #step-1 {
+    display: none;
+  }
+  .step {
+    padding: 1rem;
+  }
+  .content {
+    margin-left: 0;
+    width: 100%;
+    max-width: 700px;
+  }
+  .section {
+    max-width: 700px;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 628px) {
+  .sidebar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .step {
+    max-width: none;
+    width: 90%;
+  }
+  .sidebar__item {
+    justify-content: center;
+  }
 }

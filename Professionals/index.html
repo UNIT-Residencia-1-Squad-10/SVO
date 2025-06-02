@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROFESSIONALS</title>
     <link rel="stylesheet" href="/shared/reset.css">
-   <link rel="stylesheet" href="/shared/styles.css" />
-   <link rel="stylesheet" href="/Professionals/styles.css">
-   <script src="/shared/components.js" defer></script>
-   <script src="/Professionals/script.js" defer></script>
+    <link rel="stylesheet" href="/shared/styles.css" />
+    <link rel="stylesheet" href="/Professionals/styles.css">
+    <script type="module" src="/shared/components.js" defer></script>
+    <script src="/Professionals/script.js" defer></script>
+    <link rel="icon" href="/shared/assets/favIcon.png" type="image/x-icon">
   </head>
   <body>
     <svo-header></svo-header>
 
-    <main class="main">
+    <main class="main dark-mode">
       <h1 class="main_title">Profissionais</h1>
 
       <section class="hero">
@@ -30,58 +31,82 @@
       <section class="professionals__container">
 
         <div class="card__professionals">
-          <img class="card__professionals__photo" src="assets/foto-profissional.png" alt="Foto" >
+          <img class="card__professionals__photo" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto" >
           <div class="professionals__details">
-            <div class="card__professionals__name">
+            <button class="card__professionals__arrow" onclick="show__card__professionals__details(this)">
               <h3>Maria Silva</h3>
-            </div>
-            <button class="card__professionals__arrow" onclick="show__card__professionals__details(this)">V</button>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+
+            </button>
           </div>
           <div class ="card__professionals__details" style="display: none;" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam turpis nulla, varius vitae blandit id, viverra in tortor. Nullam quis finibus felis. Mauris commodo eu tortor et pretium. Donec cursus et est eu lacinia. Donec in eleifend est. Donec consectetur lorem quis mi maximus, blandit vehicula erat commodo. Integer non mollis enim. Nunc pharetra massa purus, quis convallis nibh interdum eu. Donec quis quam et velit elementum vulputate. Aenean tincidunt feugiat odio non lacinia. Pellentesque efficitur aliquam velit, vitae laoreet tellus lobortis eget.</p>
+            <p>Ser advogado vai muito além de conhecer leis — é sobre dar voz à justiça, defender direitos e transformar vidas. Na faculdade de Direito, você desenvolve habilidades de argumentação, pensamento crítico e liderança, preparando-se para atuar em tribunais, empresas, órgãos públicos ou abrir seu próprio caminho.</p>
+            <p>Se você sonha em impactar a sociedade, enfrentar desafios intelectuais e lutar por um mundo mais justo, o curso de Direito é para você.</p>
           </div>
           <div class="yellow-line"></div>
         </div>
 
       
         <div class="card__professionals">
-          <img class="card__professionals__photo" src="assets/foto-profissional.png" alt="Foto" >
+          <img class="card__professionals__photo" src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto" >
           <div class="professionals__details">
-            <div class="card__professionals__name">
-              <h3>Maria Silva</h3>
-            </div>
-            <button class="card__professionals__arrow" onclick="show__card__professionals__details(this)">V</button>
+            <button class="card__professionals__arrow" onclick="show__card__professionals__details(this)">
+              <h3>Reinan Oliveira</h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+
+            </button>
           </div>
           <div class ="card__professionals__details" style="display: none;" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam turpis nulla, varius vitae blandit id, viverra in tortor. Nullam quis finibus felis. Mauris commodo eu tortor et pretium. Donec cursus et est eu lacinia. Donec in eleifend est. Donec consectetur lorem quis mi maximus, blandit vehicula erat commodo. Integer non mollis enim. Nunc pharetra massa purus, quis convallis nibh interdum eu. Donec quis quam et velit elementum vulputate. Aenean tincidunt feugiat odio non lacinia. Pellentesque efficitur aliquam velit, vitae laoreet tellus lobortis eget.</p>
+            <p>A área de T.I. é o coração do mundo moderno — tudo ao nosso redor depende da tecnologia: aplicativos, sistemas, segurança digital, inteligência artificial e muito mais. Ao estudar T.I., você aprende a criar soluções, resolver problemas reais e inovar em um mercado que só cresce.</p>
+            <p>Se você gosta de tecnologia, lógica, inovação e quer fazer parte das profissões do futuro, esse é o seu lugar.</p>
           </div>
           <div class="yellow-line"></div>
         </div>
 
         <div class="card__professionals">
-          <img class="card__professionals__photo" src="assets/foto-profissional.png" alt="Foto" >
+          <img class="card__professionals__photo" src="https://images.pexels.com/photos/32213421/pexels-photo-32213421.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Foto" >
           <div class="professionals__details">
-            <div class="card__professionals__name">
-              <h3>Maria Silva</h3>
-            </div>
-            <button class="card__professionals__arrow" onclick="show__card__professionals__details(this)">V</button>
+            <button class="card__professionals__arrow" onclick="show__card__professionals__details(this)">
+              <h3>Carla Silva</h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+
+            </button>
           </div>
           <div class ="card__professionals__details" style="display: none;" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam turpis nulla, varius vitae blandit id, viverra in tortor. Nullam quis finibus felis. Mauris commodo eu tortor et pretium. Donec cursus et est eu lacinia. Donec in eleifend est. Donec consectetur lorem quis mi maximus, blandit vehicula erat commodo. Integer non mollis enim. Nunc pharetra massa purus, quis convallis nibh interdum eu. Donec quis quam et velit elementum vulputate. Aenean tincidunt feugiat odio non lacinia. Pellentesque efficitur aliquam velit, vitae laoreet tellus lobortis eget.</p>
+            <p>A Química está presente em tudo — nos alimentos que comemos, nos medicamentos que salvam vidas, na energia que move o planeta e nos materiais do nosso dia a dia. Ao estudar Química, você aprende a entender, criar e transformar a matéria, atuando em áreas como indústria, pesquisa, saúde, meio ambiente e muito mais.</p>
+            <p>Se você é curioso, gosta de experimentos e quer fazer parte das descobertas que constroem o futuro, a Química é o seu caminho.</p>
           </div>
           <div class="yellow-line"></div>
         </div>
 
         <div class="card__professionals">
-          <img class="card__professionals__photo" src="assets/foto-profissional.png" alt="Foto" >
+          <img class="card__professionals__photo" src="https://images.pexels.com/photos/32200441/pexels-photo-32200441/free-photo-of-retrato-de-uma-fotografa-em-preto-e-branco.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Foto" >
           <div class="professionals__details">
-            <div class="card__professionals__name">
-              <h3>Maria Silva</h3>
-            </div>
-            <button class="card__professionals__arrow" onclick="show__card__professionals__details(this)">V</button>
+            <button class="card__professionals__arrow" onclick="show__card__professionals__details(this)">
+              <h3>Ana Peixoto</h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+
+            </button>
           </div>
           <div class ="card__professionals__details" style="display: none;" >
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam turpis nulla, varius vitae blandit id, viverra in tortor. Nullam quis finibus felis. Mauris commodo eu tortor et pretium. Donec cursus et est eu lacinia. Donec in eleifend est. Donec consectetur lorem quis mi maximus, blandit vehicula erat commodo. Integer non mollis enim. Nunc pharetra massa purus, quis convallis nibh interdum eu. Donec quis quam et velit elementum vulputate. Aenean tincidunt feugiat odio non lacinia. Pellentesque efficitur aliquam velit, vitae laoreet tellus lobortis eget.</p>
+            <p>Ser fotógrafo é muito mais do que apertar um botão — é capturar histórias, sentimentos e momentos únicos com criatividade e sensibilidade. Ao estudar Fotografia, você desenvolve um olhar técnico e artístico, aprende sobre luz, composição, edição e como transformar sua paixão em profissão.</p>
+            <p>Se você ama contar histórias com imagens, viajar por diferentes mundos e eternizar emoções, a Fotografia é para você.</p>
           </div>
           <div class="yellow-line"></div>
         </div>

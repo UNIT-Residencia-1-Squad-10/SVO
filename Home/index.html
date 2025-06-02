@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME</title>
-
+    <title>Início</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="/shared/assets/favIcon.png" type="image/x-icon">
     <!-- Header e Footer (não alterar) -->
     <link rel="stylesheet" href="/shared/reset.css" />
     <link rel="stylesheet" href="/shared/styles.css" />
     <link rel="stylesheet" href="styles.css" />
-
-    <script src="/shared/components.js" defer></script>
+    <link rel="stylesheet" href="/shared/cards.css">
+    <script type="module" src="/shared/components.js" defer></script>
+    <script type="module">
+      import { renderHomeNews, CardSize } from '/News/script.js';
+      renderHomeNews('.news__itens', CardSize.MED, 'last');
+    </script>
   </head>
   <body>
     <svo-header></svo-header>
@@ -89,58 +93,9 @@
         <a href="/News/index.html" data-link" class="news__button">Todas as notícias</a>
       </div>
       <div class="news__itens">
-        <div class="news__item">
-          <img class="news__item-img" src="assets/Imagem 2.png" alt="" />
-          <div class="news__item-text">
-            <h3 class="news__item-title">
-              Nova Ferramenta de Gestão Administrativa
-            </h3>
-            <p class="news__item-description">
-              Uma nova ferramenta de gestão foi implementada para otimizar os
-              processos administrativos e melhorar a eficiência das operações.
-            </p>
-            <div class="news__item-bottom">
-              <a class="news__item-link" href="#">Saiba Mais</a>
-              <p class="notice__item-date">03/01/2025</p>
-            </div>
-          </div>
-        </div>
-        <div class="news__item">
-          <img class="news__item-img" src="assets/Imagem 2.png" alt="" />
-          <div class="news__item-text">
-            <h3 class="news__item-title">
-              Nova Ferramenta de Gestão Administrativa
-            </h3>
-            <p class="news__item-description">
-              Uma nova ferramenta de gestão foi implementada para otimizar os
-              processos administrativos e melhorar a eficiência das operações.
-            </p>
-            <div class="news__item-bottom">
-              <a class="news__item-link" href="#">Saiba Mais</a>
-              <p class="notice__item-date">03/01/2025</p>
-            </div>
-          </div>
-        </div>
-        <div class="news__item">
-          <img class="news__item-img" src="assets/Imagem 2.png" alt="" />
-          <div class="news__item-text">
-            <h3 class="news__item-title">
-              Nova Ferramenta de Gestão Administrativa
-            </h3>
-            <p class="news__item-description">
-              Uma nova ferramenta de gestão foi implementada para otimizar os
-              processos administrativos e melhorar a eficiência das operações.
-            </p>
-            <div class="news__item-bottom">
-              <a class="news__item-link" href="#">Saiba Mais</a>
-              <p class="notice__item-date">03/01/2025</p>
-            </div>
-          </div>
-        </div>
-        <!-- Repita o bloco acima conforme necessário -->
+        <!-- Notícias carregadas dinamicamente aqui -->
       </div>      
-	  <div class="news__part news__part-2">
-        
+	    <div class="news__part news__part-2">       
         <p class="news__text">
           Acompanhe aqui as notícias mais recentes do SVO.
         </p>

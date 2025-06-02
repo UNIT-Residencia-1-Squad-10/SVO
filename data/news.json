@@ -5,7 +5,7 @@
     "content": "Uma nova ferramenta de gestão foi implementada para otimizar os processos administrativos e melhorar a eficiência das operações.",
     "author": "Equipe de TI",
     "date": "2025-04-25T10:00:00Z",
-    "image": "assets/highlight.png",
+    "image": "../data/newsImages/highlight.png",
     "type": "highlight",
     "text": "A implementação da nova ferramenta de gestão administrativa representa um avanço significativo para a organização. Com ela, os processos internos foram otimizados, reduzindo o tempo de execução de tarefas e aumentando a transparência nas operações. A equipe passou por treinamentos específicos para garantir o uso eficiente da plataforma, que agora integra setores como recursos humanos, financeiro e logística. O resultado é uma administração mais ágil, com dados centralizados e relatórios em tempo real, facilitando a tomada de decisões estratégicas."
   },
@@ -15,7 +15,7 @@
     "content": "Um treinamento será realizado para reforçar os procedimentos internos e garantir a conformidade com as políticas administrativas.",
     "author": "Recursos Humanos",
     "date": "2025-04-24T14:00:00Z",
-    "image": "assets/SubNew_ImageContainer.png",
+    "image": "../data/newsImages/SubNew_ImageContainer.png",
     "type": "main",
     "text": "O treinamento realizado abordou os principais procedimentos internos, reforçando a importância do cumprimento das normas e políticas institucionais. Durante o evento, colaboradores participaram de dinâmicas e simulações que ilustraram situações do dia a dia, promovendo o aprendizado prático. O objetivo foi garantir que todos estejam alinhados com as melhores práticas, contribuindo para um ambiente de trabalho mais seguro, produtivo e em conformidade com as exigências legais."
   },
@@ -25,7 +25,7 @@
     "content": "O manual de políticas administrativas foi atualizado com novas diretrizes para melhorar a governança corporativa.",
     "author": "Departamento Jurídico",
     "date": "2025-04-23T09:00:00Z",
-    "image": "assets/SubNew_ImageContainer2.png",
+    "image": "../data/newsImages/SubNew_ImageContainer2.png",
     "type": "main",
     "text": "A revisão do manual de políticas administrativas trouxe novas diretrizes para a governança corporativa. Entre as principais mudanças estão a atualização dos processos de auditoria, a inclusão de políticas de diversidade e a modernização dos fluxos de aprovação. O documento foi disponibilizado digitalmente para todos os colaboradores, que também participaram de sessões de esclarecimento para sanar dúvidas e garantir a correta aplicação das novas regras."
   },
@@ -35,7 +35,7 @@
     "content": "O relatório de desempenho administrativo do último mês já está disponível para consulta no portal interno.",
     "author": "Departamento de Estatísticas",
     "date": "2025-04-22T11:00:00Z",
-    "image": "assets/SubNew_ImageContainer3.png",
+    "image": "../data/newsImages/SubNew_ImageContainer3.png",
     "type": "main",
     "text": "O relatório de desempenho administrativo do último mês apresenta indicadores detalhados sobre produtividade, eficiência e uso de recursos. Os dados mostram avanços em diversos setores, especialmente após a adoção de novas tecnologias. O documento destaca ainda os desafios enfrentados e propõe ações corretivas para aprimorar os resultados nos próximos períodos. A transparência na divulgação desses dados fortalece a confiança entre equipes e gestores."
   },
@@ -45,7 +45,7 @@
     "content": "Uma nova política de segurança de dados foi implementada para proteger informações sensíveis e garantir a conformidade com a LGPD.",
     "author": "Departamento Jurídico",
     "date": "2025-04-21T08:00:00Z",
-    "image": "assets/highlight.png",
+    "image": "../data/newsImages/highlight.png",
     "type": "main",
     "text": "A política de segurança de dados foi reformulada para atender às exigências da LGPD e proteger informações sensíveis da organização. Foram implementadas novas camadas de autenticação, criptografia de dados e treinamentos periódicos sobre boas práticas digitais. O setor de TI monitora constantemente possíveis ameaças, garantindo que os sistemas estejam sempre atualizados e seguros contra invasões ou vazamentos."
   },
@@ -55,7 +55,7 @@
     "content": "O sistema administrativo estará fora do ar para manutenção programada no próximo sábado, das 22h às 4h.",
     "author": "Equipe de TI",
     "date": "2025-04-20T16:00:00Z",
-    "image": "assets/SubNew_ImageContainer.png",
+    "image": "../data/newsImages/SubNew_ImageContainer.png",
     "type": "main",
     "text": "A manutenção programada do sistema administrativo foi realizada com sucesso, trazendo melhorias de desempenho e estabilidade. Durante o período de indisponibilidade, equipes de suporte estiveram de prontidão para sanar dúvidas e orientar os usuários. Após a atualização, o sistema apresentou respostas mais rápidas e integração aprimorada com outros módulos, beneficiando todos os setores da instituição."
   },
@@ -65,7 +65,7 @@
     "content": "Uma reunião de planejamento estratégico será realizada para definir as metas administrativas do próximo trimestre.",
     "author": "Coordenação Geral",
     "date": "2025-04-19T09:00:00Z",
-    "image": "assets/SubNew_ImageContainer2.png",
+    "image": "../data/newsImages/SubNew_ImageContainer2.png",
     "type": "main",
     "text": "A reunião de planejamento estratégico reuniu gestores de diferentes áreas para definir metas e prioridades para o próximo trimestre. Foram discutidos indicadores de desempenho, oportunidades de inovação e estratégias para otimizar recursos. O encontro resultou em um plano de ação detalhado, com prazos e responsáveis definidos, visando o crescimento sustentável e a excelência nos serviços prestados."
   },
@@ -75,7 +75,7 @@
     "content": "Uma nova ferramenta foi implementada para melhorar o controle de estoque e reduzir desperdícios.",
     "author": "Equipe de Logística",
     "date": "2025-04-18T10:00:00Z",
-    "image": "assets/SubNew_ImageContainer3.png",
+    "image": "../data/newsImages/SubNew_ImageContainer3.png",
     "type": "main",
     "text": "A adoção da nova ferramenta de controle de estoque permitiu maior precisão no acompanhamento de entradas e saídas de materiais. O sistema emite alertas automáticos para reposição, evitando faltas ou excessos. Além disso, relatórios detalhados auxiliam na análise de consumo e na identificação de oportunidades para redução de custos, tornando a gestão de suprimentos mais eficiente."
   },
@@ -85,7 +85,7 @@
     "content": "O sistema de pagamentos foi atualizado para incluir novas funcionalidades e melhorar a experiência do usuário.",
     "author": "Equipe de TI",
     "date": "2025-04-17T15:00:00Z",
-    "image": "assets/SubNew_ImageContainer4.png",
+    "image": "../data/newsImages/SubNew_ImageContainer4.png",
     "type": "main",
     "text": "O sistema de pagamentos foi atualizado para oferecer mais segurança e praticidade aos colaboradores. Agora, é possível acompanhar o status de solicitações em tempo real, além de contar com novas opções de pagamento digital. A equipe financeira recebeu treinamento para operar as novas funcionalidades, garantindo agilidade no processamento e maior satisfação dos usuários."
   },
@@ -95,7 +95,7 @@
     "content": "Informamos que o próximo feriado administrativo será na segunda-feira, dia 28 de abril.",
     "author": "Recursos Humanos",
     "date": "2025-04-16T08:00:00Z",
-    "image": "assets/SubNew_ImageContainer.png",
+    "image": "../data/newsImages/SubNew_ImageContainer.png",
     "type": "main",
     "text": "Em virtude do feriado administrativo, as atividades da instituição estarão suspensas na próxima segunda-feira. Os setores essenciais funcionarão em regime de plantão para atender demandas urgentes. Solicitamos que todos programem suas atividades considerando a data, evitando transtornos e garantindo a continuidade dos serviços após o retorno."
   },
@@ -105,7 +105,7 @@
     "content": "Uma nova política de home office foi implementada para flexibilizar o trabalho remoto dos colaboradores.",
     "author": "Recursos Humanos",
     "date": "2025-04-15T09:00:00Z",
-    "image": "assets/svoEnter.jpg",
+    "image": "../data/newsImages/svoEnter.jpg",
     "type": "main",
     "text": "A política de home office foi revisada para proporcionar mais flexibilidade aos colaboradores. Agora, é possível solicitar o trabalho remoto em dias alternados, mediante aprovação da liderança. A medida visa equilibrar produtividade e qualidade de vida, mantendo o compromisso com os resultados e a integração das equipes por meio de reuniões virtuais regulares."
   },
@@ -115,7 +115,7 @@
     "content": "Uma campanha foi lançada para conscientizar os colaboradores sobre a importância da organização administrativa.",
     "author": "Comunicação Interna",
     "date": "2025-04-14T10:00:00Z",
-    "image": "assets/svoLab.jpg",
+    "image": "../data/newsImages/svoLab.jpg",
     "type": "main",
     "text": "A campanha de conscientização administrativa tem como foco a importância da organização e do cumprimento de prazos. Foram distribuídos materiais informativos e realizadas palestras sobre gestão do tempo, comunicação eficiente e uso de ferramentas digitais. A iniciativa busca criar uma cultura de responsabilidade e colaboração entre todos os membros da equipe."
   },
@@ -125,7 +125,7 @@
     "content": "Uma nova ferramenta foi implementada para facilitar o controle de ponto dos colaboradores.",
     "author": "Recursos Humanos",
     "date": "2025-04-13T11:00:00Z",
-    "image": "assets/svoEnter.jpg",
+    "image": "../data/newsImages/svoEnter.jpg",
     "type": "main",
     "text": "A nova ferramenta de controle de ponto digitaliza o registro de entrada e saída dos colaboradores, eliminando processos manuais e reduzindo erros. O sistema permite o acompanhamento em tempo real e gera relatórios automáticos para o setor de RH. A novidade traz mais transparência e praticidade para todos, facilitando o cumprimento das obrigações trabalhistas."
   },
@@ -135,7 +135,7 @@
     "content": "O sistema de relatórios foi atualizado para incluir novos gráficos e análises detalhadas.",
     "author": "Departamento de Estatísticas",
     "date": "2025-04-12T14:00:00Z",
-    "image": "assets/svoLab.jpg",
+    "image": "../data/newsImages/svoLab.jpg",
     "type": "main",
     "text": "Com a atualização do sistema de relatórios, gestores têm acesso a dashboards interativos e análises detalhadas. A ferramenta permite a personalização de filtros e a exportação de dados em diferentes formatos. Isso facilita a identificação de tendências, o acompanhamento de metas e a tomada de decisões baseadas em informações precisas e atualizadas."
   },
@@ -145,7 +145,7 @@
     "content": "Uma nova política de sustentabilidade foi implementada para reduzir o impacto ambiental das operações administrativas.",
     "author": "Departamento de Sustentabilidade",
     "date": "2025-04-11T13:00:00Z",
-    "image": "assets/svoPeople.jpg",
+    "image": "../data/newsImages/svoPeople.jpg",
     "type": "main",
     "text": "A política de sustentabilidade implementada reforça o compromisso da instituição com o meio ambiente. Entre as ações estão a redução do consumo de papel, o incentivo à reciclagem e o uso racional de recursos naturais. Programas de conscientização ambiental foram lançados para engajar colaboradores e parceiros, promovendo práticas responsáveis em todas as áreas."
   },
@@ -155,7 +155,7 @@
     "content": "O sistema de atendimento foi modernizado para agilizar o suporte aos colaboradores e setores administrativos.",
     "author": "Equipe de TI",
     "date": "2025-04-10T09:00:00Z",
-    "image": "assets/SubNew_ImageContainer2.png",
+    "image": "../data/newsImages/SubNew_ImageContainer2.png",
     "type": "last",
     "text": "O sistema de atendimento foi modernizado para agilizar o suporte aos colaboradores e setores administrativos. Agora, é possível abrir chamados online, acompanhar o andamento das solicitações e avaliar o atendimento recebido. A equipe de suporte passou por capacitação para garantir respostas rápidas e soluções eficazes, elevando o padrão de qualidade dos serviços internos."
   },
@@ -165,7 +165,7 @@
     "content": "Uma nova campanha de reciclagem foi lançada para incentivar práticas sustentáveis dentro da organização.",
     "author": "Departamento de Sustentabilidade",
     "date": "2025-04-09T14:00:00Z",
-    "image": "assets/svoPeople.jpg",
+    "image": "../data/newsImages/svoPeople.jpg",
     "type": "last",
     "text": "A campanha de reciclagem interna mobilizou colaboradores de todos os setores para a separação correta de resíduos. Foram instalados coletores seletivos e promovidas oficinas sobre reaproveitamento de materiais. O objetivo é reduzir o impacto ambiental das atividades administrativas e criar uma cultura de responsabilidade socioambiental."
   },
@@ -175,7 +175,7 @@
     "content": "Foi realizado um evento de integração para dar boas-vindas aos novos colaboradores do setor administrativo.",
     "author": "Recursos Humanos",
     "date": "2025-04-08T11:00:00Z",
-    "image": "assets/svoEnter.jpg",
+    "image": "../data/newsImages/svoEnter.jpg",
     "type": "last",
     "text": "O evento de integração de novos colaboradores contou com palestras, dinâmicas e apresentação dos principais setores da instituição. Os participantes receberam kits de boas-vindas e tiveram a oportunidade de conhecer colegas e gestores. A iniciativa visa facilitar a adaptação dos recém-chegados e fortalecer o espírito de equipe desde o início da jornada."
   },
@@ -185,7 +185,7 @@
     "content": "Novos equipamentos de TI foram adquiridos para melhorar a infraestrutura tecnológica do setor.",
     "author": "Equipe de TI",
     "date": "2025-04-07T16:00:00Z",
-    "image": "assets/svoLab.jpg",
+    "image": "../data/newsImages/svoLab.jpg",
     "type": "last",
     "text": "A atualização dos equipamentos de TI trouxe mais velocidade e segurança para as operações administrativas. Novos computadores, impressoras e sistemas de backup foram adquiridos, garantindo maior disponibilidade e proteção dos dados. A equipe de tecnologia realizou a instalação e configuração dos dispositivos, minimizando impactos na rotina dos usuários."
   },
@@ -195,7 +195,7 @@
     "content": "Durante a Semana da Saúde, diversas atividades foram promovidas para o bem-estar dos colaboradores.",
     "author": "Comunicação Interna",
     "date": "2025-04-06T10:00:00Z",
-    "image": "assets/SubNew_ImageContainer.png",
+    "image": "../data/newsImages/SubNew_ImageContainer.png",
     "type": "last",
     "text": "Durante a Semana da Saúde, foram promovidas palestras, exames preventivos e atividades físicas para os colaboradores. O objetivo foi incentivar hábitos saudáveis e prevenir doenças ocupacionais. A ação contou com a participação de profissionais da área da saúde e teve grande adesão, reforçando o compromisso da instituição com o bem-estar de sua equipe."
   }

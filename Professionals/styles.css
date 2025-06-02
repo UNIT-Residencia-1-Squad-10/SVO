@@ -20,9 +20,9 @@ html {
 }
 
 
-body {
-  background: var(--white2);
-  color: var(--dark);
+body {  
+  background-color: var(--body-bg);
+  color: var(--background-color);
 }
 .main_title {
     display: flex;
@@ -52,7 +52,7 @@ body {
     gap: 2.5rem;
     max-width: 810px;
     padding: 6.3rem 5rem;
-    background-color: var(--white);
+    background-color: var(--sevices-content-bg);
     border-radius: 1.3rem;
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
   }
@@ -63,6 +63,7 @@ body {
   }
   
   .summary__p {
+    color: var(--services--content-text);
     font-size: 1.6rem;
     font-weight: 300;
   }
@@ -71,18 +72,33 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    align-items: start;
     gap: 6rem;
     margin-top: 3rem;
     margin-left: 7.5rem;
     margin-right: 7.5rem;
   }
+
+  @media (max-width: 768px) {
+    .professionals__container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+
   
 .card__professionals {
     width: 50%;
     text-align: center;
     flex-direction: column;
     padding-bottom: 10px;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;    
+    color: var(--services--content-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
 .card__professionals__photo {
@@ -110,12 +126,19 @@ body {
     border: none;
     font-size: 18px;
     cursor: pointer;
+    color: var(--services--content-text);
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    gap: 5px;
   }
   
 .card__professionals__details {
     display: none;
     margin-top: 10px;
     font-size: 14px;
+    color: var(--services--content-text);
+    background-color: var(--sevices-content-bg);
   }
 .yellow-line {
     height: 4px;
