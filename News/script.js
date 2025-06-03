@@ -180,7 +180,7 @@ export const CardSize = {
             <p class="news-card-main-text">${item.content}</p>
           </div>
           <div class="news-card-main-link-container">
-            <a href="new_details.html?id=${item.id}" class="news-card-main-link">Saiba mais</a>
+            <a href="/News/new_details.html?id=${item.id}" class="news-card-main-link">Saiba mais</a>
           </div>
         </div>
       `;
