@@ -133,6 +133,7 @@ body {
 .laws__item-link {
   text-decoration: none;
   color: var(--institutional-text-color);
+  cursor: pointer;
 }
 
 .title-bar {
