@@ -238,6 +238,7 @@ body {
   border: 2px solid #969696;
   width: 100%;
   max-width: 306px;
+  color: var(--home-request-input-color);
 }
 
 .request__button {
@@ -357,8 +358,8 @@ body {
   display: none;
 }
 
-@media(max-width: 1600px) {
-    .news {
+@media (max-width: 1600px) {
+  .news {
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -684,7 +685,7 @@ body {
   .schedule__item p {
     font-size: 12px;
   }
-  .request  {
+  .request {
     width: 85%;
     align-self: center;
   }
@@ -693,5 +694,4 @@ body {
     width: 85%;
     align-self: center;
   }
-
 }
