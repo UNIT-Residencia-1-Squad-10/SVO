@@ -1,4 +1,4 @@
-import { renderFooterNews, CardSize } from '../News/script.js';
+import { renderNewsSection, CardSize } from '../News/script.js';
 
 // CLASS/TAG HEADER COMO COMPONENTE
 class MeuHeader extends HTMLElement {
@@ -299,7 +299,7 @@ class MeuFooter extends HTMLElement {
 		`;
 		setTimeout(() => {
       const target = this.shadowRoot.getElementById('footer-news-container');
-      renderFooterNews(target, CardSize.FOOTER, 'last');
+      renderNewsSection(target, CardSize.FOOTER, 'last');
     }, 10);
 	}
 }

@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="/shared/components.js" defer></script>
     <script src="/shared/vlibras-widget.js" defer></script>
+    <script type="module">
+      import { renderNewsSection, CardSize } from '/News/script.js';
+      renderNewsSection('.news', CardSize.INSTITUTIONAL, 'last');
+    </script>
   </head>
   <body>
     <svo-header></svo-header>
@@ -125,39 +129,9 @@
             <div class="title-bar">
               <div class="title-bar__decoration"></div> 
             </div>
-              <a href="#" class="news__item news__item-link">
-                <img
-                  class="news__item-img"
-                  src="assets/not_1.png"
-                  alt="Imagem relacionada à mudança de endereço do SVO"
-                />
-                <div class="news__item-content">
-                  <h4 class="news__item-h4">Nova Ferramenta de Gestão Administrativa</h4>
-                  <p class="news__item-p">25-02-2025</p>
-                </div>
-              </a>
-              <a href="#" class="news__item news__item-link">
-                <img
-                  class="news__item-img"
-                  src="assets/not_2.png"
-                  alt="Imagem relacionada à mudança de endereço do SVO"
-                />
-                <div class="news__item-content">
-                  <h4 class="news__item-h4">Nova Política de Home Office</h4>
-                  <p class="news__item-p">25-02-2025</p>
-                </div>
-              </a>
-              <a href="#" class="news__item news__item-link">
-                <img
-                  class="news__item-img"
-                  src="assets/not_3.png"
-                  alt="Imagem relacionada à mudança de endereço do SVO"
-                />
-                <div class="news__item-content">
-                  <h4 class="news__item-h4">Campanha de Conscientização Administrativa</h4>
-                  <p class="news__item-p">25-02-2025</p>
-                </div>
-              </a>
+            <div class="news__container">
+              <!-- Notícias carregadas dinamicamente aqui -->
+            </div>
           </div>
         </aside>
       </div>
