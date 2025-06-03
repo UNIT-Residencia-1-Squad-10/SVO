@@ -81,7 +81,7 @@
   --services-step-active-bg: rgba(255, 255, 255, 0.18);
   --sevices-content-bg: #f8f9fa;
   --services--content-text: #666666;
-  --services--content-btn: rgb(182, 185, 4);
+  --services--content-btn: #ffffff;
   --services-content-btn-bg: #01448a;
 
   /* CONTACT STYLES */
@@ -197,7 +197,7 @@ body.dark-mode {
   --services-step-active-bg: rgba(255, 255, 255, 0.099);
   --sevices-content-bg: #303030;
   --services--content-text: #fff;
-  --services--content-btn: #000;
+  --services--content-btn: #ffffff;
   --services-content-btn-bg: #01448a;
 
   /* CONTACT STYLES */
