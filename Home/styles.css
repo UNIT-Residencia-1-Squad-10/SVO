@@ -671,12 +671,15 @@ body {
     width: 85%;
     align-self: center;
   }
+  .schedule__hours {
+    padding: 2rem 2rem;
+  }
   .schedule__item {
     gap: 1rem;
     margin: auto;
   }
   .schedule__container {
-    padding: 4rem 5rem;
+    padding: 4rem 2rem;
     justify-content: space-between;
   }
   .schedule__title {
@@ -693,5 +696,15 @@ body {
   .services {
     width: 85%;
     align-self: center;
+  }
+}
+
+@media (max-width: 365px) {
+  .services {
+    width: 90%;
+  }
+  .schedule {
+    padding: 0rem;
+    width: 90%;
   }
 }
