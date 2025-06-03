@@ -46,6 +46,7 @@
   --home-metrics-color: #01448a;
   --home-request-title: #01448a;
   --home-request-bg: #fff;
+  --home-request-input-color: #000;
   --home-request-button-hover: #fff;
   --home-news-title: #01448a;
   --home-news-button-hover: #fff;
@@ -147,6 +148,7 @@ body.dark-mode {
   --home-metrics-color: #fbb802;
   --home-request-title: #fbb802;
   --home-request-bg: #343434;
+  --home-request-input-color: #fff;
   --home-request-button-hover: #fff;
   --home-news-title: #046ad4;
   --home-news-button-bg-hover: #fbb802;
@@ -212,8 +214,8 @@ body.dark-mode {
   --news-pagination-bt-active: #01448a;
   --news-pagitation-text: #ffffff;
   --faq-title: #fff;
-  --title-news:#fff;
-  --subtitle-news:#f0f0f0;
+  --title-news: #fff;
+  --subtitle-news: #f0f0f0;
   --social-media-icon-color: #ffffff;
 }
 
