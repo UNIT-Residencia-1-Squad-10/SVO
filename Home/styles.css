@@ -531,6 +531,8 @@ body {
   padding: 2rem 1.5rem;
   position: relative;
   z-index: 1;
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 /* SCHEDULE */
