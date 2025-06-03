@@ -1,20 +1,20 @@
-import { renderNewsSection, CardSize } from '../News/script.js';
+import { renderNewsSection, CardSize } from "../News/script.js";
 
 // CLASS/TAG HEADER COMO COMPONENTE
 class MeuHeader extends HTMLElement {
-	connectedCallback() {
-		if (
-			!document.querySelector(
-				'script[src*="kit.fontawesome.com/a940e28064.js"]'
-			)
-		) {
-			const script = document.createElement("script");
-			script.src = "https://kit.fontawesome.com/a940e28064.js";
-			script.crossOrigin = "anonymous";
-			document.head.appendChild(script);
-		}
+  connectedCallback() {
+    if (
+      !document.querySelector(
+        'script[src*="kit.fontawesome.com/a940e28064.js"]'
+      )
+    ) {
+      const script = document.createElement("script");
+      script.src = "https://kit.fontawesome.com/a940e28064.js";
+      script.crossOrigin = "anonymous";
+      document.head.appendChild(script);
+    }
 
-		this.innerHTML = `
+    this.innerHTML = `
 			<header>
 					<!-- Barra de informações acima da Navbar -->
 					<div class="info-bar">
@@ -147,22 +147,22 @@ class MeuHeader extends HTMLElement {
 			<!-- VLibras Widget -->
 			<vlibras-widget></vlibras-widget>
 		`;
-	}
+  }
 }
 
 customElements.define("svo-header", MeuHeader);
 
 class MeuFooter extends HTMLElement {
-	  constructor() {
+  constructor() {
     super();
     this.attachShadow({ mode: "open" });
   }
-	async connectedCallback() {
-		const [style1, style2] = await Promise.all([
-      fetch('/shared/styles.css').then(res => res.text()),
-      fetch('/shared/cards.css').then(res => res.text())
+  async connectedCallback() {
+    const [style1, style2] = await Promise.all([
+      fetch("/shared/styles.css").then((res) => res.text()),
+      fetch("/shared/cards.css").then((res) => res.text()),
     ]);
-		this.shadowRoot.innerHTML = `
+    this.shadowRoot.innerHTML = `
 			<style>${style1 + style2}</style>
 			<footer class="footer">
 				<div class="footer__container">
@@ -297,11 +297,11 @@ class MeuFooter extends HTMLElement {
 				</div>
 			</footer>
 		`;
-		setTimeout(() => {
-      const target = this.shadowRoot.getElementById('footer-news-container');
-      renderNewsSection(target, CardSize.FOOTER, 'last');
+    setTimeout(() => {
+      const target = this.shadowRoot.getElementById("footer-news-container");
+      renderNewsSection(target, CardSize.FOOTER, "last");
     }, 10);
-	}
+  }
 }
 customElements.define("svo-footer", MeuFooter);
 
@@ -313,70 +313,84 @@ const savedTheme = localStorage.getItem("darkMode");
 let isDark = false;
 
 if (savedTheme !== null) {
-	// USA O TEMA SALVO
-	isDark = savedTheme === "true";
+  // USA O TEMA SALVO
+  isDark = savedTheme === "true";
 } else {
-	// DETECTA A PREFERÊNCIA DO SISTEMA
-	isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  // DETECTA A PREFERÊNCIA DO SISTEMA
+  isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
 
 // APLICAR O TEMA CONFORME DETECTADO
 if (isDark) {
-	body.classList.add("dark-mode");
-	buttons.forEach((btn) => (btn.checked = true));
+  body.classList.add("dark-mode");
+  buttons.forEach((btn) => (btn.checked = true));
 } else {
-	body.classList.remove("dark-mode");
-	buttons.forEach((btn) => (btn.checked = false));
+  body.classList.remove("dark-mode");
+  buttons.forEach((btn) => (btn.checked = false));
 }
 
 // LISTENER PARA ALTERNAR O TEMA MANUALMENTE
 buttons.forEach((btn) => {
-	btn.addEventListener("click", () => {
-		body.classList.toggle("dark-mode");
-		const isDarkMode = body.classList.contains("dark-mode");
-		localStorage.setItem("darkMode", isDarkMode);
-		buttons.forEach((b) => (b.checked = isDarkMode));
-	});
+  btn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    const isDarkMode = body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDarkMode);
+    buttons.forEach((b) => (b.checked = isDarkMode));
+  });
 });
 
 // MENU MOBILE
 
 document.addEventListener("DOMContentLoaded", () => {
-	const menuToggle = document.getElementById("menu-toggle");
-	const close_menu = document.getElementById("menu-toggle-close");
-	const mobileMenu = document.getElementById("mobile-menu");
+  const menuToggle = document.getElementById("menu-toggle");
+  const close_menu = document.getElementById("menu-toggle-close");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-	menuToggle.addEventListener("click", () => {
-		mobileMenu.classList.toggle("ativo");
-	});
-	close_menu.addEventListener("click", () => {
-		mobileMenu.classList.toggle("ativo");
-	});
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("ativo");
+  });
+  close_menu.addEventListener("click", () => {
+    mobileMenu.classList.toggle("ativo");
+  });
 
-	// FECHAR O MENU AO CLICAR EM UM LINK
-	document.querySelectorAll(".navbar__link").forEach((link) => {
-		link.addEventListener("click", () => {
-			mobileMenu.classList.remove("ativo");
-		});
-	});
+  // FECHAR O MENU AO CLICAR EM UM LINK
+  document.querySelectorAll(".navbar__link").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("ativo");
+    });
+  });
 });
 
 // ACESSIBILIDADE
 const acessibility = document.querySelector(
-	".navbar__accessibility-font-size-btn"
+  ".navbar__accessibility-font-size-btn"
 );
 const fontLevel = document.querySelector("#fontSizeLevel");
 
 acessibility.addEventListener("click", () => {
-	if (body.classList.contains("font-medium")) {
-		body.classList.remove("font-medium");
-		body.classList.add("font-large");
-		fontLevel.textContent = "(3/3)";
-	} else if (body.classList.contains("font-large")) {
-		body.classList.remove("font-large");
-		fontLevel.textContent = "(1/3)";
-	} else {
-		body.classList.add("font-medium");
-		fontLevel.textContent = "(2/3)";
-	}
+  if (body.classList.contains("font-medium")) {
+    body.classList.remove("font-medium");
+    body.classList.add("font-large");
+    fontLevel.textContent = "(3/3)";
+  } else if (body.classList.contains("font-large")) {
+    body.classList.remove("font-large");
+    fontLevel.textContent = "(1/3)";
+  } else {
+    body.classList.add("font-medium");
+    fontLevel.textContent = "(2/3)";
+  }
+});
+
+// BARRA DE NAVEGAÇÃO FIXA AO ABAIXAR O SCROLL
+const navbar = document.querySelector(".navbar");
+const hero = document.querySelector(".hero");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 500) {
+    navbar.classList.add("fixed");
+    hero.style.marginTop = "82.4px";
+  } else {
+    navbar.classList.remove("fixed");
+    hero.style.marginTop = "0";
+  }
 });
