@@ -27,14 +27,14 @@ body {
   flex-direction: column;
   padding: 8px;
   gap: 16px;
-  position: relative; 
-  padding-bottom: 80px; 
+  position: relative;
+  padding-bottom: 80px;
 }
 
 .news__title--left,
 .news__title--right {
   height: 40px;
-  background-color: var(--navbar-background-color);
+  background-color: var(--secundary-color);
   color: var(--background-color);
   border-radius: 8px;
   font-size: var(--vinte-px);
