@@ -59,9 +59,6 @@ class MeuHeader extends HTMLElement {
 											<a class="navbar__link" id="news" href="/News/index.html" data-link>Notícias</a>
 									</li>
 									<li class="navbar__item">
-											<a class="navbar__link" id="services" href="/Services/index.html" data-link>Serviços</a>
-									</li>
-									<li class="navbar__item">
 											<a class="navbar__link" id="talkWithUs" href="/Contact/index.html" data-link>Fale Conosco</a>
 									</li>
 							</ul>
@@ -119,9 +116,6 @@ class MeuHeader extends HTMLElement {
 									</li>
 									<li class="navbar__item">
 											<a class="navbar__link" id="news" href="/News/index.html" data-link>Notícias</a>
-									</li>
-									<li class="navbar__item">
-											<a class="navbar__link" id="services" href="/Services/index.html" data-link>Serviços</a>
 									</li>
 									<li class="navbar__item">
 											<a class="navbar__link" id="talkWithUs" href="/Contact/index.html" data-link>Fale Conosco</a>

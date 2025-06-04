@@ -1,13 +1,18 @@
-@import url("../shared/styles.css");
-
-body {
-  background: var(--body-bg);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  background: var(--body-bg);
 }
 
 .news {
