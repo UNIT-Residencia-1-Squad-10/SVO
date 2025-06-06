@@ -120,7 +120,14 @@ class MeuHeader extends HTMLElement {
 									<li class="navbar__item">
 											<a class="navbar__link" id="talkWithUs" href="/Contact/index.html" data-link>Fale Conosco</a>
 									</li>
-							</ul>
+								</ul>
+										<a class="navbar__request-service-mobile" href="/Services/index.html">
+											<button class="navbar__request-service">
+													Solicitar Remoção
+											</button>
+										</a>
+									
+									
 							<div class="mobile-navbar__bottom">
 									<a href="/Home/index.html"><img class="mobile-navbar__logo" src="/Home/assets/logo svo branco.png"
 													alt="Logo SVO" /></a>

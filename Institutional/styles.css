@@ -84,8 +84,7 @@ body {
   justify-content: space-between;
 }
 
-.news,
-.laws {
+.news {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,6 +104,7 @@ body {
   flex-direction: row;
   gap: 0.5rem;
   transition: transform 0.3s ease;
+  margin-bottom: 1rem;
 }
 .news__item-content {
   display: flex;
@@ -129,8 +129,7 @@ body {
   color: var(--institutional-news-p);
   font-weight: 200;
 }
-.news__item-link,
-.laws__item-link {
+.news__item-link {
   text-decoration: none;
   color: var(--institutional-text-color);
   cursor: pointer;
@@ -149,41 +148,15 @@ body {
   background-color: #fbb802;
   border-radius: 9.9rem;
 }
-.laws__item {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 40px;
-  padding: 2.3rem;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 17px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-  background-color: var(--institutional-sidebar-laws-item);
-  transition: transform 0.3s ease;
-}
 
-.laws__item:hover,
 .news__item:hover {
   transform: scale(1.05);
 }
 
-.laws__img {
-  color: var(--institutional-sidebar-laws-svg);
-  width: 8px;
-  height: 14px;
-  fill: none;
-}
-.laws__h3,
 .news__h3 {
   font-size: var(--vinte-px);
 }
-.laws__text {
-  font-size: var(--dezesseis-px);
-  color: var(--institutional-text-color);
-  font-weight: 400;
-}
+
 /* Responsividade - Seção Atividades */
 
 @media (max-width: 1141px) {
@@ -216,12 +189,15 @@ body {
     align-items: stretch;
   }
 
-  .laws,
   .news {
-    max-width: 375px;
+    max-width: 810px;
+    width: 100%;
+    padding: 2rem;
   }
-  .laws {
-    justify-content: start;
+
+  .news__item-img {
+    width: 70px;
+    height: 50px;
   }
   .main__title {
     max-width: 810px;
@@ -239,23 +215,16 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .laws,
-  .news {
-    max-width: 600px;
-    width: 100%;
-    padding: 2rem;
-  }
 
   .activity {
     max-width: 600px;
     padding: 6.3rem 2rem;
   }
-  .main__title {
+  .news {
     max-width: 600px;
   }
-  .news__item-img {
-    width: 70px;
-    height: 50px;
+  .main__title {
+    max-width: 600px;
   }
 }
 
