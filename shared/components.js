@@ -389,10 +389,10 @@ const hero = document.querySelector(".hero");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 500) {
     navbar.classList.add("fixed");
-    hero.style.marginTop = "82.4px";
+    body.style.marginTop = "116px";
   } else {
     navbar.classList.remove("fixed");
-    hero.style.marginTop = "0";
+    body.style.marginTop = "0";
   }
 });
 
