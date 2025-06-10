@@ -1,41 +1,35 @@
-:root {
-  /* Tema claro */
-  --bg-color: #ffffff;
-  --text-color: #222222;
-  --subtitle-color: #555555;
-  --card-bg: #f5f5f5;
-  --card-shadow: rgba(0, 0, 0, 0.1);
-
-  --font-family: "Roboto", sans-serif;
-  --font-size-base: 16px;
-  --font-size-title: 2.2rem;
-  --font-size-subtitle: 1.7rem;
-  --font-size-name: 1.15rem;
-  --font-size-role: 0.95rem;
-}
-
-body.dark-mode {
-  --bg-color: #121212;
-  --text-color: #eeeeee;
-  --subtitle-color: #bbbbbb;
-  --card-bg: #1e1e1e;
-  --card-shadow: rgba(0, 0, 0, 0.7);
-}
-
+/* Reset base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: var(--font-family);
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-size: var(--font-size-base);
+  background-color: var(--body-bg);
+  color: var(--professionals-text-color);
+  font-size: var(--dezesseis-px);
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Layout principal */
 .main {
   max-width: 1200px;
   margin: 3rem auto;
@@ -43,7 +37,7 @@ body {
 }
 
 .main_title {
-  font-size: var(--font-size-title);
+  font-size: var(--trinta-px);
   text-align: center;
   margin-bottom: 2.5rem;
 }
@@ -54,16 +48,16 @@ body {
 }
 
 .summary__h2 {
-  font-size: 3rem;
+  font-size: var(--trinta-px);
   font-weight: 700;
   text-align: left;
   margin-bottom: 1rem;
-  color: var(--text-color);
+  color: var(--professionals-text-color);
 }
 
 .summary__p {
   color: var(--subtitle-color);
-  font-size: var(--font-size-base);
+  font-size: var(--dezesseis-px);
   line-height: 1.6;
   max-width: 1200px;
 }
@@ -88,7 +82,7 @@ body {
   }
 }
 
-/* Card de profissional */
+/* Card */
 .u-list-item {
   background-color: var(--card-bg);
   box-shadow: 0 3px 6px var(--card-shadow);
@@ -116,9 +110,9 @@ body {
   transform: scale(1.05);
 }
 
-/* Textos do card */
+/* Tipografia dentro dos cards */
 .u-text-grey-30 {
-  font-size: 0.50rem(--font-size-role);
+  font-size: var(--cargo-font-size);
   color: var(--subtitle-color);
   margin-bottom: 0.4rem;
   text-align: left;
@@ -126,12 +120,12 @@ body {
 
 .u-text-default {
   font-weight: bold;
-  font-size: 3.0rem(--font-size-name);
-  color: var(--text-color);
+  font-size: var(--nome-font-size);
+  color: var(--professionals-text-color);
   text-align: left;
 }
 
-/* Responsividade para fontes */
+/* Responsividade de fontes */
 @media (max-width: 480px) {
   .main_title {
     font-size: 1.6rem;
@@ -140,22 +134,8 @@ body {
   .summary__h2 {
     font-size: 1.4rem;
   }
-}
 
   .summary__p {
     font-size: 0.95rem;
   }
-
-
-/* Remove sublinhado e herda a cor para links */
-a {
-  text-decoration: none;
-  color: inherit;
 }
-
-/* Garante que o texto dentro dos cards não fique com aparência de link visitado */
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-

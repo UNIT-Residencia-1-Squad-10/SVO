@@ -99,6 +99,9 @@
   --faq-title: #000000;
   --social-media-icon-color: #000000;
 
+  /* PROFESSIONALS STYLES */
+  --professionals-text-color: #000000;
+
   /* FONT SIZE */
   --dez-px: 1rem;
   --dezesseis-px: 1.6rem;
@@ -217,6 +220,9 @@ body.dark-mode {
   --title-news: #fff;
   --subtitle-news: #f0f0f0;
   --social-media-icon-color: #ffffff;
+
+  /* PROFESSIONALS STYLES */
+  --professionals-text-color: #f8f9fa;
 }
 
 *,
