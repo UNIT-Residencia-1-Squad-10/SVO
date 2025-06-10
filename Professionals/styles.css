@@ -19,12 +19,12 @@ body {
   line-height: 1.5;
 }
 
-a {
+.u-repeater a {
   text-decoration: none;
   color: inherit;
 }
 
-a:visited {
+.u-repeater a:visited {
   color: inherit;
   text-decoration: none;
 }
